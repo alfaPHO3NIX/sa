@@ -24,9 +24,9 @@ bot.command({
 })
 
 bot.status({
-    text: "Tokyo Development",//buraya durum yazısı
+    text: "Made By xFurkan_",//buraya durum yazısı
     type: "PLAYING",//buraya oynuyor bölümü PLAYING LISTENING WATCHING STREAMING şeklindede yapabilirsiniz
-    status: "dnd",//buraya status kısmı dnd idle online şeklinde yapabilirsiniz
+    status: "online",//buraya status kısmı dnd idle online şeklinde yapabilirsiniz
     time: 12
 })
 
