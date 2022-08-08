@@ -2,7 +2,7 @@ const parzi = require("aoi.js")
 var fs = require('fs')
 const bot = new parzi.Bot({
     token: process.env.token,//.env dosyasında token yazan variablenin değerine tokeninizi yazın
-    prefix:"!"//ayarlamalı prefix 
+    prefix:"$getServerVar[onek]"//ayarlamalı prefix 
 })
 bot.onJoined()
 bot.onLeave()
