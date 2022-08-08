@@ -2,5 +2,5 @@ module.exports = {
 name: "prefix",
 code: `
 $onlyForIDs[$botOwnerID;Selam]
-$setServerVar`
-}
+$setServerVar[prefix;$message]
+Yeni Prefix: $message}`

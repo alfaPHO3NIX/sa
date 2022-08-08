@@ -31,6 +31,5 @@ bot.status({
 })
 
 bot.variables({
-  variableismi:"variable değeri",
   prefix:"!",//her zaman "" den sonra , koyun
   })
