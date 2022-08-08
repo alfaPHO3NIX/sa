@@ -1,37 +1,20 @@
-const parzi = require("aoi.js")
-var fs = require('fs')
-const bot = new parzi.Bot({
-    token: process.env.token,//.env dosyasında token yazan variablenin değerine tokeninizi yazın
-    prefix:"$getServerVar[onek]"//ayarlamalı prefix 
+const aoijs = require("aoi.js");  
+const bot = new aoijs.Bot({
+  token: process.env.token,
+  prefix: "!",
+  intents: "all",
+
 })
-bot.onJoined()
-bot.onLeave()
+
+/////////callback/////////
 bot.onMessage()
-var reader = fs.readdirSync("./komutlar/").filter(file => file.endsWith(".js"))
-for(const file of reader) {    
-    const command = require(`./komutlar/${file}`)
-    bot.command({
-        name: command.name,
-        code: command.code
-    })
-}
 
+/////////variable////////
+
+//////komutlar////////
 bot.command({
-  name:"ping",
-  code:`
-  Pingim: **$ping**
-  `
+  name: "ping",
+  code: `
+Pingim \`$pingms\`
+`,
 })
-
-bot.status({
-    text: "Made By xFurkan_",//buraya durum yazısı
-    type: "PLAYING",//buraya oynuyor bölümü PLAYING LISTENING WATCHING STREAMING şeklindede yapabilirsiniz
-    status: "online",//buraya status kısmı dnd idle online şeklinde yapabilirsiniz
-    time: 12
-})
-
-bot.variables({
-  parasembol: "Coin",
-  para: "0",
-  onek:"!",//her zaman "" den sonra , koyun
-  })
