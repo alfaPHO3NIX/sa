@@ -31,6 +31,7 @@ bot.status({
 })
 
 bot.variables({
+  parasembol: "Coin",
   para: "0",
   onek:"!",//her zaman "" den sonra , koyun
   })
