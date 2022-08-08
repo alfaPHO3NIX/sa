@@ -1,4 +1,6 @@
 module.exports = {
 name: "prefix",
-code:
-$onlyFo}
+code: `
+$onlyForIDs[$botOwnerID;Selam]
+$setServerVar`
+}
