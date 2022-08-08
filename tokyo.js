@@ -31,5 +31,6 @@ bot.status({
 })
 
 bot.variables({
+  para: "0",
   onek:"!",//her zaman "" den sonra , koyun
   })

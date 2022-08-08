@@ -1,4 +1,4 @@
 module.exports = {
 name: "param",
 code: `
-Şuanki Paran: $getUserVar[]`}
+Şuanki Paran: $getGlobalUserVar[para]`}
