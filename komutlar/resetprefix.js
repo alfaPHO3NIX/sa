@@ -1,7 +1,7 @@
 module.exports = {
-name: "prefixsıfırla",
+name: "!prefixsıfırla",
 code: `
 $onlyForIDs[$botOwnerID;Bu komut sahibime özeldir]
-$resetServerVar[prefix]
+$resetServerVar[onek]
 Prefix Sıfırlandı.
 `}
