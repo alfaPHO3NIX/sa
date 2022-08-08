@@ -3,4 +3,5 @@ name: "prefix",
 code: `
 $onlyForIDs[$botOwnerID;Selam]
 $setServerVar[prefix;$message]
-Yeni Prefix: $message}`
+Yeni Prefix: $message
+`}
