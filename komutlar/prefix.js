@@ -2,8 +2,10 @@ module.exports = {
 name: "prefix",
 code: `
 $title[Prefix Değiştirildi!]
-$description[** **\nYeni Prefix: $message[1]\n** **
+$description[** **\nYeni Prefix: $message\n** **
 ]
-$setServerVar[]
+$setServerVar[prefix;$message]
+$argsCheck[1;Yeni prefixi girmelisin!]
+$onlyPerms[admin;Yetkin Yok.]
 `
 }
