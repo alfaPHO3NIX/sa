@@ -5,5 +5,6 @@ $title[$getVar[botadi]]
 $description[** **
 Mevcut $getVar[parasembol]: $getGlobalUserVar[para]
 ** **]
+$color[RANDOM]
 `
 }
