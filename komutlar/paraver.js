@@ -3,7 +3,9 @@ name: "paraver",
 code: `
 $title[Başarılı!]
 $description[** **
-<@$mentioned[1;no]> adlı kişiye $noMentionMessage[1] $getVar[parasembol] verildi.
+<@$mentioned[1]> adlı kişiye $noMentionMessage[1;no] $getVar[parasembol] verildi.
 ** **]
+$color[RANDOM]
+$argsCheck[1]
 `
 }
