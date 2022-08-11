@@ -12,6 +12,9 @@ bot.onMessage()
 
 /////////variable////////
 bot.variables({
+para: "0",
+parasembol: "TL",
+botadi: "xFrkn_",
 prefix: "!",
 })
 //////komutlar////////
