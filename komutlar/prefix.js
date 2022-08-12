@@ -1,6 +1,6 @@
 module.exports = {
 name: "prefix",
-aliases: "önek",
+aliases: ['önek'],
 code: `
 $title[Prefix Değiştirildi!]
 $description[** **\nYeni Prefix: $message\n** **
