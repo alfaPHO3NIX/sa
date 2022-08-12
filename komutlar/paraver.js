@@ -9,6 +9,6 @@ $color[RANDOM]
 
 $onlyIf[$isNumber[$noMentionMessage[1]]!=false;**<@$authorID> Lütfen bir miktar belirt]
 $onlyPerms[admin;Yetkin Yok.]
-$setGlobalUser[para;$sum[$getGlobalUserVar[para;$mentioned[1];$noMentionMessage[1]];$mentioned[1]]
+$setGlobalUser[para;$sum[$getGlobalUserVar[para;$mentioned[1]];$noMentionMessage[1]];$mentioned[1]]
 `
 }
