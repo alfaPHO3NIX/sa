@@ -6,6 +6,6 @@ $description[** **
 <@$mentioned[1]> adlı kişiye $noMentionMessage[1;no] $getVar[parasembol] verildi.
 ** **]
 $color[RANDOM]
-$argsCheck[1]
+$onlyIf[$checkContains[$noMentionMessage[1]]!=false;**<@$authorID> Lütfen bir miktar belirt]
 `
 }
