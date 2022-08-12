@@ -6,6 +6,9 @@ $description[** **
 <@$mentioned[1]> adlı kişiye $noMentionMessage[1;no] $getVar[parasembol] verildi.
 ** **]
 $color[RANDOM]
-$onlyIf[$checkContains[$noMentionMessage[1]]!=false;**<@$authorID> Lütfen bir miktar belirt]
+
+$onlyIf[$isNumber[$noMentionMessage[1]]!=false;**<@$authorID> Lütfen bir miktar belirt]
+$onlyPerms[admin;Yetkin Yok.]
+$setGlobalUser[para;$sum[$getGlobalUserVar[para;$mentioned[1];$noMentionMessage[1]];$mentioned[1]]
 `
 }
