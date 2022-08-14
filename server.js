@@ -12,6 +12,7 @@ bot.onMessage()
 
 /////////variable////////
 bot.variables({
+presure:"0",
 para:"0",
 parasembol:"TL",
 botadi:"xFrkn_",
@@ -27,7 +28,8 @@ Pingim \`$pingms\`
 
 bot.loopCommand({
 code: `
-...
+$onlyIf[$getGlobalUserVar[presure]>0]
+$setGlobalUserVar[presure;$sub[$getGlobalUserVar[presure];1]]
 `,
 executeOnStartup: true,
 every: 1000
