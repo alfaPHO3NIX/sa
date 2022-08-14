@@ -26,12 +26,13 @@ Pingim \`$pingms\`
 `,
 })
 
-bot.loopCommand({
-name: "s",
-code: `
-hi
-`,
-channel: "1",
-executeOnStartup: true,
-every: 500000
+bot.command({
+        name: "a",
+        code: `$loop[3;{};hello]`
 })
+
+bot.awaitedCommand({
+       name: "hello",
+       code: `hi user!`
+})
+//The bot would return 'hi user!' 3 times
