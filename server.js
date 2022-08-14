@@ -24,3 +24,11 @@ bot.command({
 Pingim \`$pingms\`
 `,
 })
+
+bot.loopCommand({
+code: `
+...
+`,
+executeOnStartup: true,
+every: 1000
+})
