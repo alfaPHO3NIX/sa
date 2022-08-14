@@ -26,6 +26,15 @@ Pingim \`$pingms\`
 `,
 })
 
+bot.command({
+name: "presürem",
+code: `
+$deletecommand
+$title[Premium]
+$description[\nKalan Premium Süresi;\n$getGlobalUserVar[presure]]
+`,
+})
+
 bot.loopCommand({
 code: `
 $onlyIf[$getGlobalUserVar[presure]>0]
