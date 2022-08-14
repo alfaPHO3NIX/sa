@@ -40,7 +40,8 @@ bot.command({
 bot.awaitedCommand({
        name: "premium",
        code: `
-       $wait[1s]
+       $wait[1s
+       ]
        $onlyIf[$getGlobalUserVar[presure]>0;]
        $setGlobalUserVar[presure;$sub[$getGlobalUserVar[presure];1]]
        `
