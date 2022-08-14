@@ -4,6 +4,6 @@ code: `
 $deletecommand
 
 Kalan Premium Süresi;
-$getVar[presure]
+$getGlobalUserVar[presure]
 `
 }

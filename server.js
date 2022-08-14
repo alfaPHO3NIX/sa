@@ -30,10 +30,10 @@ bot.command({
         name: "prebaşlat",
         code: `
         $wait[1s]
-        $loop[1;{};premium]
+        $loop[20;{};premium]
         $onlyPerms[admin;Bu komut sahibime özel!]
         Süre Başlatıldı
-        
+        $deleteIn[5s]
         `
 })
 
