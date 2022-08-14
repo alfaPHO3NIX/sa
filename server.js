@@ -12,7 +12,7 @@ bot.onMessage()
 
 /////////variable////////
 bot.variables({
-presurem: "0",
+presure: "50",
 para: "0",
 parasembol: "TL",
 botadi: "xFrkn_",
@@ -27,12 +27,21 @@ Pingim \`$pingms\`
 })
 
 bot.command({
-        name: "a",
-        code: `$loop[3;{};hello]`
+        name: "prebaşlat",
+        code: `
+        $wait[1s]
+        $loop[1;{};premium]
+        $onlyPerms[admin;Bu komut sahibime özel!]
+        Süre Başlatıldı
+        
+        `
 })
 
 bot.awaitedCommand({
-       name: "hello",
-       code: `hi user!`
+       name: "premium",
+       code: `
+       $onlyIf[$getGlobalUserVar[presure]>0;]
+       $setGlobalUserVar[presure;$sub[$getGlobalUserVar[presure];1]]
+       `
 })
 //The bot would return 'hi user!' 3 times
