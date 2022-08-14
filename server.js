@@ -25,3 +25,13 @@ bot.command({
 Pingim \`$pingms\`
 `,
 })
+
+bot.loopCommand({
+name: "s",
+code: `
+hi
+`,
+channel: "1",
+executeOnStartup: true,
+every: 500000
+})

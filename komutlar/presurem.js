@@ -2,8 +2,8 @@ module.exports = {
 name: "presürem",
 code: `
 $deletecommand
-$title[Premium]
-$description[\nKalan Premium Süresi;
-$getVar[presurem]]
+
+Kalan Premium Süresi;
+$getVar[presurem]
 `
 }
