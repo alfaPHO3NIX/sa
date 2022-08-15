@@ -6,6 +6,7 @@ const bot = new aoijs.Bot({
 })
 const loader = new aoijs.LoadCommands(bot);
 loader.load(bot.cmd, "./komutlar/")
+loader.load(bot.cmd, "./shopier/")
 
 /////////callback/////////
 bot.onMessage()
