@@ -38,6 +38,21 @@ bot.interactionCommand({
   name: "satinal", 
   prototype: 'slash',
   code: `
-  Selam
-  `,
-})
+  $interactionModal[Hello there!;profileModal;
+    {actionRow:
+      {textInput:What's your name?:1:nameInput:yes:$username:3:30:$username}
+    }
+    {actionRow:
+      {textInput:How old are you?:2:ageInput:no:13+:0:2}
+    }
+  ]
+  `
+});
+
+bot.interactionCommand({
+  name: "profileModal",
+  prototype: 'modal',
+  code: `
+  $interactionReply[Nice to meet you, **$textInputValue[nameInput]**. So you are $textInputValue[ageInput] years old.]
+  `
+});
