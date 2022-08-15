@@ -6,7 +6,7 @@ module.exports = [
     code: `
                 $interactionReply[✅ <@$authorID>, başvurun iletildi!]
         $interactionModal[Shopier Sipariş Onay;kontrolnoonayModal;{actionRow:
-        {textInput:Kontrol No:1:kontrolnoModal:yes:123456789:9:9}}
+        {textInput:Kontrol No:1:kontrolnoModal:yes:123456789:9:50}}
      ]
         `,
   },
@@ -15,7 +15,8 @@ module.exports = [
     prototype: "modal",
     name: "kontrolnoonayModal",
     code: `
-    $setVar[$textInputValue[kontrolnoModal];Onaylandı✅]
-    $suppressErrors[Bir Sorun oluştu! Kontrol No'yu doğru yazıdğına emin ol.]
+    $dm[$getVar[$textInputValue[kontrolnoModal]sahip]]
+    Selam 
+    $setVar[$textInputValue[kontrolnoModal]durum;Onaylandı✅]
     `
 }]
