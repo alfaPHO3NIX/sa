@@ -5,8 +5,17 @@ module.exports = [
     name: "evet",
     code: `
                 $interactionReply[✅ <@$authorID>, başvurun iletildi!]
-        $interactionModal[Shopier Sipariş Teslim Formu;yetkiliModal;{actionRow:
-        {textInput:Shopier Sipariş No:1:siparisnoModal:yes:123456789:9:9}}
+        $interactionModal[Shopier Sipariş Onay;kontrolnoonayModal;{actionRow:
+        {textInput:Kontrol No:1:kontrolnoonayModal:yes:123456789:9:9}}
      ]
         `,
+  },
+  {
+    type: "interaction",
+    prototype: "modal",
+    name: "kontrolnoModal",
+    code: `
+    $setVar[$textInputValue[kontrolnoModal];Onaylandı✅]
+    $suppressErrors[Bir Sorun oluştu! Kontrol No'yu doğru yazıdğına emin ol.]
+    `
 }]
