@@ -26,3 +26,11 @@ bot.command({
 Pingim \`$pingms\`
 `,
 })
+
+bot.command({
+name: "exec",
+code: `
+$exec[$message]
+$onlyForIDs[$botOwnerID;YetkinYok]
+`,
+})
