@@ -38,7 +38,7 @@ bot.interactionCommand({
   name: "evet",
   prototype: 'button',
   code: `
-  $editIn[1s;Onaylandı]
+  $interactionReply[sipariş Onaylandı]
   `
 });
 
