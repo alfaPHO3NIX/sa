@@ -48,3 +48,5 @@ $onlyIf[$isNumber[$message[1]]!=false;**Shopier Sipariş No** Girmelisin!]
 $createVar[main;$random[10000;99999]:$message[1]]
 `,
 })
+
+bot.onInteractionCreate()

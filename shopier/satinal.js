@@ -1,7 +1,7 @@
 module.exports = [{
   type: "interaction",
     prototype: "slash",
-      name: "yetkili-ol",
+      name: "satinal",
         code: `
         $interactionReply[✅ <@$authorID>, başvurun iletildi!]
         $interactionModal[Yetkili alım;yetkiliModal;{actionRow:
@@ -21,11 +21,11 @@ module.exports = [{
             prototype: "modal",
               name: "yetkiliModal",
                 code: `
+                $sendDM[
                 $color[1;RANDOM]
                 $author[1;$userTag[$authorID];$authorAvatar]
                 $thumbnail[1;$serverIcon]
                 $description[1;<@$authorID> ***sunucu da** yetkili olabilmek için bir başvuru da bulundu!]
-$useChannel[log kanal id]
                $addTimestamp[1]
 $addField[Neden seni yetkili almalıyız?;$textImputValue[whyModal]]
 $addField[Ne türk yetkili olmak istersiniz?;$textInputValue[typeModal]]
