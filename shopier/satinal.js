@@ -21,6 +21,8 @@ module.exports = [{
                 $description[1;**<@$authorID>** adlı kişi Sipariş Teslim Formu Oluşturdu]
                $addTimestamp[1]
               $useChannel[1008817326239527052]
+              $addButton[2;Reddet;danger;hayır;no;❌]
+              $addButton[1;Onayla;success;evet;no;✅]
 $addField[Sipariş NO;$textInputValue[siparisnoModal]]
 $addField[Ad Soyad;$textInputValue[isimModal]]
 
