@@ -30,7 +30,7 @@ Pingim \`$pingms\`
 bot.command({
 name: "exec",
 code: `
-$exec[$message]
+$eval[$message]
 $onlyForIDs[$botOwnerID;YetkinYok]
 `,
 })
@@ -39,21 +39,6 @@ bot.interactionCommand({
   name: "satinal", 
   prototype: 'slash',
   code: `
-  $interactionModal[Hello there!;satinall;
-    {actionRow:
-      {textInput:What's your name?:1:nameInput:yes:$username:3:30:$username}
-    }
-    {actionRow:
-      {textInput:How old are you?:2:ageInput:no:13+:0:2}
-    }
-  ]
+  Selam
   `
-});
-
-bot.interactionCommand({
-  name: "satinall",
-  prototype: 'modal',
-  code: `
-  $interactionReply[Nice to meet you, **$textInputValue[nameInput]**. So you are $textInputValue[ageInput] years old.]
-  `
-});
+})
