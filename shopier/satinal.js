@@ -5,33 +5,24 @@ module.exports = [{
         code: `
         $interactionReply[✅ <@$authorID>, başvurun iletildi!]
         $interactionModal[Yetkili alım;yetkiliModal;{actionRow:
-        {textInput:İsminiz ve yaşınız?:1:isimModal:yes:Şafak 14:3:20}}
+        {textInput:Ad Soyad:1:isimModal:yes:Ad Soyad:3:30}}
         {actionRow:
-        {textInput:Kaç saat aktif olabilirsiniz?:1:timeModal:yes:7/24:1:10}}
-          {actionRow:
-          {textInput:Kaç sunucuda yetkilisiniz?:1:serverModal:yes:2 sunucuda:1:15}}
-           {actionRow:
-           {textInput:Ne tür yetkili olmak istersiniz?:1:typeModal:yes:Abone görevlisi:1:30}}
-           {actionRow:
-           {textInput:Neden seni yetkili almalıyız?:2:whyModal:yes:Çünkü ben tatlıyım:1:100}}
-        ]
+         {textInput:Sipariş No Giriniz:1:siparisnoModal:yes:123456789:9:9}}
+    ]
         `
         },{
           type: "interaction",
             prototype: "modal",
               name: "yetkiliModal",
                 code: `
-               $dm
+               $dm[$botOwnerID]
                 $color[1;RANDOM]
                 $author[1;$userTag[$authorID];$authorAvatar]
                 $thumbnail[1;$serverIcon]
-                $description[1;<@$authorID> ***sunucu da** yetkili olabilmek için bir başvuru da bulundu!]
+                $description[1;<@$authorID> **<@$authorID>** adlı kişi Sipariş Teslim Formu Oluşturdu]
                $addTimestamp[1]
-$addField[Neden seni yetkili almalıyız?;$textInputValue[whyModal]]
-$addField[Ne türk yetkili olmak istersiniz?;$textInputValue[typeModal]]
-$addField[Kaç sunucuda yetkilisiniz?;$textInputValue[serverModal]]
-$addField[Kaç saat aktif olabilirsiniz?;$textInputValue[timeModal]]
-$addField[İsminiz ve yaşınız?;$textInputValue[isimModal]]
+$addField[Sipariş NO;$textInputValue[whyModal]]
+$addField[Ad Soyad;$textInputValue[typeModal]]
 
 `
   }]
