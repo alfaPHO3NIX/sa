@@ -17,8 +17,9 @@ module.exports = [
     prototype: "modal",
     name: "yetkiliModal",
     code: `
-                $createVar[main;$sum[$math[$textInputValue[siparisnoModal]*2]]sahip:$authorID]
-                $createVar[main;$sum[$math[$textInputValue[siparisnoModal]*2]]durum:Cevaplanmadı]
+                $sum[$textInputValue[siparisnoModal];589543]
+                $createVar[main;$sum[$textInputValue[siparisnoModal];589543]sahip:$authorID]
+                $createVar[main;$sum[$textInputValue[siparisnoModal];589543]durum:Cevaplanmadı]
                 $color[1;RANDOM]
                 $author[1;$userTag[$authorID];$authorAvatar]
                 $thumbnail[1;$serverIcon]
