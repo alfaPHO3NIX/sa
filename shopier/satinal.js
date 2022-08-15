@@ -4,7 +4,7 @@ module.exports = [{
       name: "satinal",
         code: `
                 $interactionReply[✅ <@$authorID>, başvurun iletildi!]
-        $interactionModal[Yetkili alım;yetkiliModal;{actionRow:
+        $interactionModal[Shopier Sipariş Teslim Formu;yetkiliModal;{actionRow:
         {textInput:İsminiz ve yaşınız?:1:isimModal:yes:Şafak 14:3:20}}
         {actionRow:
         {textInput:Kaç saat aktif olabilirsiniz?:1:siparisnoModal:yes:7/24:1:10}}
