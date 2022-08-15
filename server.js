@@ -25,10 +25,3 @@ bot.command({
 Pingim \`$pingms\`
 `,
 })
-
-bot.loopCommand ({
-code: `
-selam`,
-  executeOnStartup: true,
-  every: 1000
-})
