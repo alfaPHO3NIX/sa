@@ -1,9 +1,12 @@
 module.exports = [{
   type: "interaction",
-    prototype: "slash",
+    prototype: "button",
       name: "onayla",
-        code: `
-        
-                        $interactionReply[✅ Sipariş Reddedildi]
-`
+        code: ``
+      },{
+          type: "interaction",
+            prototype: "button",
+              name: "onayla",
+                code: `
+                Onaylan
 }]
