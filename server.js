@@ -39,9 +39,8 @@ bot.interactionCommand({
   prototype: 'button',
   code: `
   $interactionReply[
-  sipariş Onaylandı
-  $dm[$authorID]
- Siparişin Onaylandı]
+  Sipariş Onaylandı
+  $textInputValue[siparisnoModal]
   `
 });
 
