@@ -17,7 +17,8 @@ module.exports = [
     prototype: "modal",
     name: "yetkiliModal",
     code: `
-                Sipariş No: $textInputValue[siparisnoModal]
+                $random[10000;99999]
+                $createVar[]
                 $color[1;RANDOM]
                 $author[1;$userTag[$authorID];$authorAvatar]
                 $thumbnail[1;$serverIcon]

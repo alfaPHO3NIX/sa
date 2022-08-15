@@ -38,7 +38,10 @@ bot.interactionCommand({
   name: "evet",
   prototype: 'button',
   code: `
-  $interactionReply[sipariş Onaylandı]
+  $interactionReply[
+  sipariş Onaylandı
+  $dm[$authorID]
+ Siparişin Onaylandı]
   `
 });
 
