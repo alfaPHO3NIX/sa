@@ -34,14 +34,4 @@ $onlyForIDs[$botOwnerID;YetkinYok]
 `,
 })
 
-bot.interactionCommand({
-  name: "evet",
-  prototype: 'button',
-  code: `
-  $interactionReply[
-  Sipariş Onaylandı
-  $textInputValue[siparisnoModal]
-  `
-});
-
 bot.onInteractionCreate()
