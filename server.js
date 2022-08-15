@@ -10,7 +10,6 @@ loader.load(bot.cmd, "./shopier/")
 
 /////////callback/////////
 bot.onMessage()
-
 /////////variable////////
 bot.variables({
 presure: "0",
@@ -40,5 +39,5 @@ bot.interactionCommand({
   prototype: 'slash',
   code: `
   Selam
-  `
+  `,
 })
