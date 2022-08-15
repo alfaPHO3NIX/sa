@@ -21,16 +21,17 @@ module.exports = [{
             prototype: "modal",
               name: "yetkiliModal",
                 code: `
-                $sendDM[
+               $sendDM[
                 $color[1;RANDOM]
                 $author[1;$userTag[$authorID];$authorAvatar]
                 $thumbnail[1;$serverIcon]
                 $description[1;<@$authorID> ***sunucu da** yetkili olabilmek için bir başvuru da bulundu!]
                $addTimestamp[1]
-$addField[Neden seni yetkili almalıyız?;$textImputValue[whyModal]]
+$addField[Neden seni yetkili almalıyız?;$textInputValue[whyModal]]
 $addField[Ne türk yetkili olmak istersiniz?;$textInputValue[typeModal]]
 $addField[Kaç sunucuda yetkilisiniz?;$textInputValue[serverModal]]
 $addField[Kaç saat aktif olabilirsiniz?;$textInputValue[timeModal]]
 $addField[İsminiz ve yaşınız?;$textInputValue[nameModal]]
+]
 `
   }]
