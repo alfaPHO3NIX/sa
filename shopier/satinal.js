@@ -11,9 +11,9 @@ module.exports = [
         {textInput:Shopier Sipariş No:1:siparisnoModal:yes:123456789:9:9}}
      ]
         `,
-  },
-  {
-    type: "interaction",
+},
+{
+  type: "interaction",
     prototype: "modal",
     name: "yetkiliModal",
     code: `
