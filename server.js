@@ -34,4 +34,14 @@ $onlyForIDs[$botOwnerID;YetkinYok]
 `,
 })
 
+bot.interactionCommand({
+  name: "evet",
+  prototype: 'button',
+  code: `
+  $interactionReply[
+  
+  ]
+  `
+});
+
 bot.onInteractionCreate()
