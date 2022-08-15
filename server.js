@@ -36,10 +36,10 @@ $onlyForIDs[$botOwnerID;YetkinYok]
 })
 
 bot.interactionCommand({
-  name: "profile", 
+  name: "satinal", 
   prototype: 'slash',
   code: `
-  $interactionModal[Hello there!;profileModal;
+  $interactionModal[Hello there!;satinall;
     {actionRow:
       {textInput:What's your name?:1:nameInput:yes:$username:3:30:$username}
     }
@@ -51,7 +51,7 @@ bot.interactionCommand({
 });
 
 bot.interactionCommand({
-  name: "profileModal",
+  name: "satinall",
   prototype: 'modal',
   code: `
   $interactionReply[Nice to meet you, **$textInputValue[nameInput]**. So you are $textInputValue[ageInput] years old.]
