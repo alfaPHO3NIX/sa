@@ -5,7 +5,7 @@ module.exports = [{
         code: `
         $interactionReply[✅ <@$authorID>, başvurun iletildi!]
         $interactionModal[Yetkili alım;yetkiliModal;{actionRow:
-        {textInput:İsminiz ve yaşınız?:1:nameModal:yes:Şafak 14:3:20}}
+        {textInput:İsminiz ve yaşınız?:1:isimModal:yes:Şafak 14:3:20}}
         {actionRow:
         {textInput:Kaç saat aktif olabilirsiniz?:1:timeModal:yes:7/24:1:10}}
           {actionRow:
@@ -21,7 +21,7 @@ module.exports = [{
             prototype: "modal",
               name: "yetkiliModal",
                 code: `
-               $sendDM[
+               $dm
                 $color[1;RANDOM]
                 $author[1;$userTag[$authorID];$authorAvatar]
                 $thumbnail[1;$serverIcon]
@@ -31,7 +31,7 @@ $addField[Neden seni yetkili almalıyız?;$textInputValue[whyModal]]
 $addField[Ne türk yetkili olmak istersiniz?;$textInputValue[typeModal]]
 $addField[Kaç sunucuda yetkilisiniz?;$textInputValue[serverModal]]
 $addField[Kaç saat aktif olabilirsiniz?;$textInputValue[timeModal]]
-$addField[İsminiz ve yaşınız?;$textInputValue[nameModal]]
-]
+$addField[İsminiz ve yaşınız?;$textInputValue[isimModal]]
+
 `
   }]
