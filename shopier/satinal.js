@@ -6,9 +6,9 @@ module.exports = [
     code: `
                 $interactionReply[✅ <@$authorID>, başvurun iletildi!]
         $interactionModal[Shopier Sipariş Teslim Formu;yetkiliModal;{actionRow:
-        {textInput:İsminiz ve yaşınız?:1:isimModal:yes:Şafak 14:3:20}}
+        {textInput:Ad Soyad:1:isimModal:yes:Ad Soyad:3:30}}
         {actionRow:
-        {textInput:Kaç saat aktif olabilirsiniz?:1:siparisnoModal:yes:7/24:1:10}}
+        {textInput:Shopier Sipariş No:1:siparisnoModal:yes:123456789:9:9}}
      ]
         `,
   },
@@ -17,7 +17,7 @@ module.exports = [
     prototype: "modal",
     name: "yetkiliModal",
     code: `
-                Sipariş No: $textInputValue[sipariş]
+                Sipariş No: $textInputValue[siparisnoModal]
                 $color[1;RANDOM]
                 $author[1;$userTag[$authorID];$authorAvatar]
                 $thumbnail[1;$serverIcon]
