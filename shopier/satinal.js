@@ -18,7 +18,8 @@ module.exports = [
     name: "yetkiliModal",
     code: `
                 $random[10000;99999]
-                $createVar[]
+                $createVar[main;$random[10000;99999]sahip;$authorID]
+                $createVar[main;$random[10000;99999]durum;Cevaplanmadı]
                 $color[1;RANDOM]
                 $author[1;$userTag[$authorID];$authorAvatar]
                 $thumbnail[1;$serverIcon]
