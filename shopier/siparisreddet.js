@@ -21,8 +21,9 @@ module.exports = [
     code: `
     $dm[$textInputValue[reddetuseridModal]]
     $title[Selam <@$textInputValue[reddetuseridModal]>]
-    **$textInputValue[reddetkontrolnoModal]** Kontrol No'lu Siparişin Reddedildi :(
-    
-    Reddedilme sebebi: $textInputValue[siparisreddetsebepModal]
+  $description[**$textInputValue[reddetkontrolnoModal]** Kontrol No'lu Siparişin Reddedildi :(
+  ** **
+Reddedilme sebebi: $textInputValue[siparisreddetsebepModal]
+    ]
     `
 }]
