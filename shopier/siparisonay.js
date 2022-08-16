@@ -7,6 +7,8 @@ module.exports = [
                 $interactionReply[✅ <@$authorID>, başvurun iletildi!]
         $interactionModal[Shopier Sipariş Onay;kontrolnoonayModal;{actionRow:
         {textInput:Kontrol No:1:kontrolnoModal:yes:123456789:9:50}}
+         {actionRow:
+          {textInput:Kontrol No:1:useridModal:yes:Kullanıcı İd:9:50}}
      ]
         `,
   },
@@ -15,11 +17,10 @@ module.exports = [
     prototype: "modal",
     name: "kontrolnoonayModal",
     code: `
-    $dm[$getVar[$textInputValue[kontrolnoModal]sahip]]
-    Selam <$getVar[$textInputValue[kontrolnoModal]sahip]>
+    $dm[$textInputValue[useridModal]]
+    Selam <@$textInputValue[useridModal]>
     **$textInputValue[kontrolnoModal]** Kontrol No'lu Siparişin Onaylandı!
     
     Siparişinizi **48 Saat içerisinde** teslim etmeye çalışacağım.
-    $setVar[$textInputValue[kontrolnoModal]durum;Onaylandı✅]
     `
 }]
