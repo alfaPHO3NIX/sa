@@ -16,7 +16,10 @@ module.exports = [
     name: "kontrolnoonayModal",
     code: `
     $dm[$getVar[$textInputValue[kontrolnoModal]sahip]]
-    Selam 
+    Selam <$getVar[$textInputValue[kontrolnoModal]sahip]>
+    **$textInputValue[kontrolnoModal]** Kontrol No'lu Siparişin Onaylandı!
+    
+    Siparişinizi **48 Saat içerisinde** teslim etmeye çalışacağım.
     $setVar[$textInputValue[kontrolnoModal]durum;Onaylandı✅]
     `
 }]
