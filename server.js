@@ -19,6 +19,7 @@ para: "0",
 parasembol: "TL",
 botadi: "xFrkn_",
 prefix: "!",
+katlamakasasicarpan: "0",
 })
 //////komutlar////////
 bot.command({
