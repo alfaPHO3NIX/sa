@@ -1,3 +1,8 @@
 module.exports = {
-name: "katlamakasa",
-code: ``}
+name: "katlamakasası",
+code: `
+$random[0.2;25
+]
+
+`
+}
