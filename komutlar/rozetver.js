@@ -4,11 +4,11 @@ module.exports = {
 $deletecommand
 $title[Başarılı!]
 $description[<@$mentioned[1]> Adlı kişiye $noMentionMessage[1] Rozeti Verildi!]
-$setGlobalUserVar[$noMentionMessage[1]rozet;Sahipsin$customEmoji[evet];mentioned[1]]
+$setGlobalUserVar[$noMentionMessage[1]rozet;Sahipsin$customEmoji[onayla];$mentioned[1]]
 $deleteIn[5s]
-$argsCheck[>1;Bir Rozet Belirt]
+$argsCheck[2;Bir Rozet Belirt]
 $onlyIf[$mentioned[1]!=undefined;Lütfen Bir Kişi Belirt]
 $onlyForIDs[$botOwnerID;Yetkin Yok $customEmoji[reddet]]
 $suppressErrors[Bi hata oluştu! Rozet adını girmedin yada girdiğin rozet bulanamadı.]
-`,
-};
+`
+}

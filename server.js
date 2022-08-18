@@ -34,7 +34,7 @@ gunlukgelenpara: "0",
 
 
 //Rozet Değişkenleri
-bughunterrozet: "Sahip Değilsin",
+bughunterrozet: "Sahip Değilsin$customEmoji[reddet",
 premiumsahibirozet: "Sahip Değilsin",
 etkinlikkazananırozet: "Sahip Değilsin",
 partnerrozet: "Sahip Değilsin",
