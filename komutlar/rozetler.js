@@ -4,8 +4,8 @@ aliases: ['rozetlerim'],
 code: `
 $title[Tüm Rozetler]
 $description[
-Bug Hunter: $getGlobalUserVar[bughunterrozet]\n
-Premium Sahibi: $getGlobalUserVar[premiumsahibirozet]
+$customEmoji[bughunter]Bug Hunter: $getGlobalUserVar[bughunterrozet]\n
+$customEmoji[premium]Premium Sahibi: $getGlobalUserVar[premiumsahibirozet]
 \nEtkinlik Kazananı: $getGlobalUserVar[etkinlikkazananırozet]
 $color[RANDOM]
 ]
