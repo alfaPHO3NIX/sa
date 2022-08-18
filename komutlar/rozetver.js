@@ -4,7 +4,7 @@ module.exports = {
 $deletecommand
 $title[Başarılı!]
 $description[<@$mentioned[1]> Adlı kişiye $noMentionMessage[1] Rozeti Verildi!]
-$setGlobalUserVar[$no]
+$setGlobalUserVar[$noMentionMessage[1]rozet;Sahipsin$customEmoji[evet];mentioned[1]]
 $deleteIn[5s]
 $argsCheck[>1;Bir Rozet Belirt]
 $onlyIf[$mentioned[1]!=undefined;Lütfen Bir Kişi Belirt]
