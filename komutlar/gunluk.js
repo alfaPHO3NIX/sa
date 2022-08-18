@@ -4,9 +4,9 @@ aliases: ['daily','günlükpara'],
 code: `
 $title[Başarılı]
 $description[\nHesabınıza $getUserVar[gunlukgelenpara] $getVar[parasembol] eklendi]
-$globalCooldown[$getGlobalUserVar[gunlukparacooldown];Bu komutu $replaceText[$replaceText[$replaceText[$replaceText[$replaceText[$getGlobalUserVar[gunlukparacooldown];y; Yıl];d; Gün];h; Saat];m; Dakika];s; Saniye] sonra kullanabilirsin]
 $setGlobalUserVar[para;$sum[$getUserVar[gunlukgelenpara];$getGlobalUserVar[para]]
 $setUserVar[gunlukgelenpara;$random[500;5000]]
+$globalCooldown[$getGlobalUserVar[gunlukparacooldown];Bu komutu $replaceText[$replaceText[$replaceText[$replaceText[$replaceText[$getGlobalUserVar[gunlukparacooldown];y; Yıl];d; Gün];h; Saat];m; Dakika];s; Saniye] sonra kullanabilirsin]
 `
 }
 
