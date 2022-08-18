@@ -29,12 +29,12 @@ prefix: "!",
 katlamakasasicarpan: "0",
 
 //Günlük Para Değişkenleri
-gunlukparacooldown: "4s",
+gunlukparacooldown: "4h",
 gunlukgelenpara: "0",
 
 
 //Rozet Değişkenleri
-bughunterrozet: "Sahip Değilsin$customEmoji[reddet",
+bughunterrozet: "Sahip Değilsin",
 premiumsahibirozet: "Sahip Değilsin",
 etkinlikkazananırozet: "Sahip Değilsin",
 partnerrozet: "Sahip Değilsin",
@@ -58,3 +58,11 @@ $onlyForIDs[$botOwnerID;YetkinYok]
 })
 
 bot.onInteractionCreate()
+
+//Bot Durumu
+bot.status({
+  text: "Made By $username[$botOwnerID]",
+  type: "PLAYING",
+  status: "dnd",
+  time: 12
+})
