@@ -10,7 +10,7 @@ $customEmoji[premium]Premium Sahibi: $getGlobalUserVar[premiumsahibirozet]
 \n$customEmoji[yetkili]Yetkili Ekibi: $getGlobalUserVar[yetkiliekibirozet]
 \n$customEmoji[etkinlikkazanani]Etkinlik Kazananı: $getGlobalUserVar[etkinlikkazananırozet]
 \n$customEmoji[verified] Onaylı Kişi: $getGlobalUserVar[onaylıkişirozet]
-\n$customEmoji[geliştiriciemoji]Developer: $getGlobalUserVar[geliştiricirozet]
+\n$customEmoji[kirmiziyildiz]Developer: $getGlobalUserVar[geliştiricirozet]
 $color[RANDOM]
 ]
 `
