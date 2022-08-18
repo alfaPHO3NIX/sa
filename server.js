@@ -14,12 +14,23 @@ loader.load(bot.cmd, "./kasa/")
 bot.onMessage()
 /////////variable////////
 bot.variables({
+//Premium Değişkenleri
 presure: "0",
+  
+//Ekonomi Değişkenleri
 para: "0",
 parasembol: "TL",
+
+//Bot Status Değilkenleri
 botadi: "xFrkn_",
 prefix: "!",
+
+//Kasa Değişkenleri
 katlamakasasicarpan: "0",
+
+//Günlük Para Değişkenleri
+gunlukparacooldown: "4h",
+gunlukgelenpara: "0",
 })
 //////komutlar////////
 bot.command({
@@ -30,7 +41,7 @@ Pingim \`$pingms\`
 })
 
 bot.command({
-name: "exec",
+name: "eval",
 code: `
 $eval[$message]
 $onlyForIDs[$botOwnerID;YetkinYok]
