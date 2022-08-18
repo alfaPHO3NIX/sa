@@ -9,6 +9,8 @@ loader.load(bot.cmd, "./komutlar/")
 loader.load(bot.cmd, "./shopier/")
 loader.load(bot.cmd, "./moderasyon/")
 loader.load(bot.cmd, "./kasa/")
+loader.load(bot.cmd, "./premium/")
+loader.load(bot.cmd, "./sıralama/")
 
 /////////callback/////////
 bot.onMessage()
