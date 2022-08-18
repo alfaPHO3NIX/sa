@@ -59,9 +59,23 @@ $onlyForIDs[$botOwnerID;YetkinYok]
 
 bot.onInteractionCreate()
 
-//Bot Durumu
+//Bot Durumları
 bot.status({
   text: "Made By $username[$botOwnerID]",
+  type: "PLAYING",
+  status: "dnd",
+  time: 12
+})
+
+bot.status({
+  text: "!Yardım Yazarak Yardım Alabilirsiniz",
+  type: "PLAYING",
+  status: "dnd",
+  time: 12
+})
+
+bot.status({
+  text: "!prefix",
   type: "PLAYING",
   status: "dnd",
   time: 12
