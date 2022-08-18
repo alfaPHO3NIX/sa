@@ -38,7 +38,8 @@ bughunterrozet: "Sahip Değilsin",
 premiumsahibirozet: "Sahip Değilsin",
 etkinlikkazananırozet: "Sahip Değilsin",
 partnerrozet: "Sahip Değilsin",
-//rozet: "Sahip Değilsin",
+onaylıkişirozet: "Sahip Değilsin",
+  //rozet: "Sahip Değilsin",
 })
 //////komutlar////////
 bot.command({
