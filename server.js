@@ -29,7 +29,7 @@ prefix: "!",
 katlamakasasicarpan: "0",
 
 //Günlük Para Değişkenleri
-gunlukparacooldown: "4h",
+gunlukparacooldown: "0s",
 gunlukgelenpara: "0",
 })
 //////komutlar////////
