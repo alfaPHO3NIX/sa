@@ -39,7 +39,9 @@ premiumsahibirozet: "Sahip Değilsin",
 etkinlikkazananırozet: "Sahip Değilsin",
 partnerrozet: "Sahip Değilsin",
 onaylıkişirozet: "Sahip Değilsin",
-  //rozet: "Sahip Değilsin",
+yetkiliekibirozet: "Sahip Değilsin",
+geliştiricirozet: "Sahip Değilsin",
+//rozet: "Sahip Değilsin",
 })
 //////komutlar////////
 bot.command({
