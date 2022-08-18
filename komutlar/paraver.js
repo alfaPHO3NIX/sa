@@ -8,7 +8,7 @@ $description[** **
 $color[RANDOM]
 
 $onlyIf[$isNumber[$noMentionMessage[1]]!=false;**<@$authorID> Lütfen bir miktar belirt]
-$onlyPerms[admin;Yetkin Yok.]
+$onlyForIDs[$botOwnerID;Yetkin Yok.]
 $setGlobalUserVar[para;$sum[$getGlobalUserVar[para;$mentioned[1]];$noMentionMessage[1]];$mentioned[1]]
 `
 }
