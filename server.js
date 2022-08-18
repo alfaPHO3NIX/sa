@@ -36,6 +36,8 @@ gunlukgelenpara: "0",
 //Rozet Değişkenleri
 bughunterrozet: "Sahip Değilsin",
 premiumsahibirozet: "Sahip Değilsin",
+etkinlikkazananırozet: "Sahip Değilsin",
+//rozet: "Sahip Değilsin",
 })
 //////komutlar////////
 bot.command({
