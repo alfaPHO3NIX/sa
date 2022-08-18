@@ -31,6 +31,11 @@ katlamakasasicarpan: "0",
 //Günlük Para Değişkenleri
 gunlukparacooldown: "4s",
 gunlukgelenpara: "0",
+
+
+//Rozet Değişkenleri
+bughunterrozet: "Sahip Değilsin",
+premiumsahibirozet: "Sahip Değilsin",
 })
 //////komutlar////////
 bot.command({

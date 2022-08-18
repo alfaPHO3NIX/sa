@@ -4,8 +4,9 @@ aliases: ['rozetlerim'],
 code: `
 $title[Tüm Rozetler]
 $description[
-Bug Hunter: $replaceText[getGlobalUserVar[bughunterrozet];]
-Premium Sahibi: $getGlobalUser[premiumsahibi]
+Bug Hunter: $getGlobalUserVar[bughunterrozet]\n
+Premium Sahibi: $getGlobalUserVar[premiumsahibirozet]
+$color[RANDOM]
 ]
 `
 }
