@@ -2,7 +2,7 @@ module.exports = {
   name: "e",
   aliases: ["emojilikonuş"],
   code: `
-$customEmoji[$findChars[$message]]
+$customEmoji[$findChars[$message]
 $message
 `,
 };
