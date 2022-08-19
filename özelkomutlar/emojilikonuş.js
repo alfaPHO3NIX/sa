@@ -9,6 +9,6 @@ $replaceText[$replaceText[$replaceText[$replaceText[$message
 ;:verified:;$customEmoji[verified]]
 ;:kirmiziyildiz:;$customEmoji[kirmiziyildiz]]
 ;:tac:;$customEmoji[emoji_003]]
-$onlyIf[$getGlobalUserVar[premium]==var]
+$onlyIf[$getGlobalUserVar[premium]==Var;Bu Özellik Sadece Premium Üyelere Özeldir$customEmoji[reddet]]
 `,
 };
