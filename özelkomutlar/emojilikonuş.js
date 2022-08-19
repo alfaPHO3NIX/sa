@@ -3,9 +3,11 @@ module.exports = {
   aliases: ["emojilikonuş"],
   code: `
 $deletecommand
-$replaceText[$replaceText[$message
+$replaceText[$replaceText[$replaceText[$replaceText[$message
 
-;:bughunter:;$customEmoji[bughunter]
+;:bughunter:;$customEmoji[bughunter]]
 ;:verified:;$customEmoji[verified]]
+;:kirmiziyildiz:;$customEmoji[kirmiziyildiz]]
+;:boost:;$customEmoji[:dbc_boost1:]]
 `,
 };
