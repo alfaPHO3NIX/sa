@@ -4,13 +4,13 @@ aliases: ['pre'],
 code: `
 $title[$customEmoji[premium]Premium Özellikleri$customEmoji[premium]]
 $description[**          Özel Komutlar**
-**$getServerVar[prefix]e / emojilikonuş {mesaj}**;
+**$getServerVar[prefix]e / emojilikonuş {mesaj}**
 Nitronuz olmasa bile emojili bir şekilde mesaj gönderebilirsiniz!
 
-**$getServerVar[prefix]emojiler**;
+**$getServerVar[prefix]emojiler**
 Emojili konuş sistemindeki emojileri adları ile beraber listeler.
 
-$getServerVar[prefix]premiumrolal / $getServerVar[prefix]prerolal;
+$getServerVar[prefix]premiumrolal / $getServerVar[prefix]prerolal
 **TG MC** sunucusunda özel premium rolü alırsınız!
 ]
 `
