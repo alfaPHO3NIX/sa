@@ -3,6 +3,9 @@ module.exports = {
   aliases: ["emojilikonuş"],
   code: `
 $deletecommand
-$sendWebhook[$joinSplitText[;];$messageSlice[1]]$replaceText[$message;:bughunter:; $customEmoji[bughunter]]
+$replaceText[$replaceText[$message
+
+;:bughunter:;$customEmoji[bughunter]
+;:verified:;$customEmoji[verified]]
 `,
 };
