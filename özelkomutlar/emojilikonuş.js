@@ -2,6 +2,7 @@ module.exports = {
   name: "e",
   aliases: ["emojilikonuş"],
   code: `
-$replaceText[$replaceText[$replaceText[$replaceText[$replaceText[$message;y; $custom]
+  $deletecommand
+$replaceText[$message;:bughunter:; $customEmoji[bughunter]]
 `,
 };
