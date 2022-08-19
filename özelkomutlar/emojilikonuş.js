@@ -1,8 +1,8 @@
 module.exports = {
-name: "e",
-aliases: ['emojilikonuş'],
-code: `
-
-
-`
-}
+  name: "e",
+  aliases: ["emojilikonuş"],
+  code: `
+$customEmoji[$findChars[$message]]
+$message
+`,
+};
