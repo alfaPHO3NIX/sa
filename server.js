@@ -19,7 +19,8 @@ bot.onMessage()
 bot.variables({
 //Premium Değişkenleri
 presure: "0",
-  
+premium: "Yok",
+
 //Ekonomi Değişkenleri
 para: "0",
 parasembol: "TL",

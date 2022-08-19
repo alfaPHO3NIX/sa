@@ -8,6 +8,7 @@ $replaceText[$replaceText[$replaceText[$replaceText[$message
 ;:bughunter:;$customEmoji[bughunter]]
 ;:verified:;$customEmoji[verified]]
 ;:kirmiziyildiz:;$customEmoji[kirmiziyildiz]]
-;:boost:;$customEmoji[:dbc_boost1:]]
+;:tac:;$customEmoji[emoji_003]]
+$onlyIf[$getGlobalUserVar[premium]==var]
 `,
 };
