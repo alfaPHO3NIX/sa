@@ -2,22 +2,6 @@ module.exports = {
   name: "e",
   aliases: ["emojilikonuş"],
   code: `
-$replaceText[$replaceText[$replaceText[
-;
-(
-;
-'$']
-;
-$message
-;
-(
-;
-customEmoji[
-
-]
-;
-));
-]
-]
-`
-}
+$replaceText[$replaceText[$replaceText[$replaceText[$replaceText[$message;y; $custom]
+`,
+};
