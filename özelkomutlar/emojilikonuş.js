@@ -3,8 +3,8 @@ module.exports = {
   aliases: ["emojilikonuş"],
   code: `
 $deletecommand
-$sendWebhook[$eval[$replaceText[$createWebhook[$channelID;$username;$userAvatar]]]];,
-;;;$message
+$sendWebhook[$replaceText[$createWebhook[$channelID;$username;$userAvatar]];,
+;;;
 $replaceText[$replaceText[$replaceText[$replaceText[$message
 ;:bughunter:;$customEmoji[bughunter]]
 ;:verified:;$customEmoji[verified]]
