@@ -1,7 +1,7 @@
 const aoijs = require("aoi.js");  
 const bot = new aoijs.Bot({
   token: process.env.token,
-  prefix: "$getServerVar[prefix]",
+  prefix: ['$getServerVar[prefix]','!'],
   intents: "all",
 })
 const loader = new aoijs.LoadCommands(bot);
