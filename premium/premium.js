@@ -10,8 +10,6 @@ Nitronuz olmasa bile emojili bir şekilde mesaj gönderebilirsiniz!
 **$getServerVar[prefix]emojiler**
 Emojili konuş sistemindeki emojileri adları ile beraber listeler.
 
-$getServerVar[prefix]premiumrolal / $getServerVar[prefix]prerolal
-**TG MC** sunucusunda özel premium rolü alırsınız!
 ]
 `
 }
