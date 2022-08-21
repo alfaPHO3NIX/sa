@@ -7,7 +7,7 @@ $description[<@$mentioned[1]> Adlı kişiden $noMentionMessage[1] Rozeti Geri Al
 $setGlobalUserVar[$noMentionMessage[1]rozet;Sahip Değilsin;$mentioned[1]]
 $deleteIn[5s]
 $onlyIf[$mentioned[1]!=undefined;Lütfen Bir Kişi Belirt]
-$onlyForIDs[$botOwnerID;Yetkin Yok $customEmoji[reddet]]
-$suppressErrors[Bi hata oluştu! Rozet adını girmedin yada girdiğin rozet bulanamadı.]
+$onlyForIDs[$getVar[owners];Yetkin Yok $customEmoji[reddet]]
+$suppressErrora[Bi hata oluştu! Rozet adını girmedin yada girdiğin rozet bulanamadı.]
 `
 }

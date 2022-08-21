@@ -16,6 +16,9 @@ Bir kişi etiketlemezseniz kendi bakiyenizi,bir kişi etiketlerseniz etkietledi�
 **$getServerVar[prefix]günlük / $getServerVar[prefix]daily**
 4 saatte bir para alırsınız.
 
+**$getServerVar[prefix]sıralama para**
+Para sıralamasını gösterir.
+
 **$getServerVar[prefix]**paragönder {kişi} {miktar}
 Etkitetlediğiniz kişiye belirttiğiniz miktarda $getVar[parasembol] gönderir.
 
