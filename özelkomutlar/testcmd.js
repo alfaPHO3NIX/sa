@@ -1,7 +1,7 @@
 module.exports = {
 name: "a",
 code: `
-$sendWebhook[$eval[$replaceText[$createWebhook[$channelID;$username;$authorAvatar];;;]];$message]
+$sendWebhook[$replaceText[$createWebhook[$channelID;$username;$authorAvatar]; , ;;;];$message]
 
 `
 }
