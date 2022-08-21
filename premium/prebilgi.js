@@ -1,6 +1,6 @@
 module.exports = {
-name: "premium",
-aliases: ['pre'],
+name: "prebilgi",
+aliases: ['premiumbilgi','preözellikler','premiumözellikler'],
 code: `
 $title[$customEmoji[premium]Premium Özellikleri$customEmoji[premium]]
 $description[**          Özel Komutlar**
