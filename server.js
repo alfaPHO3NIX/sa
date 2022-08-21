@@ -27,7 +27,8 @@ parasembol: "TL",
 
 //Bot Status Değilkenleri
 botadi: "xFrkn_",
-prefix: "!",980089",
+prefix: "!",
+owners: "980089372768624660;711923709253910588",
 
 //Kasa Değişkenleri
 katlamakasasicarpan: "0",
