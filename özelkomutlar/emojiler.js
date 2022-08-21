@@ -11,6 +11,6 @@ $customEmoji[emoji_003] :tac:
 $customEmoji[onayla] :onayla:
 $customEmoji[reddet] :reddet:
 
-]
+] 
 `
 }
