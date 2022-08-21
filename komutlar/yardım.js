@@ -1,9 +1,14 @@
 module.exports = {
-name: "",
+name: "yardım",
+aliases: ['help'],
 code: `
 $title[$customEmoji[kitap] Yardım $customEmoji[kitap]]
 $description[
-**     Ekonomi Komutları**$customEmoji[zumrut]
+**     Ana Komutlar**
+**$getServerVar[prefix]yardım / $getServerVar[prefix]help**
+Tüm komutları gösterir.
+
+**     $customEmoji[zumrut]Ekonomi Komutları**$customEmoji[zumrut]
 
 **$getServerVar[prefix]param / $getServerVar[prefix]param {kişi}**
 Bir kişi etiketlemezseniz kendi bakiyenizi,bir kişi etiketlerseniz etkietlediğiniz kişinin bakiyesini gösterir
@@ -23,7 +28,7 @@ sizde olan/olmayan tüm rozetleri gösterir.
 Premium özrlliklerini gösterir.
 
 **$getServerVar[prefix]premium**
-Premium'unuzun olup olmadığını gösterir
+Premium'unuzun olup olmadığını gösterirr
 ]
 `
 }
