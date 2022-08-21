@@ -23,7 +23,7 @@ sizde olan/olmayan tüm rozetleri gösterir.
 Premium özrlliklerini gösterir.
 
 **$getServerVar[prefix]premium**
-Premium
+Premium'unuzun olup olmadığını gösterir
 ]
 `
 }
