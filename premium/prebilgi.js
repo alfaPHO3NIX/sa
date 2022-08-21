@@ -10,11 +10,13 @@ Nitronuz olmasa bile emojili bir şekilde mesaj gönderebilirsiniz!
 **$getServerVar[prefix]emojiler**
 Emojili konuş sistemindeki emojileri adları ile beraber listeler.
 
-**$getServerVar[prefix]isimrenk \ $getServerVar[prefix]renkliisim**
+**$getServerVar[prefix]isimrenk / $getServerVar[prefix]renkliisim**
 Yakında
 
 **TG MC sunucusunda özel kit**
 Yakında
+
+**Ücret:** __100K OwO__
 ]
 `
 }
