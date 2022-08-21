@@ -3,10 +3,10 @@ module.exports = {
   aliases: ["emojilikonuş"],
   code: `
 $deletecommand
-$replaceText[$replaceText[$replaceText[$replaceText[$replaceText[$replaceText[
-$thumbnail[1;$authorAvatar]
-$title[$username]
-$description[$message]
+$thumbnail[1;$userAvatar]
+$title[1;$username]
+$description[
+$replaceText[$replaceText[$replaceText[$replaceText[$replaceText[$replaceText[$message
 ;:bughunter:;$customEmoji[bughunter]]
 ;:verified:;$customEmoji[verified]]
 ;:kirmiziyildiz:;$customEmoji[kirmiziyildiz]]
@@ -16,6 +16,7 @@ $description[$message]
 
 $argsCheck[>0;En azından 1 kelime yazsaydın ya be kanka!]
 $onlyIf[$getGlobalUserVar[premium]==Var;$deletcommand Bu Özellik Sadece Premium Üyelere Özeldir$customEmoji[reddet]]
+;$userAvatar]
 `,
 };
 
