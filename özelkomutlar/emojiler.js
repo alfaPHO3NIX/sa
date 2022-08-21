@@ -10,7 +10,8 @@ $customEmoji[maviyildiz] :maviyildiz:
 $customEmoji[emoji_003] :tac:
 $customEmoji[onayla] :onayla:
 $customEmoji[reddet] :reddet:
-
-] 
+$customEmoji[emoji_hg] :hosgeldin:
+$customEmoji[emoji_hb] :hosbulduk:
+]
 `
 }
