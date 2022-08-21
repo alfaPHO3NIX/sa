@@ -9,6 +9,5 @@ $setGlobalUserVar[premiumsahibirozet;Sahip Değilsin;$mentioned[1]]
 $setGlobalUserVar[premium;Yok;$mentioned[1]]
 $onlyIf[$mentioned[1;no]!=undefined;Bir Kişi Belirmelisin $customEmoji[reddet]]
 $onlyIf[$getGlobalUserVar[premium;$mentioned[1;no]]==Var;Bu Kullanıcının Zaten Premium Üyeliği Yok$customEmoji[reddet]]
-$onlyForIDs[$getVar[owners];Yetkin Yok$customEmoji[reddet]]
-`
+$onlyForIDs[980089372768624660;711923709253910588;x;Yetkin Yok $customEmoji[reddet]]`
 }

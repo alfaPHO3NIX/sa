@@ -8,6 +8,6 @@ $description[<@$mentioned[1;no]> Adlı Kişiye Premium Verildi!
 $setGlobalUserVar[premiumsahibirozet;Sahipsin$customEmoji[onayla];$mentioned[1]]
 $setGlobalUserVar[premium;Var;$mentioned[1]]
 $onlyIf[$mentioned[1;no]!=undefined;Bir Kişi Belirmelisin $customEmoji[reddet]]
-$onlyForIDs[$getVar[owners];Yetkin Yok$customEmoji[reddet]]
+$onlyForIDs[980089372768624660;711923709253910588;x;Yetkin Yok $customEmoji[reddet]]
 `
 }
