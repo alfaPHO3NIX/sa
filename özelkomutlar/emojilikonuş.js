@@ -3,7 +3,6 @@ module.exports = {
   aliases: ["emojilikonuş"],
   code: `
 $deletecommand
-$thumbnail[1;$userAvatar]
 $title[1;$username]
 $description[
 $replaceText[$replaceText[$replaceText[$replaceText[$replaceText[$replaceText[$message
