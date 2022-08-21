@@ -11,7 +11,19 @@ Bir kişi etiketlemezseniz kendi bakiyenizi,bir kişi etiketlerseniz etkietledi�
 **$getServerVar[prefix]günlük / $getServerVar[prefix]daily**
 4 saatte bir para alırsınız.
 
-**$getServerVar[prefix]**
+**$getServerVar[prefix]**paragönder {kişi} {miktar}
+Etkitetlediğiniz kişiye belirttiğiniz miktarda $getVar[parasembol] gönderir.
+
+**     Rozet Sistemi**
+**$getServerVar[prefix]rozetler / $getServerVar[prefix]rozetlerim**
+sizde olan/olmayan tüm rozetleri gösterir.
+
+**Premium Sistemi**
+**$getServerVar[prefix]prebilgi / $getServerVar[prefix]premiumbilgi**
+Premium özrlliklerini gösterir.
+
+**$getServerVar[prefix]premium**
+Premium
 ]
 `
 }
