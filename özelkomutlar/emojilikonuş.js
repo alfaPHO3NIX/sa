@@ -4,7 +4,8 @@ module.exports = {
   code: `
 $deletecommand
 $replaceText[$replaceText[$replaceText[$replaceText[$replaceText[$replaceText[
-$title[$thumbnail[1;$userAvatar]$username]
+$thumbnail[1;$authorAvatar]
+$title[$username]
 $description[$message]
 ;:bughunter:;$customEmoji[bughunter]]
 ;:verified:;$customEmoji[verified]]
