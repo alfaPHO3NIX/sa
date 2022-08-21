@@ -14,7 +14,7 @@ $replaceText[$replaceText[$replaceText[$replaceText[$replaceText[$replaceText[$r
 ;:onayla:;$customEmoji[onayla]]
 ;:reddet:;$customEmoji[reddet]]
 ;:hosgeldin:;$customEmoji[emoji_hg]]
-;:hosbuldum:;$customEmoji[emoji_hb]]
+;:hosbulduk:;$customEmoji[emoji_hb]]
 ;:partner:;$customEmoji[partner]]
 $argsCheck[>0;En azından 1 kelime yazsaydın ya be kanka!]
 $onlyIf[$getGlobalUserVar[premium]==Var;$deletcommand Bu Özellik Sadece Premium Üyelere Özeldir$customEmoji[reddet]]
