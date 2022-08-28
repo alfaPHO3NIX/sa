@@ -13,6 +13,8 @@ Emojili konuş sistemindeki emojileri adları ile beraber listeler.
 **$getServerVar[prefix]isimrenk / $getServerVar[prefix]renkliisim**
 Yakında
 
+Hediye 250K $getVar[parasembol]
+
 **TG MC sunucusunda özel kit**
 Yakında
 
