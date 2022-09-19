@@ -45,7 +45,8 @@ partnerrozet: "Sahip Değilsin",
 onaylıkişirozet: "Sahip Değilsin",
 yetkiliekibirozet: "Sahip Değilsin",
 geliştiricirozet: "Sahip Değilsin",
-//rozet: "Sahip Değilsin",
+yükselreisrozet: "Sahip Değilsin",
+  //rozet: "Sahip Değilsin",
 })
 //////komutlar////////
 bot.command({
