@@ -12,6 +12,7 @@ loader.load(bot.cmd, "./kasa/")
 loader.load(bot.cmd, "./premium/")
 loader.load(bot.cmd, "./sıralama/")
 loader.load(bot.cmd, "./özelkomutlar")
+loader.load(bot.cmd, "./eğlence")
 
 /////////callback/////////
 bot.onMessage()
