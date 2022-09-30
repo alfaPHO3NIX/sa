@@ -13,19 +13,10 @@ loader.load(bot.cmd, "./premium/")
 loader.load(bot.cmd, "./sıralama/")
 loader.load(bot.cmd, "./özelkomutlar")
 loader.load(bot.cmd, "./eğlence")
-loader.load(bot.cmd, "./önerisistemi")
 
-/////////callback/////////
-bot.onMessage()
-/////////variable////////
 bot.variables({
-//Premium Değişkenleri
-presure: "0",
-premium: "Yok",
-
 //Ekonomi Değişkenleri
-para: "0",
-parasembol: "TL",
+pabol: "TL",
 
 //Bot Status Değilkenleri
 botadi: "xFrkn_",
