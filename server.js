@@ -4,6 +4,10 @@ const bot = new aoijs.Bot({
   prefix: ['$getServerVar[prefix]','!'],
   intents: "all",
 })
+
+//////// Call Back \\\\\\\\
+bot.onMessage()
+//\\\\\\
 const loader = new aoijs.LoadCommands(bot);
 loader.load(bot.cmd, "./komutlar/")
 loader.load(bot.cmd, "./shopier/")
@@ -16,7 +20,8 @@ loader.load(bot.cmd, "./eğlence")
 
 bot.variables({
 //Ekonomi Değişkenleri
-pabol: "TL",
+para: "0",
+parasembol: "TL",
 
 //Bot Status Değilkenleri
 botadi: "xFrkn_",
