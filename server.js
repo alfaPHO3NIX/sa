@@ -17,6 +17,7 @@ loader.load(bot.cmd, "./premium/")
 loader.load(bot.cmd, "./sıralama/")
 loader.load(bot.cmd, "./özelkomutlar")
 loader.load(bot.cmd, "./eğlence")
+loader.load(bot.cmd, "./mücevher eko")
 
 bot.variables({
 //Ekonomi Değişkenleri
