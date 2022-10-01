@@ -9,7 +9,7 @@ module.exports = {
   Yasaklanma Sebebi;
   $getBanReason[$guildID;$noMentionMessage]
   ]
-  $onlyIf[$isBanned[$guildID;$noMentionMessage]!=false;bu kullanıcı banlanmamış $customEmoji[reddet]]
+  $onlyIf[$isBanned[$guildID;$noMentionMessage]!=not;bu kullanıcı banlanmamış $customEmoji[reddet]]
   $onlyIf[$isNumber[$message[1]]!=false;ID sayılardan oluşur $customEmoji[reddet]]
   `,
 };
