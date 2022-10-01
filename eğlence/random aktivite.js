@@ -1,6 +1,6 @@
 module.exports = {
   name: "raktivite",
-  aliases: [""],
+  aliases: ["random-aktivite","randomaktivite"],
   code: `
   $nomention
   

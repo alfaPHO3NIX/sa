@@ -1,7 +1,8 @@
 module.exports = {
 name: "tokatat",
+aliases: ["tokat-at"],
 code: `
-$title[<@$mentioned[1;]> Adlı kişiye ✋ tokat attın!]
+$title[<@$mentioned[1;no]> Adlı kişiye ✋ tokat attın!]
 $color[$random[1;999999]]
 $description[
 
