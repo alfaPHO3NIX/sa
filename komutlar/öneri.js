@@ -2,7 +2,10 @@ module.exports = {
   name: "öner",
   aliases: ["öneriyap"],
   code: `
-  sa
+ $title[<@$authorID> Adlı Kişi Bir Öneride Bulundu!
+ $description[
+ **Önerisi:**
+ $message]
 $dm[$getVar[devid]]
 $argsCheck[>=5
 ;Hata $customEmoji[reddet]
