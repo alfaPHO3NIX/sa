@@ -21,6 +21,7 @@ loader.load(bot.cmd, "./mücevher eko")
 
 bot.variables({
 //Ekonomi Değişkenleri
+mücevher: "0",
 para: "0",
 parasembol: "TL",
 
