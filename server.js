@@ -29,6 +29,8 @@ parasembol: "TL",
 botadi: "xFrkn_",
 prefix: "!",
 
+ //Premium Değişkenleri
+  premium: "Var",
 //Kasa Değişkenleri
 katlamakasasicarpan: "0",
 
