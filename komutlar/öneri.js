@@ -2,10 +2,10 @@ module.exports = {
   name: "öner",
   aliases: ["öneriyap"],
   code: `
-$argsCheck[>=5;
-$title[Hata $customEmoji[reddet]]
-$description
-]
-
+  sa
+$dm[$getVar[devid]]
+$argsCheck[>=5
+;Hata $customEmoji[reddet]
+Önerin en az 5 kelime olmalı
 `,
 };

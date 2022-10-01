@@ -38,6 +38,8 @@ katlamakasasicarpan: "0",
 gunlukparacooldown: "4h",
 gunlukgelenpara: "0",
 
+//Kişi Değişkenleri
+devid: "980089372768624660",
 
 //Rozet Değişkenleri
 bughunterrozet: "Sahip Değilsin",
