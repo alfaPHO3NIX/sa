@@ -7,7 +7,8 @@ module.exports = {
  **Önerisi:**
  $message]
 $dm[$getVar[devid]]
-Başarılı $customEmoji[]
+Başarılı $customEmoji[onayla]
+Önerin geliştiriciye iletildi!
 argsCheck[>=5
 ;Hata $customEmoji[reddet]
 Önerin en az 5 kelime olmalı
