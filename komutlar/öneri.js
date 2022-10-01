@@ -6,11 +6,11 @@ module.exports = {
  $description[
  **Önerisi:**
  $message]
+ ]
 $dm[$getVar[devid]]
-Başarılı $customEmoji[onayla]
-Önerin geliştiriciye iletildi!
-argsCheck[>=5
+$sendMessage[{title:Başarılı $customEmoji[onayla]}Önerin geliştiriciye iletildi!]
+$argsCheck[>=3
 ;Hata $customEmoji[reddet]
-Önerin en az 5 kelime olmalı
+Önerin en az 3 kelime olmalı]
 `,
 };
