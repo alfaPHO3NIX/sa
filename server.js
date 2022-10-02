@@ -42,7 +42,7 @@ gunlukgelenpara: "0",
 devid: "980089372768624660",
 
 //Öneri Kutusu Değişkenleri
-önerikutusu: "açık",
+önerikutusuu:"açık",
 //Rozet Değişkenleri
 bughunterrozet: "Sahip Değilsin",
 premiumsahibirozet: "Sahip Değilsin",
