@@ -3,6 +3,6 @@ module.exports = {
   aliases: ["mygems"],
   code: `
   $title[Mevcut Mücevherin]
-  $description[$getGlobalUserVar[mücevher]]
+  $description[$numberSeparator[$getGlobalUserVar[mücevher]] Mücevher]
  `
 }
