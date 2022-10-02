@@ -2,6 +2,7 @@ module.exports = {
   name: "bansorgu",
   aliases: ["yasaksorgu", "yasaklanmasorgu"],
   code: `
+  $onlyIf[$isBanned[$message[1]]!=not;Bu kullanıcı banlanmamış!]
   $title[Kişi Bulundu]
   $description[
   **Kullanıcı Adı:**
@@ -10,7 +11,6 @@ module.exports = {
   **Yasaklanma Sebebi:**
   $getBanReason[$guildID;$message[1]]
   ]
-  $onlyIf[$isBanned[$guildID;$message[1]]!=not;bu kullanıcı banlanmamış $customEmoji[reddet]]
   $onlyIf[$isNumber[$message[1]]!=false;ID sayılardan oluşur $customEmoji[reddet]]
   `,
 };
