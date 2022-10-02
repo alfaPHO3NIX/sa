@@ -2,7 +2,8 @@ module.exports = {
   name: "ökutusu",
   aliases: ["önerikutusu","ök"],
   code: `
-  
- $onlyIf[$getVar[önerikutusu]==açık;$setVar[önerikutusu;açık] $sendMessage[Öneri kutusu başarıyla açıldı!]]
+ Öneri kutusu başarıyla kapatıldı!
+ $onlyIf[$getVar[önerikutusu]!=kapalı;Öneri kutusu başarıyla açıldı! $setVar[önerikutusu;açık]]
+ $setVar[önerikutusu;kapalı]
  `
 };
