@@ -1,9 +1,10 @@
 module.exports = {
   name: "ökutusu aç",
-  aliases: ["önerikutusu","ök"],
+  aliases: ["önerikutusu ","ök aç"],
   code: `
   Öneri kutusu başarıyla açıldı!
-  $setVar[önerikutusuu;açık]
-  $onlyIf[$getVar[önerikutusuu]==kapalı;Öneri kutusu zaten açık!]
- `
+  $setVar[önerikutusu;açık]
+  $onlyIf[$getVar[önerikutusu]==kapalı;Öneri kutusu zaten açık!]
+  $onlyForIDs[$botOwnerID;Yetkin Yok.]
+ `,
 };
