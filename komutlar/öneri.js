@@ -12,5 +12,6 @@ $sendMessage[$title[Başarılı $customEmoji[onayla]]Önerin geliştiriciye ilet
 $argsCheck[>=3
 ;Hata $customEmoji[reddet]
 Önerin en az 3 kelime olmalı]
+$onlyIf[$getVar[önerikutusu]!=kapalı;Öneri kutusu şuanlık kapalı :( maalesef açılana kadar öneri yapamazsın.]
 `,
 };
