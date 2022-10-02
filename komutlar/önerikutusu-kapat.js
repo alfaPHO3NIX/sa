@@ -5,6 +5,6 @@ module.exports = {
   Öneri kutusu başarıyla kapatıldı!
   $setVar[önerikutusu;kapalı]
   $onlyIf[$getVar[önerikutusu]==açık;Öneri kutusu zaten kapalı!]
-  $onlyForIDs[272773;Yetkin Yok.]
+  $onlyForIDs[$botOwnerID;Yetkin Yok.]
  `,
 };
