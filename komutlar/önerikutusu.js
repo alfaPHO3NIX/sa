@@ -8,7 +8,10 @@ module.exports = {
   ]
   $setVar[önerikutusu;açık]
   $onlyIf[$message[1]==aç;
-  
+  $setVar[önerikutusu;]
+  $onlyIf[$getVar[önerikutusu]!=kapalı;Öneri kutusu zaten kapalı!]
+  $onlyIf[$message[1]==kapat;
+  Kullanım: !önerikutusu aç/kapat]
   ]
   
   `
