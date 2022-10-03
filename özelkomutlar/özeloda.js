@@ -19,9 +19,7 @@ type:"interaction",
 prototype: "button",
 
 code:`
-
-$interactionReply[✅ <@$authorID>, başvurun iletildi!]
-        $interactionModal[Özel Oda Oluştur;sModal;{actionRow:
+        $interactionModal[Özel Oda Oluştur;yetkiliModal;{actionRow:
         {textInput:Özel Oda Adı:1:oModal:yes:Özel Oda Adı:3:30}}
      ]
 
@@ -46,12 +44,39 @@ $textSplit[$interactionData[customId];_;1]
 `,
 
 },{
-type: "interaction",
-prototype: 'modal',
-code: `
-$interactionReply[Seaaa]
-$onlyIf[$get[customId]==sModal;]
-$textSplit[$interactionData[customId];_;1]
+    type: "interaction",
+
+    prototype: "modal",
+
+    name: "yetkiliModal",
+
+    code: `
+
+                $sum[$textInputValue[siparisnoModal];589543]
+
+                $createVar[main;$sum[$textInputValue[siparisnoModal];589543]sahip:$authorID]
+
+                $createVar[main;$sum[$textInputValue[siparisnoModal];589543]durum:Cevaplanmadı]
+
+                $color[1;RANDOM]
+
+                $author[1;$userTag[$authorID];$authorAvatar]
+
+                $thumbnail[1;$serverIcon]
+
+                $description[1;**<@$authorID>** adlı kişi Sipariş Teslim Formu Oluşturdu]
+
+               $addTimestamp[1]
+
+              $useChannel[1008817326239527052]
+
+              $addButton[2;Reddet;danger;hayır;no;❌]
+
+              $addButton[1;Onayla;success;evet;no;✅]
+
+$addField[Sipariş NO;$textInputValue[siparisnoModal]]
+
+$addField[Ad Soyad;$textInputValue[isimModal]]
 `
 }
 ]
