@@ -21,7 +21,7 @@ prototype: "button",
 code:`
 
 $interactionReply[✅ <@$authorID>, başvurun iletildi!]
-        $interactionModal[Özel Oda Oluştur;odaismiModal;{actionRow:
+        $interactionModal[Özel Oda Oluştur;odaolusturModal;{actionRow:
         {textInput:Özel Oda Adı:1:isimModal:yes:Özel Oda Adı:3:30}}
      ]
 
@@ -45,4 +45,12 @@ $textSplit[$interactionData[customId];_;1]
 
 `
 
-}] 
+},{
+name: "odaolusturModal",
+type: "interaction",
+interaction: "modal",
+code: `
+$interactionReply[Seaaa]
+`
+}
+]
