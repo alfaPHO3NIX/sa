@@ -49,7 +49,8 @@ $textSplit[$interactionData[customId];_;1]
   type: "interaction",
   prototype: "modal",
   code: `
-  sa $textInputValue[oModal]
+  $setGlobalUserVar[ozelodaid;$textInputValue[oModal]]
+  $createChannel[$guildID;$textInputValue[oModal];text;no;1026605349618327612]
   `
   
 }

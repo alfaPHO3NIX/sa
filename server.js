@@ -52,6 +52,9 @@ yetkiliekibirozet: "Sahip Değilsin",
 geliştiricirozet: "Sahip Değilsin",
 yükselreisrozet: "Sahip Değilsin",
   //rozet: "Sahip Değilsin",
+  
+ //Özel Oda değişkenleri
+  ozelodaid: "",
 })
 //////komutlar////////
 bot.command({
