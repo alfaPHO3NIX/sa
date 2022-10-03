@@ -3,13 +3,13 @@ module.exports = [{
   aliases: ["özel-oda oluştut","ö"],
   code: `
   sa
-  $addButton[1;saasab;success;deneme_$authorID;no]
+  $addButton[1;saasab;1;deneme_$authorID;no]
  `
 },{
 type:"interaction",
 prototype: "button",
 code:`
-$interactionReply[sa;;;;;;yes]
+$interactionUpdate[sa]
 
 $onlyif[$get[authorID]==$interactionData[author.id];{
 "content" : "Bu Butonu Sadece Komutu Kullanan Kişi Basabilir",
@@ -26,7 +26,8 @@ $let[customId;$splitText[1]]
 
 $textSplit[$interactionData[customId];_;1]
 `
-}]tent" : "Bu Butonu Sadece Komutu Kullanan Kişi Basabilir",
+}] 
+tent" : "Bu Butonu Sadece Komutu Kullanan Kişi Basabilir",
 "ephemeral" : true,
 "options" : { "interaction" : true }
 }]
