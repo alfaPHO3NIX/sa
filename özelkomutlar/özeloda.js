@@ -9,11 +9,9 @@ module.exports = [{
 type:"interaction",
 prototype: "button",
 code:`
-wass
 $interactionReply[sa;;;;;;yes]
 
-  $onlyif[$get[authorID]==$interactionData[author.id];{
-
+$onlyif[$get[authorID]==$interactionData[author.id];{
 "content" : "Bu Butonu Sadece Komutu Kullanan Kişi Basabilir",
 
 "ephemeral" : true,
