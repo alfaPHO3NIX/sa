@@ -48,11 +48,11 @@ $textSplit[$interactionData[customId];_;1]
 
     prototype: "modal",
 
-    name: "yetkiliModal",
+    name: "sModal",
 
     code: `
 
-                $sum[$textInputValue[siparisnoModal];589543]
+                
 
                 $createVar[main;$sum[$textInputValue[siparisnoModal];589543]sahip:$authorID]
 
@@ -68,15 +68,14 @@ $textSplit[$interactionData[customId];_;1]
 
                $addTimestamp[1]
 
-              $useChannel[1008817326239527052]
+              $useChannel[1025106718029516911]
 
               $addButton[2;Reddet;danger;hayır;no;❌]
 
               $addButton[1;Onayla;success;evet;no;✅]
 
-$addField[Sipariş NO;$textInputValue[siparisnoModal]]
 
-$addField[Ad Soyad;$textInputValue[isimModal]]
+$addField[Ad Soyad;$textInputValue[oModal]]
 `
 }
 ]
