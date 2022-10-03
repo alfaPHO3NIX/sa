@@ -34,7 +34,7 @@ $onlyif[$get[authorID]==$interactionData[author.id];{
 
 }]
 
-$onlyIf[$get[customId]==deneme;]
+$onlyIf[$get[customId]==odaolustur;]
 
 $let[authorID;$splitText[2]]
 
@@ -51,8 +51,23 @@ $textSplit[$interactionData[customId];_;1]
   code: `
   $setGlobalUserVar[ozelodaid;$textInputValue[oModal]]
   $createChannel[$guildID;$textInputValue[oModal];text;no;1026605349618327612]
+  $modifyChannelPerms[]
   `
   
-}
-
-                 ]
+},{
+  type:"interaction",
+  prototype:"button",
+  code: `
+  
+  $onlyif[$get[authorID]==$interactionData[author.id];{
+"content" : "Bu Butonu Sadece Komutu Kullanan Kişi Basabilir",
+"ephemeral" : true,
+"options" : { "interaction" : true }
+}]
+$onlyIf[$get[customId]==odabilgileri;]
+$let[authorID;$splitText[2]]
+$let[customId;$splitText[1]] 
+$textSplit[$interactionData[customId];_;1]
+  `
+  }
+]
