@@ -18,13 +18,13 @@ $onlyif[$get[authorID]==$interactionData[author.id];{
 
 "options" : { "interaction" : true }
 }]
-$onlyIf[$get[customId]==deneme;s]
+$onlyIf[$get[customId]==deneme;]
 
 $let[authorID;$splitText[2]]
 
 $let[customId;$splitText[1]] 
 
-$textSplit[$interactionData[customId];]
+$textSplit[$interactionData[customId];_;1]
 `
 }]tent" : "Bu Butonu Sadece Komutu Kullanan Kişi Basabilir",
 "ephemeral" : true,
