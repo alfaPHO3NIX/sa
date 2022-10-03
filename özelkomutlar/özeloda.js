@@ -8,7 +8,8 @@ module.exports = [{
 
   
   $title[Özel Oda Menü]
-  $addButton[1;Oda Oluştur;success;deneme_$authorID;no]
+  $addButton[1;Oda Oluştur;success;odaolustur_$authorID;no]
+ $addButton[1;Oda Bilgileri;1;odabilgileri_$authorID;no]
  $onlyIf[$getGlobalUserVar[premium]==Var;{newEmbed:{color:RANDOM}{title:Özel Oda Menü * Hata}{description:Bu komutu sadece premium üyeler kullanabilir!}}]
  `
 
@@ -49,16 +50,17 @@ $textSplit[$interactionData[customId];_;1]
   type: "interaction",
   prototype: "modal",
   code: `
+  $interactionReply[Oda Başarıyla Oluşturuldu!]
   $setGlobalUserVar[ozelodaid;$textInputValue[oModal]]
   $createChannel[$guildID;$textInputValue[oModal];text;no;1026605349618327612]
-  $modifyChannelPerms[]
+  $modifyChannelPerms[$channelID[$getGlobalUserVar[ozelodaid];;;$guildID]]
   `
   
 },{
   type:"interaction",
   prototype:"button",
   code: `
-  
+  ssss
   $onlyif[$get[authorID]==$interactionData[author.id];{
 "content" : "Bu Butonu Sadece Komutu Kullanan Kişi Basabilir",
 "ephemeral" : true,
