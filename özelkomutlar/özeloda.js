@@ -21,8 +21,8 @@ prototype: "button",
 code:`
 
 $interactionReply[✅ <@$authorID>, başvurun iletildi!]
-        $interactionModal[Özel Oda Oluştur;odaolusturModal;{actionRow:
-        {textInput:Özel Oda Adı:1:isimModal:yes:Özel Oda Adı:3:30}}
+        $interactionModal[Özel Oda Oluştur;sModal;{actionRow:
+        {textInput:Özel Oda Adı:1:oModal:yes:Özel Oda Adı:3:30}}
      ]
 
 $onlyif[$get[authorID]==$interactionData[author.id];{
@@ -43,14 +43,15 @@ $let[customId;$splitText[1]]
 
 $textSplit[$interactionData[customId];_;1]
 
-`
+`,
 
 },{
-name: "odaolusturModal",
 type: "interaction",
-interaction: "modal",
+prototype: 'modal',
 code: `
 $interactionReply[Seaaa]
+$onlyIf[$get[customId]==sModal;]
+$textSplit[$interactionData[customId];_;1]
 `
 }
 ]
