@@ -19,9 +19,10 @@ type:"interaction",
 prototype: "button",
 
 code:`
-        $interactionModal[Özel Oda Oluştur;yetkiliModal;{actionRow:
-        {textInput:Özel Oda Adı:1:oModal:yes:Özel Oda Adı:3:30}}
-     ]
+        $interactionModal[Hello there!;sModal;
+    {actionRow:
+      {textInput:Özel Oda Adı:1:oModal:yes:$username:3:30:$username}
+    }]
 
 $onlyif[$get[authorID]==$interactionData[author.id];{
 
@@ -44,38 +45,13 @@ $textSplit[$interactionData[customId];_;1]
 `,
 
 },{
-    type: "interaction",
-
-    prototype: "modal",
-
-    name: "sModal",
-
-    code: `
-
-                
-
-                $createVar[main;$sum[$textInputValue[siparisnoModal];589543]sahip:$authorID]
-
-                $createVar[main;$sum[$textInputValue[siparisnoModal];589543]durum:Cevaplanmadı]
-
-                $color[1;RANDOM]
-
-                $author[1;$userTag[$authorID];$authorAvatar]
-
-                $thumbnail[1;$serverIcon]
-
-                $description[1;**<@$authorID>** adlı kişi Sipariş Teslim Formu Oluşturdu]
-
-               $addTimestamp[1]
-
-              $useChannel[1025106718029516911]
-
-              $addButton[2;Reddet;danger;hayır;no;❌]
-
-              $addButton[1;Onayla;success;evet;no;✅]
-
-
-$addField[Ad Soyad;$textInputValue[oModal]]
-`
+  name: "sModal",
+  type: "interaction",
+  prototype: "modal",
+  code: `
+  sa $textInputValue[oModal]
+  `
+  
 }
-]
+
+                 ]
