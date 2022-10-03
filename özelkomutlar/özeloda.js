@@ -1,14 +1,14 @@
 module.exports = [{
 
-  name: "özeloda oluştur",
+  name: "özeloda",
 
-  aliases: ["özel-oda oluştut","ö"],
+  aliases: ["özel-oda","ö"],
 
   code: `
 
-  sa
-
-  $addButton[1;saasab;1;deneme_$authorID;no]
+  
+  $title[Özel Oda Menü]
+  $addButton[1;Oda Oluştur;success;deneme_$authorID;no]
  $onlyIf[$getGlobalUserVar[premium]==Var;{newEmbed:{color:RANDOM}{title:Özel Oda Menü * Hata}{description:Bu komutu sadece premium üyeler kullanabilir!}}]
  `
 
@@ -20,7 +20,10 @@ prototype: "button",
 
 code:`
 
-$interactionUpdate[sa]
+$interactionReply[✅ <@$authorID>, başvurun iletildi!]
+        $interactionModal[Özel Oda Oluştur;odaismiModal;{actionRow:
+        {textInput:Özel Oda Adı:1:isimModal:yes:Özel Oda Adı:3:30}}
+     ]
 
 $onlyif[$get[authorID]==$interactionData[author.id];{
 
