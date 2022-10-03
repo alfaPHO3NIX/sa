@@ -19,9 +19,9 @@ type:"interaction",
 prototype: "button",
 
 code:`
-        $interactionModal[Hello there!;sModal;
+        $interactionModal[Özel Oda Oluştur;sModal;
     {actionRow:
-      {textInput:Özel Oda Adı:1:oModal:yes:$username:3:30:$username}
+      {textInput:Özel Oda Adı:1:oModal:yes:Oda Adı:3:30}
     }]
 
 $onlyif[$get[authorID]==$interactionData[author.id];{
