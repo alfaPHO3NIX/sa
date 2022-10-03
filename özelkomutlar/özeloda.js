@@ -24,7 +24,7 @@ $let[authorID;$splitText[2]]
 
 $let[customId;$splitText[1]] 
 
-$textSplit[$interactionData[customId];
+$textSplit[$interactionData[customId];]
 `
 }]tent" : "Bu Butonu Sadece Komutu Kullanan Kişi Basabilir",
 "ephemeral" : true,
