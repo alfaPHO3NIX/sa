@@ -54,7 +54,6 @@ $textSplit[$interactionData[customId];_;1]
   $interactionReply[Oda Başarıyla Oluşturuldu!]
  $createChannel[$guildID;$textInputValue[oModal];text;no;1026605349618327612]
  $setGlobalUserVar[ozelodaid;$textInputValue[oModal]]
- $loop[1;{};odaayarla2]
  `
  
   
