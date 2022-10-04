@@ -84,9 +84,9 @@ bot.awaitedCommand({
   
 })
  bot.awaitedCommand({
-   name:"",
+   name:"odaayarla2",
    code:`
-   
+   $modifyChannelPerms[$channelID[$getGlobalUserVar[ozelodaid;$textInputValue[oModal]]];-viewchannel;-sendmessages;-addreactions;everyone]
    
    `
    
