@@ -74,6 +74,15 @@ $onlyForIDs[$botOwnerID;YetkinYok]
 
 bot.onInteractionCreate()
 
+
+bot.awaitedCommand({
+  name:"oda ayarla",
+  code:`
+  
+  
+  `
+  
+})
 //Bot Durumları
 bot.status({
   text: "Made By $username[$botOwnerID]",

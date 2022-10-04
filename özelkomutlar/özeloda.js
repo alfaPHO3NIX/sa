@@ -20,6 +20,7 @@ type:"interaction",
 prototype: "button",
 
 code:`
+      
         $interactionModal[Özel Oda Oluştur;sModal;
     {actionRow:
       {textInput:Özel Oda Adı:1:oModal:yes:Oda Adı:3:30}
@@ -51,10 +52,8 @@ $textSplit[$interactionData[customId];_;1]
   prototype: "modal",
   code: `
   $interactionReply[Oda Başarıyla Oluşturuldu!]
- $createChannel[$guildID;$channelID[textInputValue[oModal]];text;no;1026605349618327612]
- $setGlobalUserVar[ozelodaid;$textInputValue[oModal]]
  $wait[2s]
- $modifyChannelPerms[$channelID[$getGlobalUserVar[$textInputValue[oModal]]];-viewchannel;-sendmessages;-addreactions;everyone]
+ $modifyChannelPerms[$channelID[$getGlobalUserVar[ozelodaid;$textInputValue[oModal]]];-viewchannel;-sendmessages;-addreactions;everyone]
  `
   
 },{
