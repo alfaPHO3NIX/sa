@@ -72,7 +72,9 @@ $let[customId;$splitText[1]]
 $textSplit[$interactionData[customId];_;1]
   `
   },{
-    name:"",
-    code:``
+    name:"kanalayarlama",
+    code:`
+    
+    `
     }
 ]
