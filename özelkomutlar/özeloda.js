@@ -72,7 +72,7 @@ $textSplit[$interactionData[customId];_;1]
   `
   },{
     name:"kanalayarlama",
-    prototype:"",
+    prototype:"awaited",
     code:`
     $modifyChannelPerms[$channelID[$textInputValue[oModal]];-viewchannel;-sendmessages;-addreactions;everyone]]
     $setGlobalUserVar[ozelodaid;$textInputValue[oModal]]
