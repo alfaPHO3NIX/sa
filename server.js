@@ -76,9 +76,9 @@ bot.onInteractionCreate()
 
 
 bot.awaitedCommand({
-  name:"oda ayarla",
+  name:"odaayarla",
   code:`
-  
+  sa
   
   `
   
