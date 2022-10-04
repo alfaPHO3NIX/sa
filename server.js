@@ -76,13 +76,22 @@ bot.onInteractionCreate()
 
 
 bot.awaitedCommand({
-  name:"odaayarla",
+  name:"odaayarla1",
   code:`
   $setGlobalUserVar[ozelodaid;$textInputValue[oModal]]
-  $modifyChannelPerms[$channelID[$getGlobalUserVar[ozelodaid];$textInputValue[oModal]];-viewchannel;-sendmessages;-addreactions;everyone]
+  
   `
   
 })
+ bot.awaitedCommand({
+   name:"",
+   code:`
+   
+   
+   `
+   
+ })
+
 //Bot Durumları
 bot.status({
   text: "Made By $username[$botOwnerID]",
