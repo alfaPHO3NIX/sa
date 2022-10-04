@@ -78,8 +78,8 @@ bot.onInteractionCreate()
 bot.awaitedCommand({
   name:"odaayarla",
   code:`
-  sa
-  
+  $setGlobalUserVar[ozelodaid;$textInputValue[oModal]]
+  $modifyChannelPerms[$channelID[$getGlobalUserVar[ozelodaid];$textInputValue[oModal]];-viewchannel;-sendmessages;-addreactions;everyone]
   `
   
 })
