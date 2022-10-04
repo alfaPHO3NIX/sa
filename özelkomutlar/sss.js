@@ -36,7 +36,7 @@ name:"bbModal",
 type:"interaction",
 prototype:"modal",
 code: `
-$interactionReply[Hmm... $textInputValue[oModal] cm iyi iyi dmmdmdmdmdmödmd]
+$interactionReply[Hmm... $textInputValue[ddModal] cm iyi iyi dmmdmdmdmdmödmd]
 `
 
 }
