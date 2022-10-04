@@ -36,7 +36,7 @@ katlamakasasicarpan: "0",
 
 //Günlük Para Değişkenleri
 gunlukparacooldown: "4h",
-gunlukgelenpara: "0",
+gunlukgelenpara: "500",
 
 //Kişi Değişkenleri
 devid: "980089372768624660",
