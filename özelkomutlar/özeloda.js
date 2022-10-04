@@ -51,9 +51,11 @@ $textSplit[$interactionData[customId];_;1]
   prototype: "modal",
   code: `
   $interactionReply[Oda Başarıyla Oluşturuldu!]
- $createChannel[$guildID;$textInputValue[oModal];text;no;1026605349618327612]
- $loop[1;{};kanalayarlama]
- `
+ $createChannel[$guildID;$channelID[textInputValue[oModal]];text;no;1026605349618327612]
+ $wait[2s]
+ $modifyChannelPerms[$channelID[$textInputValue[oModal]];-viewchannel;-sendmessages;-addreactions;everyone]]
+
+`
   
 },{
   type:"interaction",
@@ -70,12 +72,5 @@ $let[authorID;$splitText[2]]
 $let[customId;$splitText[1]] 
 $textSplit[$interactionData[customId];_;1]
   `
-  },{
-    name:"kanalayarlama",
-    prototype:"awaited",
-    code:`
-    $modifyChannelPerms[$channelID[$textInputValue[oModal]];-viewchannel;-sendmessages;-addreactions;everyone]]
-    $setGlobalUserVar[ozelodaid;$textInputValue[oModal]]
-    `
-    }
-]
+  }
+  ]
