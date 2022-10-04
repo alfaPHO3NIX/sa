@@ -54,7 +54,7 @@ $textSplit[$interactionData[customId];_;1]
   $interactionReply[Oda Başarıyla Oluşturuldu!]
  $createChannel[$guildID;$textInputValue[oModal];text;no;1026605349618327612]
  $setGlobalUserVar[ozelodaid;$textInputValue[oModal]]
- $modifyChannelPerms[1026905400584437771;+viewchannel;+sendmessages;+addreactions;$guildID]
+ $modifyChannelPerms[1026607814015193138;+viewchannel;+sendmessages;+addreactions;$guildID]
  `
  
   
