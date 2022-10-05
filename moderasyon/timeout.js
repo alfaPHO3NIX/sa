@@ -13,10 +13,10 @@ module.exports = [{
   code:`
   $interactionModal[Zaman Aşımı;zuModal;
     {actionRow:
-      {textInput:Zaman aşımı uygulanacak kişinin idsini giriniz.:1:aModal:yes:Kullanıcı ID:18:18}
+      {textInput:Zaman aşımı uygulanacak kişinin idsini giriniz.:1:aModal:yes:Kullanıcı ID:17:18}
     }
     {actionRow:
-      {textInput:Uygulanacak zaman aşımı süresini giriniz.:2:zModal:no:13+:0:2}
+      {textInput:Uygulanacak zaman aşımı süresini giriniz.:2:zModal:yes:Süre:0:45:}
     }
   ]
   $onlyif[$get[authorID]==$interactionData[author.id];{
