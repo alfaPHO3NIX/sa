@@ -11,14 +11,13 @@ module.exports = [{
   prototype:"button",
   type:"interaction",
   code:`
-  $interactionModal[Zaman Aşımı;zuModal;
+  $interactionModal[Özel Oda Oluştur;sModal;
     {actionRow:
-      {textInput:Zaman aşımı uygulanacak kişinin idsini giriniz.:1:aModal:yes:Kullanıcı ID:17:18}
+      {textInput:Özel Oda Adı:1:oModal:yes:Oda Adı:18:18}
     }
     {actionRow:
-      {textInput:Uygulanacak zaman aşımı süresini giriniz.:2:zModal:yes:Süre:0:45:}
-    }
-  ]
+      {textInput:Kişiye uygulanacak süreyi yazınız:2:zuModal:yes}
+      ]
   $onlyif[$get[authorID]==$interactionData[author.id];{
 "content" : "Bu Butonu Sadece Komutu Kullanan Kişi Basabilir",
 "ephemeral" : true,
