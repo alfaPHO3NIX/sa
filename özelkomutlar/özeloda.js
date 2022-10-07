@@ -52,8 +52,9 @@ $textSplit[$interactionData[customId];_;1]
   prototype: "modal",
   code: `
   $interactionReply[Oda Başarıyla Oluşturuldu!]
- $setGlobalUserVar[ozelodaid;$textInputValue[oModal]]
  $createChannel[$guildID;$textInputValue[oModal];text;no;1026605349618327612]
+ $setGlobalUserVar[ozelodaid;$textInputValue[oModal]]
+ $wait[1s]
  $modifyChannelPerms[$guildID;$channelID[$getGlobalUserVar[ozelodaid]];-viewchannel]
  `
  
@@ -63,14 +64,10 @@ $textSplit[$interactionData[customId];_;1]
   prototype:"button",
   code: `
   $interactionReply[
-  {
-  $title[
+  Özel Oda | Oda Bilgileri
   Oda Adı: $getGlobalUserVar[ozelodaid]
-  Oda ID: $getGlobalUserVar[ozelodaid]
-  ]
-  
-  }
-  }
+  Oda ID: $channelID[$getGlobalUserVar[ozelodaid]]
+  ** **
   ]
   $onlyif[$get[authorID]==$interactionData[author.id];{
 "content" : "Bu Butonu Sadece Komutu Kullanan Kişi Basabilir",
