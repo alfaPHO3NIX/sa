@@ -3,9 +3,9 @@ module.exports = [{
   aliases: ["özel-oda","ö"],
   code: `
   $title[Özel Oda Menü]
-  $addButton[1;Ayarlar;Gray;ayarlar]
+  $addButton[3;Ayarlar;2;ayarlar_$authorID;no;⚙️]
   $addButton[1;Oda Oluştur;success;odaolustur_$authorID;no]
- $addButton[1;Oda Bilgileri;1;odabilgileri_$authorID;no]
+ $addButton[2;Oda Bilgileri;1;odabilgileri_$authorID;no]
  $onlyIf[$getGlobalUserVar[premium]==Var;{newEmbed:{color:RANDOM}{title:Özel Oda Menü * Hata}{description:Bu komutu sadece premium üyeler kullanabilir!}}]
  `
 },{
@@ -46,7 +46,7 @@ $textSplit[$interactionData[customId];_;1]
   $interactionReply[
   Özel Oda | Oda Bilgileri
   Oda Adı: $getGlobalUserVar[ozelodaisim]
-  Oda ID: $getGlobalUserVar[ozelodaid]
+  Oda ID: $replaceText[$username; ;-;]-Özel-Oda]
   ** **
   ]
   $onlyif[$get[authorID]==$interactionData[author.id];{
@@ -77,7 +77,7 @@ $textSplit[$interactionData[customId];_;1]
     type:"awaited",
     prototype:"loop",
     code:`
-    $modifyChannelPerms[$guildID;$channelID[$usernameÖzel Oda];-viewchannel;-managechannel;-sendmessage]
+    $modifyChannelPerms[$guildID;$channelID[$username Özel Oda];-viewchannel;-managechannel;-sendmessage]
     `
     
   }
