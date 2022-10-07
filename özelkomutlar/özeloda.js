@@ -52,7 +52,6 @@ $textSplit[$interactionData[customId];_;1]
   Oda ID: $channelID[$getGlobalUserVar[ozelodaisim]]}
   }
   ]
- $addButton[1;Kanal ID Kopyala;1;chidkopyala_$authorID;no]
   
  
  $onlyif[$get[authorID]==$interactionData[author.id];{
