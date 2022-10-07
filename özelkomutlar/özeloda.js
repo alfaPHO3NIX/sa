@@ -32,10 +32,9 @@ $textSplit[$interactionData[customId];_;1]
   prototype: "modal",
   code: `
   $interactionReply[Oda Başarıyla Oluşturuldu!]
- $createChannel[$guildID;$userTag[$authorID]'nin Odası;text;no]
- $setGlobalUserVar[ozelodaid;$channelID[$userTag[$authorID] Odası]]
- $modifyChannelPerms[$guildID;$channelID[$textInputValue[oModal]];-viewchannel;-managechannel;-sendmessage]
- 
+ $createChannel[$guildID;$username Özel Oda;text;no]
+ $setGlobalUserVar[ozelodaid;$channelID[$username Özel Oda]]
+ $loop[1;{};oa3]
  `
  
   
@@ -77,7 +76,7 @@ $textSplit[$interactionData[customId];_;1]
     type:"awaited",
     prototype:"loop",
     code:`
-    $modifyChannelPerms[$guildID;$getGlobalUserVar[ozelodaid];-viewchannel;-managechannel;-sendmessage]
+    $modifyChannelPerms[$guildID;$channelID[$username Özel Oda];-viewchannel;-managechannel;-sendmessage]
     `
     
   }
