@@ -45,14 +45,16 @@ $textSplit[$interactionData[customId];_;1]
   prototype:"button",
   code: `
   ** **
-  $interactionReply[
-  $sendMessage[{newEmbed{title:{Özel Oda | Oda Bilgileri}
-  Oda Adı: $getGlobalUserVar[ozelodaisim]
+  $interactionReply[]
+  $sendMessage[{newEmbed:
+  {title:Özel Oda | Oda Bilgileri}
+  $description[Oda Adı: $getGlobalUserVar[ozelodaisim]
   Oda ID: $channelID[$getGlobalUserVar[ozelodaisim]]
   
+  ]
+ 
+ 
   
-   ]
-   ]
   $onlyif[$get[authorID]==$interactionData[author.id];{
 "content" : "Bu Butonu Sadece Komutu Kullanan Kişi Basabilir",
 "ephemeral" : true,
