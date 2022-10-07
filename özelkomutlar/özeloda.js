@@ -55,7 +55,7 @@ $textSplit[$interactionData[customId];_;1]
  $createChannel[$guildID;$textInputValue[oModal];text;no;1026605349618327612]
  $setGlobalUserVar[ozelodaid;$textInputValue[oModal]]
  $wait[1s]
- $modifyChannelPerms[$guildID;$channelID[$getGlobalUserVar[ozelodaid]];-viewchannel]
+ $modifyChannelPerms[$guildID;$channelID[$textInputValue[oModal]];-viewchannel]
  `
  
   
@@ -79,5 +79,12 @@ $let[authorID;$splitText[2]]
 $let[customId;$splitText[1]] 
 $textSplit[$interactionData[customId];_;1]
   `
+  },{
+    name:"",
+    type:"",
+    code:`
+    sa
+    `
+    
   }
   ]
