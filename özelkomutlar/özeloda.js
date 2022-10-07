@@ -56,6 +56,7 @@ $textSplit[$interactionData[customId];_;1]
  $setGlobalUserVar[ozelodaid;$textInputValue[oModal]]
  $wait[1s]
  $modifyChannelPerms[$guildID;$channelID[$textInputValue[oModal]];-viewchannel]
+ $loop[1;{};deneme]
  `
  
   
@@ -80,11 +81,10 @@ $let[customId;$splitText[1]]
 $textSplit[$interactionData[customId];_;1]
   `
   },{
-    name:"",
-    type:"",
+    name:"deneme",
+    prototype:"loop",
     code:`
     sa
     `
-    
   }
   ]
