@@ -33,8 +33,8 @@ $textSplit[$interactionData[customId];_;1]
   prototype: "modal",
   code: `
   $interactionReply[Oda Başarıyla Oluşturuldu!]
- $createChannel[$guildID;$authorID;text;no;990815535124070431]
- $setGlobalUserVar[ozelodaisim;$authorID]
+ $createChannel[$guildID;$usertag[$authorID;2]-özel-oda;text;no;990815535124070431]
+ $setGlobalUserVar[ozelodaisim;$username-özel-oda]
  $loop[1;{};oa2]
  `
  
