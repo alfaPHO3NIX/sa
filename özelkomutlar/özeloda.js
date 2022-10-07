@@ -48,14 +48,14 @@ $textSplit[$interactionData[customId];_;1]
   $interactionReply[]
   $sendMessage[{newEmbed:
   {title:Özel Oda | Oda Bilgileri}
-  $description[Oda Adı: $getGlobalUserVar[ozelodaisim]
-  Oda ID: $channelID[$getGlobalUserVar[ozelodaisim]]
-  
+  {description:Oda Adı: {field:$getGlobalUserVar[ozelodaisim]}
+  Oda ID: $channelID[$getGlobalUserVar[ozelodaisim]]}
+  }
   ]
- 
- 
+ $addButton[1;Kanal ID Kopyala;1;chidkopyala_$authorID;no]
   
-  $onlyif[$get[authorID]==$interactionData[author.id];{
+ 
+ $onlyif[$get[authorID]==$interactionData[author.id];{
 "content" : "Bu Butonu Sadece Komutu Kullanan Kişi Basabilir",
 "ephemeral" : true,
 "options" : { "interaction" : true }
@@ -67,8 +67,19 @@ $textSplit[$interactionData[customId];_;1]
   `
   },{
     type:"interaction",
-    prototype:"",
-    
+    prototype:"button",
+    code:`
+    sa
+    $onlyif[$get[authorID]==$interactionData[author.id];{
+"content" : "Bu Butonu Sadece Komutu Kullanan Kişi Basabilir",
+"ephemeral" : true,
+"options" : { "interaction" : true }
+}]
+$onlyIf[$get[customId]==chidkopyala;]
+$let[authorID;$splitText[2]]
+$let[customId;$splitText[1]] 
+$textSplit[$interactionData[customId];_;1]
+    `
   },{
     name:"oa1",
     type:"awaited",
