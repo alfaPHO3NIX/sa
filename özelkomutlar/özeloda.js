@@ -36,7 +36,6 @@ $textSplit[$interactionData[customId];_;1]
  $createChannel[$guildID;$authorID;text;no;990815535124070431]
  $setGlobalUserVar[ozelodaisim;$authorID]
  $loop[1;{};oa2]
- $loop[1;{};oa3]
  `
  
   
@@ -47,7 +46,7 @@ $textSplit[$interactionData[customId];_;1]
   $interactionReply[
   Özel Oda | Oda Bilgileri
   Oda Adı: $getGlobalUserVar[ozelodaisim]
-  Oda ID: $channelID[getGlobalUserVar[ozelodaisim]]]
+  Oda ID: $channelID[$getGlobalUserVar[ozelodaisim]]
    ]
   $onlyif[$get[authorID]==$interactionData[author.id];{
 "content" : "Bu Butonu Sadece Komutu Kullanan Kişi Basabilir",
@@ -59,6 +58,10 @@ $let[authorID;$splitText[2]]
 $let[customId;$splitText[1]] 
 $textSplit[$interactionData[customId];_;1]
   `
+  },{
+    type:"interaction",
+    prototype:"",
+    
   },{
     name:"oa1",
     type:"awaited",
