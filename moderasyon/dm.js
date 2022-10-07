@@ -5,7 +5,14 @@ module.exports = {
   $deletecommand
   $dm[$mentioned[1]]
   $message
-  $sendMessage[{newEmbed:{title:{Deneme}description:{Başarılı}}]
+  $sendMessage[{newEmbed:
+  {title:Dm Başarılı}
+  {description:
+  DM Gönderildi $customEmoji[verified]
+  ** **
+  }
+  
+  }]
   
   `
 }
