@@ -52,7 +52,7 @@ $textSplit[$interactionData[customId];_;1]
   prototype: "modal",
   code: `
   $interactionReply[Oda Başarıyla Oluşturuldu!]
- $createChannel[$guildID;$textInputValue[oModal];text;no;1026605349618327612]
+ $createChannel[$guildID;$textInputValue[oModal];text;no]
  $setGlobalUserVar[ozelodaid;$textInputValue[oModal]]
  $wait[1s]
  $modifyChannelPerms[$guildID;$channelID[$textInputValue[oModal]];-viewchannel]
@@ -82,9 +82,10 @@ $textSplit[$interactionData[customId];_;1]
   `
   },{
     name:"deneme",
+    type:"awaited",
     prototype:"loop",
     code:`
-    sa
+    $modifyChannelPerms[$guildID;$channelID[$getGlobalUserVar[ozelodaid]];-viewchannel]
     `
   }
   ]
