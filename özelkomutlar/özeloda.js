@@ -52,9 +52,9 @@ $textSplit[$interactionData[customId];_;1]
   prototype: "modal",
   code: `
   $interactionReply[Oda Başarıyla Oluşturuldu!]
- $createChannel[$guildID;$textInputValue[oModal];text;no;1026605349618327612]
  $setGlobalUserVar[ozelodaid;$textInputValue[oModal]]
- $loop[1;{};odaayarla2]
+ $createChannel[$guildID;$textInputValue[oModal];text;no;1026605349618327612]
+ $modifyChannelPerms[$guildID;$channelID[$getGlobalUserVar[ozelodaid]];-viewchannel]
  `
  
   
@@ -62,7 +62,16 @@ $textSplit[$interactionData[customId];_;1]
   type:"interaction",
   prototype:"button",
   code: `
-  ssss
+  $interactionReply[
+  {
+  $title[
+  Oda Adı: $getGlobalUserVar[ozelodaid]
+  Oda ID: $getGlobalUserVar[ozelodaid]
+  ]
+  
+  }
+  }
+  ]
   $onlyif[$get[authorID]==$interactionData[author.id];{
 "content" : "Bu Butonu Sadece Komutu Kullanan Kişi Basabilir",
 "ephemeral" : true,
