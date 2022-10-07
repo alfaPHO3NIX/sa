@@ -83,7 +83,7 @@ $textSplit[$interactionData[customId];_;1]
     type:"awaited",
     prototype:"loop",
     code:`
-    $modifyChannelPerms[$guildID;$channelID[$getGlobalUserVar[ozelodaid]];-viewchannel;-managemessage;-sendmessage]
+    $modifyChannelPerms[$guildID;$channelID[$getGlobalUserVar[ozelodaid]];-viewchannel;-managechannel;-sendmessage]
     `
   }
   ]
