@@ -33,9 +33,10 @@ $textSplit[$interactionData[customId];_;1]
   prototype: "modal",
   code: `
   $interactionReply[Oda Başarıyla Oluşturuldu!]
- $createChannel[$guildID;$username Özel Oda;text;no;990815535124070431]
- $setGlobalUserVar[ozelodaisim;$username Özel Oda]
+ $createChannel[$guildID;$authorID;text;no;990815535124070431]
+ $setGlobalUserVar[ozelodaisim;$authorID]
  $loop[1;{};oa2]
+ $loop[1;{};oa3]
  `
  
   
@@ -46,9 +47,8 @@ $textSplit[$interactionData[customId];_;1]
   $interactionReply[
   Özel Oda | Oda Bilgileri
   Oda Adı: $getGlobalUserVar[ozelodaisim]
-  Oda ID: $replaceText[$username; ;-;]-Özel-Oda]
-  ** **
-  ]
+  Oda ID: $channelID[getGlobalUserVar[ozelodaisim]]]
+   ]
   $onlyif[$get[authorID]==$interactionData[author.id];{
 "content" : "Bu Butonu Sadece Komutu Kullanan Kişi Basabilir",
 "ephemeral" : true,
@@ -77,7 +77,7 @@ $textSplit[$interactionData[customId];_;1]
     type:"awaited",
     prototype:"loop",
     code:`
-    $modifyChannelPerms[$guildID;$channelID[$username Özel Oda];-viewchannel;-managechannel;-sendmessage]
+    $modifyChannelPerms[$authorID;$channelID[$authorID];+viewchannel;-managechannel;+sendmessage]
     `
     
   }
