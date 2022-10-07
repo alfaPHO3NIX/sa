@@ -34,8 +34,7 @@ $textSplit[$interactionData[customId];_;1]
   $interactionReply[Oda Başarıyla Oluşturuldu!]
  $createChannel[$guildID;$textInputValue[oModal];text;no]
  $setGlobalUserVar[ozelodaisim;$textInputValue[oModal]]
- $repeatMessage[
- $setglobalUserVar[ozelodaid;$channelID[$getGlobalUserVar[ozelodaisim]]]
+ $loop[1;{};oa2]
  $loop[1;{};oa3]
  `
  
@@ -71,14 +70,14 @@ $textSplit[$interactionData[customId];_;1]
     type:"awaited",
     prototype:"loop",
     code:`
-    $setGlobalUserVar[ozelodaid;$channelID[$textInputValue[oModal]]]
+    $setGlobalUserVar[ozelodaid;$channelID[$getGlobalUserVar[ozelodaisim]]]
     `
   },{
     name:"oa3",
     type:"awaited",
     prototype:"loop",
     code:`
-    $modifyChannelPerms[$guildID;$channelID[$getGlobalUserVar[ozelodaid]];-viewchannel;-managechannel;-sendmessage]
+    $modifyChannelPerms[$guildID;$getGlobalUserVar[ozelodaid];-viewchannel;-managechannel;-sendmessage]
     `
     
   }
