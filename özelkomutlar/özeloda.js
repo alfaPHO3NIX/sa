@@ -33,8 +33,9 @@ $textSplit[$interactionData[customId];_;1]
   code: `
   $interactionReply[Oda Başarıyla Oluşturuldu!]
  $createChannel[$guildID;$textInputValue[oModal];text;no]
- $setGlobalUserVar[ozelodaid;$channelID[$textInputValue[oModal]]]
- $modifyChannelPerms[$guildID;$channelID[$getGlobalUserVar[ozelodaid]];-viewchannel;-managechannel;-sendmessage]
+ $loop[1;{};oa1]
+ $loop[1;{};oa2]
+ $loop[1;{};oa3]
  `
  
   
@@ -44,8 +45,8 @@ $textSplit[$interactionData[customId];_;1]
   code: `
   $interactionReply[
   Özel Oda | Oda Bilgileri
-  Oda Adı: $getGlobalUserVar[ozelodaid]
-  Oda ID: $channelID[$getGlobalUserVar[ozelodaid]]
+  Oda Adı: $getGlobalUserVar[ozelodaisim]
+  Oda ID: $getGlobalUserVar[ozelodaid]
   ** **
   ]
   $onlyif[$get[authorID]==$interactionData[author.id];{
@@ -63,14 +64,22 @@ $textSplit[$interactionData[customId];_;1]
     type:"awaited",
     prototype:"loop",
     code:`
-    $createVar[main;s:$channelID[$getGlobalUserVar[ozelodaid]]]
+    $setGlobalUserVar[ozelodaisim;$textInputValue[oModal]]
     `
   },{
     name:"oa2",
     type:"awaited",
     prototype:"loop",
     code:`
+    $setGlobalUserVar[ozelodaid;$channelID[$textInputValue[oModal]]]
+    `
+  },{
+    name:"oa3",
+    type:"awaited",
+    prototype:"loop",
+    code:`
     $modifyChannelPerms[$guildID;$channelID[$getVar[s]];-viewchannel;-managechannel;-sendmessage]
     `
+    
   }
   ]

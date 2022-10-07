@@ -54,7 +54,9 @@ yükselreisrozet: "Sahip Değilsin",
   //rozet: "Sahip Değilsin",
   
  //Özel Oda değişkenleri
-  ozelodaid: "",
+  ozelodaisim:"0",
+  ozelodaid: "0",
+  ozeloda:"yok",
 })
 //////komutlar////////
 bot.command({
