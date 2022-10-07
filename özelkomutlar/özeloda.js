@@ -32,9 +32,8 @@ $textSplit[$interactionData[customId];_;1]
   prototype: "modal",
   code: `
   $interactionReply[Oda Başarıyla Oluşturuldu!]
- $createChannel[$guildID;$username Özel Oda;text;no]
- $setGlobalUserVar[ozelodaid;$channelID[$username Özel Oda]]
- $loop[1;{};oa3]
+ $createChannel[$guildID;$username Özel Oda;text;no;990815535124070431]
+ $setGlobalUserVar[ozelodaisim;$username Özel Oda]
  `
  
   
@@ -45,7 +44,7 @@ $textSplit[$interactionData[customId];_;1]
   $interactionReply[
   Özel Oda | Oda Bilgileri
   Oda Adı: $getGlobalUserVar[ozelodaisim]
-  Oda ID: $getGlobalUserVar[ozelodaid]
+  Oda ID: $channelID[$getGlobalUserVar[ozelodaisim]]
   ** **
   ]
   $onlyif[$get[authorID]==$interactionData[author.id];{
