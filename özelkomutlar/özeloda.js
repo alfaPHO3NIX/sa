@@ -48,7 +48,7 @@ $textSplit[$interactionData[customId];_;1]
   $interactionReply[]
   $sendMessage[{newEmbed:
   {title:Özel Oda | Oda Bilgileri}
-  {description:Oda Adı: {field:$getGlobalUserVar[ozelodaisim]}
+  {description:$getGlobalUserVar[ozelodaisim]
   Oda ID: $channelID[$getGlobalUserVar[ozelodaisim]]}
   }
   ]
@@ -62,7 +62,7 @@ $textSplit[$interactionData[customId];_;1]
 }]
 $onlyIf[$get[customId]==odabilgileri;]
 $let[authorID;$splitText[2]]
-$let[customId;$splitText[1]] 
+$let[customId;$splitText[1]]
 $textSplit[$interactionData[customId];_;1]
   `
   },{
