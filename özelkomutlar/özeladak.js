@@ -37,9 +37,8 @@ $textSplit[$interactionData[customId];_;1]
   $title[Başarılı $customEmoji[onayla]]
   $description[Kategori ID Başarıyla Ayarlandı\n\nEğer kanal id yazarsanız kabul eder fakat özel oda oluştururken hata alırsınız.]
   
-  $setVar[ozelodakategori;$textInputValue[kModals]
-  $onlyIf[$channelExists[$textInputValue[kModal]]!=false;{newEmbed:{title:Özel Oda | Admin Menüsü * Hata}{description:Bu kategori bulunamadı}} $interactionReply[]]
-  $interactionReply[]
+  $setVar[ozelodakategori;$textInputValue[kModals]]
+  $onlyIf[$channelExists[$guildID;textInputValue[kModal]]!=false;{newEmbed:{title:Özel Oda | Admin Menüsü * Hata}{description:Bu kategori bulunamadı}}]
   `
   
   
