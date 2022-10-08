@@ -111,7 +111,7 @@ $textSplit[$interactionData[customId];_;1]
     type:"interaction",
     prototype:"button",
     code:`
-    $interactionModal[Kanal Erişim Al;profileModal;
+    $interactionModal[Kanal Erişim Al;kaerisimModal;
     {actionRow:
       {textInput:Kanal ID'nizi giriniz:1:erisimModal:yes:1234567890123456789:19:19}
     }
@@ -126,6 +126,14 @@ $onlyIf[$get[customId]==kerisimal;]
 $let[authorID;$splitText[2]]
 $let[customId;$splitText[1]] 
 $textSplit[$interactionData[customId];_;1]
+    `
+  },{
+    name:"kaerisimModal",
+    type:"interaction",
+    prototype:"modal",
+    code:`
+    $interactionReply[]
+    $onlyIf[$textInputValue[erisimModal]==$channelID[$getGlobalUserVar[ozelodaisim];{newEmbed:{title:Özel Oda | Ayarlar * Hata}}]]
     `
   },{
     name:"oa3",
