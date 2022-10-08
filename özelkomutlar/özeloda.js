@@ -85,8 +85,17 @@ $textSplit[$interactionData[customId];_;1]
     type:"interaction",
     prototype:"button",
     code:`
-    
-    
+    $onlyif[$get[authorID]==$interactionData[author.id];{
+"content" : "Bu Butonu Sadece Komutu Kullanan Kişi Basabilir",
+"ephemeral" : true,
+
+"options" : { "interaction" : true }
+
+}]
+
+$onlyIf[$get[customId]==denem;]
+$let[authorID;$splitText[2ayarlart[customId;$splitText[1]] 
+$textSplit[$interactionData[customId];_;1]
     `
     
     
