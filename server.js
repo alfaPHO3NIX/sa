@@ -57,6 +57,7 @@ yükselreisrozet: "Sahip Değilsin",
   ozelodaisim:"0",
   ozelodaid: "0",
   ozeloda:"yok",
+  ozelodakate
 })
 //////komutlar////////
 bot.command({
