@@ -34,7 +34,7 @@ $textSplit[$interactionData[customId];_;1]
   type:"interaction",
   prototype:"modal",
   code:`
-  $onlyIf[$channelExists[$textInputValue[kModal]!=false;{newEmbed:{title:Özel Oda }}]]
+  $onlyIf[$channelExists[$textInputValue[kModal]!=false;{newEmbed:{title:Özel Oda | Admin Menüsü * Hata}{description:Bu kategori bulunamadı}}]]
   $interactionReply[]
   `
   
