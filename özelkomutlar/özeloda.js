@@ -103,18 +103,6 @@ $textSplit[$interactionData[customId];_;1]
     
     
   },{
-    name:"oa1",
-    type:"},{
-    type:"",
-    prototype:"",
-    code:`
-    
-    `
-    aited",
-    prototype:"loop",
-    code:`
-    `
-  },{
     name:"oa2",
     type:"awaited",
     prototype:"loop",
