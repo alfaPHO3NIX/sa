@@ -1,7 +1,6 @@
 module.exports = [{
   name: "özeloda",
   aliases: ["özel-oda","ö"],
-  nonprefixed:"true",
   code: `
   $title[Özel Oda Menü]
   $addButton[3;Ayarlar;2;ayarlar_$authorID;no;⚙️]
@@ -70,8 +69,7 @@ $textSplit[$interactionData[customId];_;1]
     type:"interaction",
     prototype:"button",
     code:`
-    dödö
-    $interactionReply[]
+    $interactionUpdate[$channelID[getGlobalUserVar[ozelodaisim]]
     $onlyif[$get[authorID]==$interactionData[author.id];{
 "content" : "Bu Butonu Sadece Komutu Kullanan Kişi Basabilir",
 "ephemeral" : true,
