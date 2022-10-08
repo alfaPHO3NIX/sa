@@ -5,7 +5,7 @@ module.exports = [{
   $title[Özel Oda | Admin Menüsü]
   $description[Seçim Yapınız.]
   $addButton[1;Kategori ID Ayarla;1;katidayarla_$authorID]
-  
+  $onlyPerms[admin;Yekin Yok $CustomEmoji[reddet]]
   `
 },{
   type:"interaction",
@@ -35,7 +35,7 @@ $textSplit[$interactionData[customId];_;1]
   prototype:"modal",
   code:`
   $onlyIf[$channelExists[$textInputValue[kModal]]!=false;{newEmbed:{title:Özel Oda | Admin Menüsü * Hata}{description:Bu kategori bulunamadı}}]
-  $interactionReply[]
+  $interactionReply[z ]
   `
   
   
