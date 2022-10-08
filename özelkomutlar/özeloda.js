@@ -69,7 +69,8 @@ $textSplit[$interactionData[customId];_;1]
     type:"interaction",
     prototype:"button",
     code:`
-    $interactionUpdate[$channelID[getGlobalUserVar[ozelodaisim]]
+    $interactionReply[$channelID[$getGlobalUserVar[ozelodaisim]]]
+    $deleteIn[20s]
     $onlyif[$get[authorID]==$interactionData[author.id];{
 "content" : "Bu Butonu Sadece Komutu Kullanan Kişi Basabilir",
 "ephemeral" : true,
@@ -80,6 +81,15 @@ $let[authorID;$splitText[2]]
 $let[customId;$splitText[1]] 
 $textSplit[$interactionData[customId];_;1]
     `
+  },{
+    type:"interaction",
+    prototype:"button",
+    code:`
+    
+    
+    `
+    
+    
   },{
     name:"oa1",
     type:"awaited",
