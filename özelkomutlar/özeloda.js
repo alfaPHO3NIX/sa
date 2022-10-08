@@ -39,8 +39,8 @@ $textSplit[$interactionData[customId];_;1]
   $description[Oda Adı: 
   $getGlobalUserVar[ozelodaisim]
   Oda ID: 
-  $channelID[$getGlobalUserVar[ozelodaisim]]]
-  $if[$addButton[1;Kanal ID Kopyala;1;chidkopyala_$authorID]]
+  $getGlobalUserVar[ozelodaid]]
+  $addButton[1;Kanal ID Kopyala;1;chidkopyala_$authorID;no]
   $interactionUpdate[** **]
   $onlyIf[$getVar[ozelodakategori1]!=0;{newEmbed:{title:Hata}{description:Görünüşe göre geliştirici özel odaların ekleneceği kategori id'yi belirtmemiş.\n\nLütfen bu hatayı geliştiriciye yada herhangi bir yetkiliye bildiriniz}}]
   $onlyif[$get[authorID]==$interactionData[author.id];{
