@@ -75,6 +75,7 @@ $textSplit[$interactionData[customId];_;1]
     $title[Özel Oda | Ayarlar]
     $description[Seçiniz.]
     $addButton[1;Kanala Erişim Al;success;kerisimal_$authorID;no]
+    $addButton[2;Özel Odanın Adını değiştir;]
     $interactionUpdate[** **]
     
     $onlyif[$get[authorID]==$interactionData[author.id];{
