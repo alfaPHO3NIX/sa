@@ -13,7 +13,7 @@ module.exports = [{
   code:`
   $interactionModal[Hello there!;katModals;
     {actionRow:
-      {textInput:Kategori ID Giriniz:1:kModal:yes:$username:18:18}
+      {textInput:Kategori ID Giriniz:1:kModal:yes:(Örnek)10363825383638253027:19:19}
     }
    ]
   $onlyif[$get[authorID]==$interactionData[author.id];{
@@ -34,7 +34,7 @@ $textSplit[$interactionData[customId];_;1]
   type:"interaction",
   prototype:"modal",
   code:`
-  $onlyIf[$channelExists[$textInputValue[kModal]!=false;{newEmbed:{title:Özel Oda | Admin Menüsü * Hata}{description:Bu kategori bulunamadı}}]]
+  $onlyIf[$channelExists[$textInputValue[kModal]]!=false;{newEmbed:{title:Özel Oda | Admin Menüsü * Hata}{description:Bu kategori bulunamadı}}]
   $interactionReply[]
   `
   
