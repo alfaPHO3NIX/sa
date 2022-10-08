@@ -85,6 +85,9 @@ $textSplit[$interactionData[customId];_;1]
     type:"interaction",
     prototype:"button",
     code:`
+    $title[Özel Oda | Ayarlar]
+    $description[Seçiniz.]
+    $interactionUpdate[** **]
     $onlyif[$get[authorID]==$interactionData[author.id];{
 "content" : "Bu Butonu Sadece Komutu Kullanan Kişi Basabilir",
 "ephemeral" : true,
@@ -101,7 +104,13 @@ $textSplit[$interactionData[customId];_;1]
     
   },{
     name:"oa1",
-    type:"awaited",
+    type:"},{
+    type:"",
+    prototype:"",
+    code:`
+    
+    `
+    aited",
     prototype:"loop",
     code:`
     `
