@@ -10,26 +10,6 @@ module.exports = [{
   $onlyIf[$getVar[ozelodakategori1]!=0;{newEmbed:{title:Hata}{description:Görünüşe göre geliştirici özel odaların ekleneceği kategori id'yi belirtmemiş.\n\nLütfen bu hatayı geliştiriciye yada herhangi bir yetkiliye bildiriniz}}]
  `,
 },{
-
-  type:"interaction",
-prototype: "button",
-code:`
-        $interactionModal[Özel Oda Oluştur;sModal;
-    {actionRow:
-      {textInput:Özel Oda Adı:1:oModal:yes:Oda Adı:3:30}
-    }]
-    $onlyIf[$getVar[ozelodakategori1]!=0;{newEmbed:{title:Hata}{description:Görünüşe göre geliştirici özel odaların ekleneceği kategori id'yi belirtmemiş.\n\nLütfen bu hatayı geliştiriciye yada herhangi bir yetkiliye bildiriniz}}]
-$onlyif[$get[authorID]==$interactionData[author.id];{
-"content" : "Bu Butonu Sadece Komutu Kullanan Kişi Basabilir",
-"ephemeral" : true,
-"options" : { "interaction" : true }
-}]
-$onlyIf[$get[customId]==odaolustur;]
-$let[authorID;$splitText[2]]
-$let[customId;$splitText[1]] 
-$textSplit[$interactionData[customId];_;1]
-`,
-},{
   type: "interaction",
   prototype: "button",
   code: `
@@ -37,7 +17,6 @@ $textSplit[$interactionData[customId];_;1]
  $createChannel[$guildID;$random[1000;9999]-özel-oda;text;no;$getVar[ozelodakategori]]
  $setGlobalUserVar[ozelodaisim;$random[1000;9999]-özel-oda]
  $loop[1;{};oa2]
- $loop[1;{};oa3]
  
  $onlyif[$get[authorID]==$interactionData[author.id];{
 "content" : "Bu Butonu Sadece Komutu Kullanan Kişi Basabilir",
@@ -61,7 +40,7 @@ $textSplit[$interactionData[customId];_;1]
   $getGlobalUserVar[ozelodaisim]
   Oda ID: 
   $channelID[$getGlobalUserVar[ozelodaisim]]]
-  $addButton[1;Kanal ID Kopyala;1;chidkopyala_$authorID]
+  $if[$addButton[1;Kanal ID Kopyala;1;chidkopyala_$authorID]]
   $interactionUpdate[** **]
   $onlyIf[$getVar[ozelodakategori1]!=0;{newEmbed:{title:Hata}{description:Görünüşe göre geliştirici özel odaların ekleneceği kategori id'yi belirtmemiş.\n\nLütfen bu hatayı geliştiriciye yada herhangi bir yetkiliye bildiriniz}}]
   $onlyif[$get[authorID]==$interactionData[author.id];{
@@ -133,7 +112,7 @@ $textSplit[$interactionData[customId];_;1]
 }]
 $onlyIf[$get[customId]==kerisimal;]
 $let[authorID;$splitText[2]]
-$let[customId;$splitText[1]] 
+$let[customId;$splitText[1]]
 $textSplit[$interactionData[customId];_;1]
     `
   },{
@@ -147,13 +126,6 @@ $textSplit[$interactionData[customId];_;1]
     $onlyIf[$textInputValue[erisimModal]==$channelID[$getGlobalUserVar[ozelodaisim]];{newEmbed:{title:Özel Oda | Ayarlar * Hata}{description:Oda bilgilerinizdeki kanal ID yazdığınız kanal id ile uyuşmuyor}}]
     $interactionReply[** **]
     `
-  },{
-    name:"oa3",
-    type:"awaited",
-    prototype:"loop",
-    code:`
-    $modifyChannelPerms[$authorID;$channelID[$random[1000;9999]-özel-oda];+viewchannel;-managechannel;+sendmessage]
-    `
-    
   }
+    
   ]
