@@ -87,21 +87,19 @@ $textSplit[$interactionData[customId];_;1]
     code:`
     $title[Özel Oda | Ayarlar]
     $description[Seçiniz.]
+    $addButton[1;Kanala Erişim Al;success;kerisimal_$authorID;no]
     $interactionUpdate[** **]
+    
     $onlyif[$get[authorID]==$interactionData[author.id];{
 "content" : "Bu Butonu Sadece Komutu Kullanan Kişi Basabilir",
 "ephemeral" : true,
-
 "options" : { "interaction" : true }
-
 }]
-
-$onlyIf[$get[customId]==denem;]
-$let[authorID;$splitText[2ayarlart[customId;$splitText[1]] 
+$onlyIf[$get[customId]==ayarlar;]
+$let[authorID;$splitText[2]]
+$let[customId;$splitText[1]] 
 $textSplit[$interactionData[customId];_;1]
-    `
-    
-    
+  `
   },{
     name:"oa2",
     type:"awaited",
