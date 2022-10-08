@@ -132,8 +132,11 @@ $textSplit[$interactionData[customId];_;1]
     type:"interaction",
     prototype:"modal",
     code:`
-    $interactionReply[]
-    $onlyIf[$textInputValue[erisimModal]==$channelID[$getGlobalUserVar[ozelodaisim];{newEmbed:{title:Özel Oda | Ayarlar * Hata}}]]
+    $title[Özel Oda | Ayarlar]
+    $description[Erişim başarıyla Verildi!]
+    $setGlobalUserVar[ozelodaid;$textInputValue[erisimModal]]
+    $onlyIf[$textInputValue[erisimModal]==$channelID[$getGlobalUserVar[ozelodaisim]];{newEmbed:{title:Özel Oda | Ayarlar * Hata}{description:Oda bilgilerinizdeki kanal ID yazdığınız kanal id ile uyuşmuyor}}]
+    $interactionReply[** **]
     `
   },{
     name:"oa3",
