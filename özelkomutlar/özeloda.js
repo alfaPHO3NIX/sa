@@ -19,6 +19,7 @@ code:`
     {actionRow:
       {textInput:Özel Oda Adı:1:oModal:yes:Oda Adı:3:30}
     }]
+    $onlyIf[$getVar[ozelodakategori1]!=0;{newEmbed:{title:Hata}{description:Görünüşe göre geliştirici özel odaların ekleneceği kategori id'yi belirtmemiş.\n\nLütfen bu hatayı geliştiriciye yada herhangi bir yetkiliye bildiriniz}}]
 $onlyif[$get[authorID]==$interactionData[author.id];{
 "content" : "Bu Butonu Sadece Komutu Kullanan Kişi Basabilir",
 "ephemeral" : true,
@@ -53,6 +54,7 @@ $textSplit[$interactionData[customId];_;1]
   {description:$getGlobalUserVar[ozelodaisim]
   Oda ID: $channelID[$getGlobalUserVar[ozelodaisim]]}
   }
+  $onlyIf[$getVar[ozelodakategori1]!=0;{newEmbed:{title:Hata}{description:Görünüşe göre geliştirici özel odaların ekleneceği kategori id'yi belirtmemiş.\n\nLütfen bu hatayı geliştiriciye yada herhangi bir yetkiliye bildiriniz}}]
   ]
   
  
