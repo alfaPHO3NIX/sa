@@ -11,8 +11,11 @@ module.exports = [{
   type:"interaction",
   prototype:"button",
   code:`
-  xlsls
-  $onlyIf[$channelExists[$textInputValue[kModal]]
+  $interactionModal[Hello there!;katModals;
+    {actionRow:
+      {textInput:Kategori ID Giriniz:1:kModal:yes:$username:18:18}
+    }
+   ]
   $onlyif[$get[authorID]==$interactionData[author.id];{
 "content" : "Bu Butonu Sadece Komutu Kullanan Kişi Basabilir",
 "ephemeral" : true,
@@ -24,6 +27,16 @@ $let[customId;$splitText[1]]
 $textSplit[$interactionData[customId];_;1] 
   `
   
+  
+  
+},{
+  name:"katModals",
+  type:"interaction",
+  prototype:"modal",
+  code:`
+  $onlyIf[$channelExists[$textInputValue[kModal]!=false;{newEmbed:{title:Özel Oda }}]]
+  $interactionReply[]
+  `
   
   
 }]
