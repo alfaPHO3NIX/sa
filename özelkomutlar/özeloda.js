@@ -108,6 +108,26 @@ $textSplit[$interactionData[customId];_;1]
     $setGlobalUserVar[ozelodaid;$channelID[$getGlobalUserVar[ozelodaisim]]]
     `
   },{
+    type:"interaction",
+    prototype:"button",
+    code:`
+    $interactionModal[Kanal Erişim Al;profileModal;
+    {actionRow:
+      {textInput:Kanal ID'nizi giriniz:1:erisimModal:yes:1234567890123456789:19:19}
+    }
+   ]
+    
+    $onlyif[$get[authorID]==$interactionData[author.id];{
+"content" : "Bu Butonu Sadece Komutu Kullanan Kişi Basabilir",
+"ephemeral" : true,
+"options" : { "interaction" : true }
+}]
+$onlyIf[$get[customId]==kerisimal;]
+$let[authorID;$splitText[2]]
+$let[customId;$splitText[1]] 
+$textSplit[$interactionData[customId];_;1]
+    `
+  },{
     name:"oa3",
     type:"awaited",
     prototype:"loop",
