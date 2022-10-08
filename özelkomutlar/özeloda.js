@@ -58,7 +58,7 @@ $textSplit[$interactionData[customId];_;1]
     prototype:"button",
     code:`
     $deleteIn[1s]
-    $interactionReply[$channelID[$getGlobalUserVar[ozelodaisim]]]
+    $interactionReply[$getGlobalUserVar[ozelodaid]]
     $onlyif[$get[authorID]==$interactionData[author.id];{
 "content" : "Bu Butonu Sadece Komutu Kullanan Kişi Basabilir",
 "ephemeral" : true,
