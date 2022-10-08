@@ -1,6 +1,6 @@
 module.exports = [{
   name: "özelodaadmin",
-  aliases: ["özeloda-admin","ö admin"],
+  aliases: ["özeloda-admin","ö admin","öa."],
   code: `
   $title[Özel Oda | Admin Menüsü]
   $description[Seçim Yapınız.]
@@ -34,6 +34,9 @@ $textSplit[$interactionData[customId];_;1]
   type:"interaction",
   prototype:"modal",
   code:`
+  $title[Başarılı $customEmoji[onayla]]
+  $description[Kategori ID Başarıyla Ayarlandı\n\nEğer kanal id yazarsanız kabul eder fakat özel oda oluştururken hata alırsınız.]
+  $setVar[ozelodakategori;$textInputValue[kModals]]
   $onlyIf[$channelExists[$textInputValue[kModal]]!=false;{newEmbed:{title:Özel Oda | Admin Menüsü * Hata}{description:Bu kategori bulunamadı}} $interactionReply[]]
   
   `
