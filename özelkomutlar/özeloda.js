@@ -36,7 +36,7 @@ $textSplit[$interactionData[customId];_;1]
   prototype: "modal",
   code: `
   $interactionReply[Oda Başarıyla Oluşturuldu!]
- $createChannel[$guildID;$random[1000;9999]-özel-oda;text;no;990815535124070431]
+ $createChannel[$guildID;$random[1000;9999]-özel-oda;text;no;$getVar[ozelodakategori]]
  $setGlobalUserVar[ozelodaisim;$random[1000;9999]-özel-oda]
  $loop[1;{};oa2]
  $loop[1;{};oa3]
@@ -51,7 +51,7 @@ $textSplit[$interactionData[customId];_;1]
   $interactionReply[]
   $sendMessage[{newEmbed:
   {title:Özel Oda | Oda Bilgileri}
-  {description:$getGlobalUserVar[ozelodaisim]
+  {description:Oda Adı: $getGlobalUserVar[ozelodaisim]
   Oda ID: $channelID[$getGlobalUserVar[ozelodaisim]]}
   }
   $onlyIf[$getVar[ozelodakategori1]!=0;{newEmbed:{title:Hata}{description:Görünüşe göre geliştirici özel odaların ekleneceği kategori id'yi belirtmemiş.\n\nLütfen bu hatayı geliştiriciye yada herhangi bir yetkiliye bildiriniz}}]
