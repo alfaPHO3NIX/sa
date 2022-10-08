@@ -1,6 +1,7 @@
 module.exports = [{
   name: "özeloda",
   aliases: ["özel-oda","ö"],
+  nonprefixed:"true",
   code: `
   $title[Özel Oda Menü]
   $addButton[3;Ayarlar;2;ayarlar_$authorID;no;⚙️]
@@ -8,6 +9,7 @@ module.exports = [{
  $addButton[2;Oda Bilgileri;1;odabilgileri_$authorID;no]
  $onlyIf[$getGlobalUserVar[premium]==Var;{newEmbed:{color:RANDOM}{title:Özel Oda Menü * Hata}{description:Bu komutu sadece premium üyeler kullanabilir!}}]
  `
+ 
 },{
 
   type:"interaction",

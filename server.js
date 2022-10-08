@@ -54,10 +54,11 @@ yükselreisrozet: "Sahip Değilsin",
   //rozet: "Sahip Değilsin",
   
  //Özel Oda değişkenleri
-  ozelodaisim:"0",
-  ozelodaid: "0",
-  ozeloda:"yok",
-  ozelodakate
+  ozelodaisim:"0",//Özel Odanın adını gösterir.
+  ozelodaid: "0",//Özel Oda kanal ID'sini gösterilir.
+  ozeloda:"yok",//Özel Odanın açılıp açılmadığını kontrol eder.
+  ozelodakategori:"undefined",//Kategori ID nin kaydedildiği değişken.
+  ozelodakategori1:"0",//Kategorinin açılıp açılmadığını kontrol eder.
 })
 //////komutlar////////
 bot.command({
