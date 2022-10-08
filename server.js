@@ -10,6 +10,7 @@ bot.onMessage()
 //\\\\\\
 const loader = new aoijs.LoadCommands(bot);
 loader.load(bot.cmd, "./komutlar/")
+loader.load(bot.cmd, "./src/")
 loader.load(bot.cmd, "./shopier/")
 loader.load(bot.cmd, "./moderasyon/")
 loader.load(bot.cmd, "./kasa/")
