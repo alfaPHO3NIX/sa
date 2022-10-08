@@ -8,8 +8,8 @@ module.exports = [{
   $addButton[1;Oda Oluştur;success;odaolustur_$authorID;no]
  $addButton[2;Oda Bilgileri;1;odabilgileri_$authorID;no]
  $onlyIf[$getGlobalUserVar[premium]==Var;{newEmbed:{color:RANDOM}{title:Özel Oda Menü * Hata}{description:Bu komutu sadece premium üyeler kullanabilir!}}]
- `
- 
+ $onlyIf[$getGlobakUserVar[ozelodakategori1]!=0;{newEmbed:{color:red}{}{title:Hata}{description:Görünüşe göre geliştirici özel odaların ekleneceği kategori id'yi belirtmemiş.\n\nLütfen bu hatayı geliştiriciye yada herhangi bir yetkiliye bildiriniz}}]
+ `,
 },{
 
   type:"interaction",
