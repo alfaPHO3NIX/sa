@@ -30,15 +30,24 @@ $let[customId;$splitText[1]]
 $textSplit[$interactionData[customId];_;1]
 `,
 },{
-  name: "sModal",
   type: "interaction",
-  prototype: "modal",
+  prototype: "button",
   code: `
   $interactionReply[Oda Başarıyla Oluşturuldu!]
  $createChannel[$guildID;$random[1000;9999]-özel-oda;text;no;$getVar[ozelodakategori]]
  $setGlobalUserVar[ozelodaisim;$random[1000;9999]-özel-oda]
  $loop[1;{};oa2]
  $loop[1;{};oa3]
+ 
+ $onlyif[$get[authorID]==$interactionData[author.id];{
+"content" : "Bu Butonu Sadece Komutu Kullanan Kişi Basabilir",
+"ephemeral" : true,
+"options" : { "interaction" : true }
+}]
+$onlyIf[$get[customId]==odaolustur;]
+$let[authorID;$splitText[2]]
+$let[customId;$splitText[1]]
+$textSplit[$interactionData[customId];_;1]
  `
  
   
@@ -69,8 +78,8 @@ $textSplit[$interactionData[customId];_;1]
     type:"interaction",
     prototype:"button",
     code:`
+    $deleteIn[1s]
     $interactionReply[$channelID[$getGlobalUserVar[ozelodaisim]]]
-    $deleteIn[20s]
     $onlyif[$get[authorID]==$interactionData[author.id];{
 "content" : "Bu Butonu Sadece Komutu Kullanan Kişi Basabilir",
 "ephemeral" : true,
