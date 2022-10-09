@@ -117,6 +117,7 @@ $textSplit[$interactionData[customId];_;1]
     code:`
     $title[Özel Oda | Ayarlar]
     $description[Erişim başarıyla Verildi!]
+    $modifyChannelPerms[$authorID;$textInputValue[erisimModal];+viewchannel;+sendmessage;+addreactions]
     $setGlobalUserVar[ozelodaid;$textInputValue[erisimModal]]
     $onlyIf[$textInputValue[erisimModal]==$channelID[$getGlobalUserVar[ozelodaisim]];{newEmbed:{title:Özel Oda | Ayarlar * Hata}{description:Oda bilgilerinizdeki kanal ID yazdığınız kanal id ile uyuşmuyor}}]
     $interactionReply[** **]
