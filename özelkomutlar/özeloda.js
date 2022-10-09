@@ -151,8 +151,7 @@ $textSplit[$interactionData[customId];_;1]
     type:"interaction",
     prototype:"modal",
     code:`
-    $editChannel[$getGlobalUserVar[ozelodaid];$getVar[ozelodakategori];$textInputValue[oadsegisModals]]
-    $interactionReply[Oda ismi başarıyla değiştirildi]
+    $editChannel[$getGlobalUserVar[ozelodaid];$default;$textInputValue[oaddegisModals];$default;no;;;no]
     `
   }
     
