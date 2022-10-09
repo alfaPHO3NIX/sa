@@ -151,7 +151,7 @@ $textSplit[$interactionData[customId];_;1]
     type:"interaction",
     prototype:"modal",
     code:`
-    $editChannel[$getGlobalUserVar[ozelodaid];$default;$textInputValue[oaddegisModals];$default;$default;$default;$default;yes]
+    $editChannel[$getGlobalUserVar[ozelodaid];$default;d;$default;$default;$default;$default;yes]
     `
   }
     
