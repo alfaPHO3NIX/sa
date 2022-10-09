@@ -122,6 +122,30 @@ $textSplit[$interactionData[customId];_;1]
     $onlyIf[$textInputValue[erisimModal]==$channelID[$getGlobalUserVar[ozelodaisim]];{newEmbed:{title:Özel Oda | Ayarlar * Hata}{description:Oda bilgilerinizdeki kanal ID yazdığınız kanal id ile uyuşmuyor}}]
     $interactionReply[** **]
     `
+  },{
+    type:"interaction",
+    prototype:"button",
+    code:`
+    $interactionModal[Özel Oda | İsim Değiştir;oaddegisModal;
+    {actionRow:
+      {textInput:Yeni Oda adını giriniz:1:oaddegisModal:yes:Yeni İsim:3:}
+
+
+       }
+      ]
+    
+    $onlyif[$get[authorID]==$interactionData[author.id];{
+"content" : "Bu Butonu Sadece Komutu Kullanan Kişi Basabilir",
+"ephemeral" : true,
+"options" : { "interaction" : true }
+}]
+$onlyIf[$get[customId]==oaddegis;]
+$let[authorID;$splitText[2]]
+$let[customId;$splitText[1]] 
+$textSplit[$interactionData[customId];_;1]
+    `
+   
+    
   }
     
   ]
