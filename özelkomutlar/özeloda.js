@@ -128,7 +128,7 @@ $textSplit[$interactionData[customId];_;1]
     code:`
     $interactionModal[Özel Oda | İsim Değiştir;oaddegisModal;
     {actionRow:
-      {textInput:Yeni Oda adını giriniz:1:oaddegisModal:yes:Yeni İsim:3:}
+      {textInput:Yeni Oda adını giriniz:1:oaddegisModals:yes:Yeni İsim:3}
 
 
        }
@@ -146,6 +146,14 @@ $textSplit[$interactionData[customId];_;1]
     `
    
     
+  },{
+    name:"oaddegisModal",
+    type:"interaction",
+    prototype:"modal",
+    code:`
+    $editChannel[$getGlobalUserVar[ozelodaid];$getVar[ozelodakategori];$textInputValue[oadsegisModals]]
+    $interactionReply[Oda ismi başarıyla değiştirildi]
+    `
   }
     
   ]
