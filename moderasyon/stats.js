@@ -3,8 +3,15 @@ module.exports = [{
   prototype:"slash",
   name:"stats",
   code: `
-  $title[İstatistikler]
-  $
+  $interactionUpdate[**
+  $sendMessage[{newEmbed:
+  {title:İstatistikler}
+  {description:
+  **Bot İstatistikleri**
+  Ram: $ram
+  }}
+  ]
+  ]
   `
 
 }]
