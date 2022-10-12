@@ -8,8 +8,8 @@ module.exports = [{
   {description:
   **Bot İstatistikleri**
   Kullanılan Ram: $ram
-  Uptime Süresi: $replaceText[$uptime;h; Saat]
-  
+  Uptime Süresi: $replaceText[$replaceText[$replaceText[$replaceText[$replaceText[$replaceText[$uptime;hour; Saat];hours;Saat];minutes; Dakika];minute; Dakika];seconds; Saniye];second; Saniye]
+  Bot Sahibi: <@$botOwnerID>
   }}
   `
 
