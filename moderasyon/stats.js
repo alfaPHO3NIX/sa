@@ -12,6 +12,7 @@ module.exports = [{
   Uptime Süresi: $replaceText[$replaceText[$replaceText[$replaceText[$replaceText[$replaceText[$uptime;hour; Saat];hours;Saat];minutes; Dakika];minute; Dakika];seconds; Saniye];second; Saniye]
   
   Bot Sahibi: <@$botOwnerID>
+  CPU Kullanımı: $cpu
   }}
   `
 
