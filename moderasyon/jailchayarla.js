@@ -1,13 +1,13 @@
 module.exports = {
-  name: "jailkanalayarla",
-  aliases: ["hapiskanalayarla"],
+  name: "jailchayarla",
+  aliases: ["hapisrolayarla"],
   code: `
   $color[RANDOM]
   $title[Başarılı!]
   $description[
-  Kanal <#$mentionedChannels[1]> olarak ayarlandı.\n** **
+  Rol <@&$mentionedRoles[1]> olarak ayarlandı.
   ]
-  $setServerVar[jailchid;$mentionedRoles[1]]
+  $setServerVar[jailroleid;$mentionedRoles[1]]
   $onlyIf[$mentionedChannels[1]!=undefined;
   {newEmbed:
   {title: Hata}
@@ -19,8 +19,7 @@ module.exports = {
   $onlyPerms[admin;{newEmbed:
   {title: Hata}
   {description: Yetkin Yok.
-  }}
-  ]
-
+  }
+  }
+]  
 `
-}
