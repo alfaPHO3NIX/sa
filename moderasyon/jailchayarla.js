@@ -5,9 +5,9 @@ module.exports = {
   $color[RANDOM]
   $title[Başarılı!]
   $description[
-  Kanal <#$mentionedChannel[1]> olarak ayarlandı.
+  Kanal <#$mentionedChannels[1]> olarak ayarlandı.
   ]
-  $setServerVar[jailroleid;$mentionedRoles[1]]
+  $setServerVar[jailroleid;$mentionedChannels[1]]
   $onlyIf[$mentionedChannels[1]!=undefined;
   {newEmbed:
   {title: Hata}
