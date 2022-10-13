@@ -15,7 +15,7 @@ module.exports = {
   }
 
 ]
- 
+ $onlyIf[$getServerVar[jailchid];]
   $onlyPerms[admin;{newEmbed:
   {title: Hata}
   {description: Yetkin Yok.
