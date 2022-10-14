@@ -4,7 +4,7 @@ aliases: ['help'],
 code: `
 $title[$customEmoji[kitap] Yardım $customEmoji[kitap]]
 $description[Seçiniz.]
-$addSelectMenu[]
+$addSelectMenu[1;help;;1;1;no;Ekonomi Komutları:Ekonomi komutlarını gösterir.:help0:no:💎]
 `
 },{
   type:"interaction",
