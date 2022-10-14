@@ -13,7 +13,7 @@ module.exports = [{
   type: "interaction",
   prototype: "button",
   code: `
-  $interactionReply[Oda Başarıyla Oluşturuldu!]
+  $interactionReply[Oda Başarıyla Oluşturuldu!;;;;;yes]
  $createChannel[$guildID;$random[1000;9999]-özel-oda;text;no;$getVar[ozelodakategori]]
  $setGlobalUserVar[ozelodaisim;$random[1000;9999]-özel-oda]
  
