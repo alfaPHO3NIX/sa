@@ -67,9 +67,7 @@ yükselreisrozet: "Sahip Değilsin",
 })
 
 bot.variables({
-  
-  
-})
+}, 'sa')
 
 //////komutlar////////
 bot.command({
