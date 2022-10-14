@@ -74,11 +74,11 @@ $textSplit[$interactionData[customId];_;1]
     type:"interaction",
     prototype:"button",
     code:`
+    
     $title[Özel Oda | Ayarlar]
     $description[Seçiniz.]
     $addButton[1;Kanala Erişim Al;success;kerisimal_$authorID;no;🔓]
     $addButton[2;Özel Odanın Adını değiştir;1;oaddegis_$authorID;no;📝]
-    $interactionUpdate[** **]
     
     $onlyif[$get[authorID]==$interactionData[author.id];{
 "content" : "Bu Butonu Sadece Komutu Kullanan Kişi Basabilir",
