@@ -5,11 +5,10 @@ module.exports = {
 $deletecommand
 $title[1;$username]
 $description[
-$replacetext[$replaceText[$replaceText[$replaceText[$replaceText[$replaceText[$replaceText[$replaceText[$replaceText[$replaceText[$message
+$replacetext[$replaceText[$replaceText[$replaceText[$replaceText[$replaceText[$replaceText[$replaceText[$replaceText[$message
 ;:bughunter:;$customEmoji[bughunter]]
 ;:verified:;$customEmoji[verified]]
 ;:kirmiziyildiz:;$customEmoji[kirmiziyildiz]]
-;:maviyildiz:;$customEmoji[maviyildiz]]
 ;:tac:;$customEmoji[emoji_003]]
 ;:onayla:;$customEmoji[onayla]]
 ;:reddet:;$customEmoji[reddet]]

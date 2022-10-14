@@ -6,8 +6,7 @@ $description[
 $customEmoji[bughunter] :bughunter:
 $customEmoji[verified] :verified:
 $customEmoji[kirmiziyildiz] :kirmiziyildiz:
-$customEmoji[maviyildiz] :maviyildiz:
-$customEmoji[emoji_003] :tac:
+$customEmoji[tac] :tac:
 $customEmoji[onayla] :onayla:
 $customEmoji[reddet] :reddet:
 $customEmoji[emoji_hg] :hosgeldin:
