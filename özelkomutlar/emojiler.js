@@ -9,8 +9,8 @@ $customEmoji[kirmiziyildiz] :kirmiziyildiz:
 $customEmoji[tac] :tac:
 $customEmoji[onayla] :onayla:
 $customEmoji[reddet] :reddet:
-$customEmoji[emoji_hg] :hosgeldin:
-$customEmoji[emoji_hb] :hosbulduk:
+$customEmoji[hg] :hosgeldin:
+$customEmoji[hb] :hosbulduk:
 ]
 `
 }
