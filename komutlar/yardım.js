@@ -4,14 +4,14 @@ aliases: ['help'],
 code: `
 $title[$customEmoji[kitap] Yardım $customEmoji[kitap]]
 $description[Seçiniz.]
-$addSelectMenu[1;help;s;1;1;no;Ekonomi Komutları:Ekonomi komutlarını gösterir.:helpValue0:no:💎]
+$addSelectMenu[1;help;Seçiniz...;1;1;no;Ekonomi Komutları:Ekonomi komutlarını gösterir.:helpValue0:no:💎]
 `
 },{
   name:"help",
   type:"interaction",
   prototype:"selectMenu",
   code:`
-  $interactionUpdate[;
+  $interactionReply[ze]
   {newEmbed:
  {title:$customEmoji[kitap] Yardım $customEmoji[kitap]}
 {description:
@@ -42,23 +42,12 @@ sizde olan/olmayan tüm rozetleri gösterir.
 Premium özrlliklerini gösterir.
 
 **$getServerVar[prefix]premium**
-Premium'unuzun olup olmadığını gösterirr
+Premium'unuzun olup olmadığını gösterir
 }}
 ]
 
-$onlyif[$get[authorID]==$interactionData[author.id];{
-
-"content" : "Bu Butonu Sadece Komutu Kullanan Kişi Basabilir",
-
-"ephemeral" : true,
-
-"options" : { "interaction" : true }
-
-}]
-
 $onlyIf[$interactionData[values[0]]==0;]
-$let[authorID;$splitText[2]]
-$let[customId;$splitText[1]] 
-$textSplit[$interactionData[customId];_;1]
+
+
 `
 }]
