@@ -66,9 +66,6 @@ yükselreisrozet: "Sahip Değilsin",
  jailroleid:"undefined",
 })
 
-bot.variables({
-}, 'sa')
-
 //////komutlar////////
 bot.command({
   name: "ping",
