@@ -57,7 +57,7 @@ Premium'unuzun olup olmadığını gösterir
 
 }}
 ]
-$onlyIf[$interactionData[values[0]]==0;]
+$onlyIf[$interactionData[values[0]]==helpValue0;]
 
 
 `
