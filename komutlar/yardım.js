@@ -4,14 +4,14 @@ aliases: ['help'],
 code: `
 $title[$customEmoji[kitap] Yardım $customEmoji[kitap]]
 $description[Seçiniz.]
-$addSelectMenu[1;help;Seçiniz...;1;1;no;Ekonomi Komutları:Ekonomi komutlarını gösterir.:helpValue0:no:💎]
+$addSelectMenu[1;help;Seçiniz...;1;1;no;Ekonomi Komutları:Ekonomi komutlarını gösterir.:helpValue0:no:$customEmoji[para];Rozet Komutları:Rozet sistemi komutlarını gösterir:help1:no:]
 `
 },{
   name:"help",
   type:"interaction",
   prototype:"selectMenu",
   code:`
-  $interactionUpdate[;
+  $interactionReply[;
   {newEmbed:
  {title:$customEmoji[kitap] Yardım $customEmoji[kitap]}
 {description:
@@ -23,7 +23,7 @@ Tüm komutları gösterir.
 
 **     $customEmoji[zumrut]Ekonomi Komutları**$customEmoji[zumrut]
 
-**$getServerVar[prefix]param / $getServerVar[prefix]param {kişi}**
+**$getServerVar[prefix]param / $getServerVar[prefix]param <kişi>**
 
 Bir kişi etiketlemezseniz kendi bakiyenizi,bir kişi etiketlerseniz etkietlediğiniz kişinin bakiyesini gösterir
 
@@ -56,9 +56,19 @@ Premium özrlliklerini gösterir.
 Premium'unuzun olup olmadığını gösterir
 
 }}
-]
+;;;;yes]
 $onlyIf[$interactionData[values[0]]==helpValue0;]
 
 
 `
+},{
+  name:"help",
+  type:"interaction",
+  prototype:"selectMenu",
+  code:`
+  
+  
+  
+  
+  `
 }]
