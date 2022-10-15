@@ -4,7 +4,7 @@ aliases: ['help'],
 code: `
 $title[$customEmoji[kitap] Yardım $customEmoji[kitap]]
 $description[Seçiniz.]
-$addSelectMenu[1;help;Seçiniz...;1;1;no;Ekonomi Komutları:Ekonomi komutlarını gösterir.:helpValue0:no:$customEmoji[para];Rozet Komutları:Rozet sistemi komutlarını gösterir:help1:no:]
+$addSelectMenu[1;help;Seçiniz...;1;1;no;Ekonomi Komutları:Ekonomi komutlarını gösterir.:help0:no:$customEmoji[para];Rozet Komutları:Rozet sistemi komutlarını gösterir:help1:no:$customEmoji[tac]]
 `
 },{
   name:"help",
@@ -39,13 +39,33 @@ Para sıralamasını gösterir.
 
 Etkitetlediğiniz kişiye belirttiğiniz miktarda $getVar[parasembol] gönderir.
 
-**     Rozet Sistemi**
-
-**$getServerVar[prefix]rozetler / $getServerVar[prefix]rozetlerim**
+}}
+;;;;yes]
+$onlyIf[$interactionData[values[0]]==help0;]
+`
+},{
+  name:"help",
+  type:"interaction",
+  prototype:"selectMenu",
+  code:`
+  
+  $interactionReply[;{newEmbed:
+  {title:**     Rozet Sistemi**}
+{description:**$getServerVar[prefix]rozetler / $getServerVar[prefix]rozetlerim**
 
 sizde olan/olmayan tüm rozetleri gösterir.
+}
+}
+;;;;yes]
+$onlyIf[$interactionData[values[0]]==help1;]
+`
+  },{
+    name:"help",
+    type:"interaction",
+    prototype:"selectMenu",
+    code:`
 
-**Premium Sistemi**
+ **Premium Sistemi**
 
 **$getServerVar[prefix]prebilgi / $getServerVar[prefix]premiumbilgi**
 
@@ -54,21 +74,7 @@ Premium özrlliklerini gösterir.
 **$getServerVar[prefix]premium**
 
 Premium'unuzun olup olmadığını gösterir
-
-}}
-;;;;yes]
-$onlyIf[$interactionData[values[0]]==helpValue0;]
-
-
-`
-},{
-  name:"help",
-  type:"interaction",
-  prototype:"selectMenu",
-  code:`
   
-  
-  
-  
+  $onlyIf[$interactionData[values[0]]==help2;]
   `
 }]
