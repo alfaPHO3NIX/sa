@@ -1,7 +1,8 @@
 module.exports = {
   name: "öner",
-  aliases: ["öneriyap"],
+  aliases: ["öneriyap","öneri"],
   code: `
+  $deletecommand
  $title[<@$authorID> Adlı Kişi Bir Öneride Bulundu!
  $description[
  **Önerisi:**
