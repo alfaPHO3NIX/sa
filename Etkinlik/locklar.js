@@ -4,9 +4,10 @@ module.exports = {
   code: `
  $title[$customEmoji[wl] | Locklar / Locklarım]
  $description[
- 
- $customEmoji[dl] Diamond Lock
-** **
+ ** **
+ $customEmoji[wl] **World Lock** : $getGlobalUserVar[wl]
+ $customEmoji[dl] **Diamond Lock**: $getGlobalUserVar[]
+ ** **
 ]
 
 `
