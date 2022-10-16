@@ -65,6 +65,11 @@ yükselreisrozet: "Sahip Değilsin",
 //Jail Değişkenleri
  jailchid: "undefined",
  jailroleid:"undefined",
+  
+//GrowTopia Değişkenleri 
+  wl:"",
+  dl:"",
+  
 })
 
 bot.variables({
