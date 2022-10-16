@@ -69,6 +69,9 @@ yükselreisrozet: "Sahip Değilsin",
 //GrowTopia Değişkenleri 
   wl:"0",
   dl:"0",
+  elock:"0",
+  rlock:"0",
+  bgl:"0",
   
 })
 
