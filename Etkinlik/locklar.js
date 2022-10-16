@@ -2,8 +2,12 @@ module.exports = {
   name: "locklar",
   aliases: ["locklarım"],
   code: `
- $title[$customEmojiLocklar / Locklarım]
-
+ $title[$customEmoji[wl] | Locklar / Locklarım]
+ $description[
+ 
+ $customEmoji[dl] Diamond Lock
+** **
+]
 
 `
 }
