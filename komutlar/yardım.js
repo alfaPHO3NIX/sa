@@ -4,7 +4,7 @@ aliases: ['help'],
 code: `
 $title[$customEmoji[kitap] Yardım $customEmoji[kitap]]
 $description[Seçiniz.]
-$addSelectMenu[1;help;Seçiniz...;1;1;no;Ana Komutlar:Ana komutları gösterir:help-1:no;Ekonomi Komutları:Ekonomi komutlarını gösterir.:help0:no:$customEmoji[para];Rozet Komutları:Rozet sistemi komutlarını gösterir:help1:no:$customEmoji[tac]]
+$addSelectMenu[1;help;Seçiniz...;1;1;no;Ana Komutlar:Ana komutları gösterir:help-1:no:$customEmoji[ev];Ekonomi Komutları:Ekonomi komutlarını gösterir.:help0:no:$customEmoji[para];Rozet Komutları:Rozet sistemi komutlarını gösterir:help1:no:$customEmoji[tac];Premium Komutları:Premium komutlarını gösterir:help2:no:$customEmoji[premium]]
 `
 },{
   name:"help",
@@ -29,7 +29,7 @@ Bir kişi etiketlemezseniz kendi bakiyenizi,bir kişi etiketlerseniz etkietledi�
 
 Para sıralamasını gösterir.
 
-**$getServerVar[prefix]**paragönder {kişi} {miktar}
+**$getServerVar[prefix]**paragönder <kişi> <miktar>
 
 Etkitetlediğiniz kişiye belirttiğiniz miktarda $getVar[parasembol] gönderir.
 
@@ -70,6 +70,6 @@ Premium özrlliklerini gösterir.
 Premium'unuzun olup olmadığını gösterir
   }}
   $onlyIf[$interactionData[values[0]]==help2;]
-  ]
+  ;;;;yes]
   `
 }]
