@@ -4,7 +4,7 @@ module.exports = {
   code: `
 $if[$message[1]==["MrB","mrb"];
 Oldu
-
+;
 Olmadı]
  $title[$customEmoji[wl] | Locklar / Locklarım]
  $description[
