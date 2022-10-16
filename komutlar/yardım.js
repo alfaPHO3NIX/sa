@@ -15,12 +15,6 @@ $addSelectMenu[1;help;Seçiniz...;1;1;no;Ana Komutlar:Ana komutları gösterir:h
   {newEmbed:
  {title:$customEmoji[kitap] Yardım $customEmoji[kitap]}
 {description:
-**     Ana Komutlar**
-
-**$getServerVar[prefix]yardım / $getServerVar[prefix]help**
-
-Tüm komutları gösterir.
-
 **     $customEmoji[zumrut]Ekonomi Komutları**$customEmoji[zumrut]
 
 **$getServerVar[prefix]param / $getServerVar[prefix]param <kişi>**
@@ -64,17 +58,18 @@ $onlyIf[$interactionData[values[0]]==help1;]
     type:"interaction",
     prototype:"selectMenu",
     code:`
+$interactionReply[;{newEmbed:
+ {title:**Premium Sistemi**}
 
- **Premium Sistemi**
-
-**$getServerVar[prefix]prebilgi / $getServerVar[prefix]premiumbilgi**
+{description:**$getServerVar[prefix]prebilgi / $getServerVar[prefix]premiumbilgi**
 
 Premium özrlliklerini gösterir.
 
 **$getServerVar[prefix]premium**
 
 Premium'unuzun olup olmadığını gösterir
-  
+  }}
   $onlyIf[$interactionData[values[0]]==help2;]
+  ]
   `
 }]
