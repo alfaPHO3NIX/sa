@@ -2,10 +2,6 @@ module.exports = {
   name: "locklar",
   aliases: ["locklarım"],
   code: `
-$if[$message[1]==["MrB","mrb"];
-Oldu
-;
-Olmadı]
  $title[$customEmoji[wl] | Locklar / Locklarım]
  $description[
  ** **
