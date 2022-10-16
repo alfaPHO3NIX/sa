@@ -6,7 +6,8 @@ module.exports = {
  $description[
  ** **
  $customEmoji[wl] **World Lock** : $getGlobalUserVar[wl]
- $customEmoji[dl] **Diamond Lock**: $getGlobalUserVar[]
+ $customEmoji[dl] **Diamond Lock**: $getGlobalUserVar[dl]
+ $customEmoji[]
  ** **
 ]
 
