@@ -78,7 +78,7 @@ yükselreisrozet: "Sahip Değilsin",
   bgl:"0",
       //Bloklar;
           //Mevcut Blok Değişkeni
-      mevcutblok:"",
+      mevcutblok:"toprak",
           //Toprak
       toprakmingem:"3",
       toprakmaxgem:"15",

@@ -2,11 +2,11 @@ module.exports = {
   name: "kaz",
   aliases: ["dig"],
   code: `
-  $if[$getGlobalUserVar[gtblok]==toprak
+  $if[$getGlobalUserVar[mevcutblok]==toprak;
+  $title[Blok Kazıldı]
+  $description[Kazılan Blok: Toprak]
   ;
-  Toprak kazıldı
-  ;
-  
+  olmadı be yarrak
   ]
   
   `
