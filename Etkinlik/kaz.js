@@ -3,9 +3,11 @@ module.exports = {
   aliases: ["dig"],
   code: `
   $if[$getGlobalUserVar[mevcutblok]==toprak;
-  $setGlon
+  $setGlobalUserVar[mücevher;$sum[$getglobalUserVar[mücevher];random[$getVar[toprakmingem];$getVar[toprakmaxgem]]]]
   $title[Blok Kazıldı]
-  $description[Kazılan Blok: Toprak]
+  $description[Kazılan Blok: Toprak
+
+]
   ;
   olmadı be yarrak
   ]
