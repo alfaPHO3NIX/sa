@@ -79,9 +79,10 @@ name:"help",
     code:`
 $interactionReply[;{newEmbed:
  {title:Etkinlikler}
- {description:Etkinlik Seç}
- $addSelectMenu[2;Etkinlikler;Etkinlik Seç...;1;1;no;Growtopia:Growtopia rtkinliği komutlarını gösterir:etgrowtopia:no:]
- 
+ {description:Etkinlik Seç};{actionRow:
+ {selectmenu:2:sa:as:mrb:no}
+ }
+ ;;;yes]
  $onlyIf[$interactionData[values[0]]==help3]
  `
 }]
