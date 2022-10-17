@@ -5,6 +5,8 @@ const bot = new aoijs.Bot({
   intents: "all",
 })
 
+
+
 //////// Call Back \\\\\\\\
 bot.onMessage()
 //\\\\\\
