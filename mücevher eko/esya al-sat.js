@@ -3,7 +3,8 @@ module.exports = {
   aliases: ["buy worldlock","satinal wl"],
   code: `
   za
+  $setGlobalUserVar[mücevher;$sub[$getGlobalUserVar[]]]
   
-  $onlyIf[$getGlobalUserVar[mucevher]>=10;Yetersiz Gem.]
+  $onlyIf[$getGlobalUserVar[mücevher]>=2000;Yetersiz Gem.]
   `
   }
