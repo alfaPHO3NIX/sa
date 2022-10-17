@@ -3,6 +3,7 @@ module.exports = {
   aliases: ["dig"],
   code: `
   $if[$getGlobalUserVar[mevcutblok]==toprak;
+  $setGlon
   $title[Blok Kazıldı]
   $description[Kazılan Blok: Toprak]
   ;

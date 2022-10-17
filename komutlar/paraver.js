@@ -10,5 +10,6 @@ $color[RANDOM]
 $onlyIf[$isNumber[$noMentionMessage[1]]!=false;**<@$authorID> Lütfen bir miktar belirt]
 $onlyForIDs[980089372768624660;711923709253910588;x;Yetkin Yok.]
 $setGlobalUserVar[para;$sum[$getGlobalUserVar[para;$mentioned[1]];$noMentionMessage[1]];$mentioned[1]]
+$onlyIf[$noMentionMessage[1]>0;**Yazdığın sayı 0'dan büyük olmalı!**]
 `
 }
