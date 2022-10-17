@@ -83,6 +83,9 @@ yükselreisrozet: "Sahip Değilsin",
       toprakmingem:"3",
       toprakmaxgem:"15",
           //
+  abonerol:"1031609913518071868",
+  abonekanal:"1030549010919997440",
+  aboneyt:"1030054998316425246",
 })
 
 bot.variables({
@@ -106,23 +109,51 @@ $onlyForIDs[$botOwnerID;YetkinYok]
 
 bot.onInteractionCreate()
 
+bot.command({
+  name:"abone",
+  code:`
+  $reactionCollector[$splitText[1];$authorID;1h;✅,❌;evet,hyr;yes]
+  $textSplit[$sendMessage[{color:YELLOW}{thumbnail:$userAvatar[$mentioned[1]]}{description:
+  <@$mentioned[1]> Kişisine Abone Vermeyi Kabul Ediyormusunuz ?
+
+  
+
+  Evet İçin :white_check_mark:  Emojisine Hayır İçin :x: Emojisine Tıklayınız.};yes]]
+  $onlyIf[$hasRole[$mentioned[1];$getServerVar[abonerol]]!=true;{color:RED}{author:$userTag[$mentioned[1]] Kişisinde Zaten Abone Rol Var ?:$authorAvatar}]
+  $onlyForChannels[$getServerVar[abonekanal];{color:RED}{description:Bu Komut Sadece <#$getServerVar[abonekanal]> Kanalında Kullanılabilir !}]
+  $onlyIf[$mentioned[1]!=;{color:RED}{author:Rol Vereceğim Kişiyi Etiketlemen Gerekiyor !:$authorAvatar}]
+  $onlyIf[$hasRole[$authorID;$getServerVar[aboneyt]]!=false;{color:RED}{author:Bu Komut Sadece $roleName[$getServerVar[aboneyt]] Kişilerine Özeldir !:$authorAvatar}]
+
+  
+
+  
+
+  $onlyIf[$getServerVar[aboneyt]!=yok;{color:RED}{author:Abone Yetkilisi Rolü Ayarlı Değil !:$authorAvatar}]
+  $onlyIf[$getServerVar[abonekanal]!=yok;{color:RED}{author:Abone Kanalı Ayarlı Değil !:$authorAvatar}]
+  $onlyIf[$getServerVar[abonerol]!=yok;{color:RED}{author:Abone Rolü Ayarlı Değil !:$authorAvatar}]`
+
+})
 
 bot.awaitedCommand({
-  name:"odaayarla1",
+  name:"evet",
   code:`
-  $setGlobalUserVar[ozelodaid;$textInputValue[oModal]]
-  
+  $clearReactions[$channelID;$message[1];all]
+  $editMessage[$message[1];{color:GREEN}
+  {author:$userTag[$mentioned[1]] Kişisine Abone Rolü Başarıyla Verilmiştir !:$userAvatar[$mentioned[1]]}]
+  $giveRole[$mentioned[1];$getServerVar[abonerol]]
   `
-  
 })
- bot.awaitedCommand({
-   name:"odaayarla2",
-   code:`
-   $modifyChannelPerms[$guildID;$channelID[$getGlobalUserVar[ozelodaid];-viewchannel;-sendmessages;-addreactions;]
-   
-   `
-   
- })
+
+bot.awaitedCommand({
+  name:"hyr",
+  code:`
+  $clearReactions[$channelID;$message[1];all]
+  $editMessage[$message[1];{color:RED}
+  {author:$userTag[$mentioned[1]] Kişisine Abone Rolü Vermeyi Reddettiniz !:$userAvatar[$mentioned[1]]}]
+
+  `
+
+})
 
 //Bot Durumları
 bot.status({
