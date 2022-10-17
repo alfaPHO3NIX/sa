@@ -119,10 +119,10 @@ bot.command({
   
 
   Evet İçin :white_check_mark:  Emojisine Hayır İçin :x: Emojisine Tıklayınız.};yes]]
-  $onlyIf[$hasRole[$mentioned[1];$getServerVar[abonerol]]!=true;{color:RED}{author:$userTag[$mentioned[1]] Kişisinde Zaten Abone Rol Var ?:$authorAvatar}]
-  $onlyForChannels[$getServerVar[abonekanal];{color:RED}{description:Bu Komut Sadece <#$getServerVar[abonekanal]> Kanalında Kullanılabilir !}]
-  $onlyIf[$mentioned[1]!=;{color:RED}{author:Rol Vereceğim Kişiyi Etiketlemen Gerekiyor !:$authorAvatar}]
-  $onlyIf[$hasRole[$authorID;$getServerVar[aboneyt]]!=false;{color:RED}{author:Bu Komut Sadece $roleName[$getServerVar[aboneyt]] Kişilerine Özeldir !:$authorAvatar}]
+  $onlyIf[$hasRole[$mentioned[1];$getServerVar[abonerol]]!=true;{newEmbed:{color:RED}{author:$userTag[$mentioned[1]] Kişisinde Zaten Abone Rol Var ?:$authorAvatar}]
+  $onlyForChannels[$getServerVar[abonekanal];{newEmbed:{color:RED}{description:Bu Komut Sadece <#$getServerVar[abonekanal]> Kanalında Kullanılabilir !}]
+  $onlyIf[$mentioned[1]!=;{newEmbed:{color:RED}{author:Rol Vereceğim Kişiyi Etiketlemen Gerekiyor !:$authorAvatar}}]
+  $onlyIf[$hasRoles[$guildID;$authorID;$getServerVar[aboneyt]]!=false;{newEmbed:color:RED}{author:Bu Komut Sadece $roleName[$getServerVar[aboneyt]] Kişilerine Özeldir !:$authorAvatar}]
 
   
 
