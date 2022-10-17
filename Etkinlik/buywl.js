@@ -2,7 +2,7 @@ module.exports = {
   name: "satınal worldlock",
   aliases: ["buy worldlock","satinal wl"],
   code: `
-  $title[Başarılı $custom]
+  $title[Başarılı $customEmoji[verified]]
   $description[
   1 World Lock $customEmoji[wl] başarıyla satın alındı!
   
