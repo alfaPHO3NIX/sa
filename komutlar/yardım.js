@@ -79,7 +79,7 @@ name:"help",
     code:`
 $interactionReply[;{newEmbed:
  {title:Etkinlikler}
- {description:Etkinlik Seç};{actionRow:{selectMenu:helpCustomID:Menu has been disabled:1:1:no:{selectMenuOptions:This won't show up:helpValue0:Either this.:false}{selectMenuOptions:This won't show up either.:helpValue1:cause menu disabled.:false}}}
+ {description:Etkinlik Seç};{actionRow:{selectMenu:helpCustomID:Etkinlik Seç:1:1:no:{selectMenuOptions:This won't show up:helpValue0:Either this.:false}{selectMenuOptions:This won't show up either.:helpValue1:cause menu disabled.:false}}}
  ;;;yes]
  $onlyIf[$interactionData[values[0]]==help3]
  `
