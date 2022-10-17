@@ -72,4 +72,16 @@ Premium'unuzun olup olmadığını gösterir
   $onlyIf[$interactionData[values[0]]==help2;]
   ;;;;yes]
   `
+},{
+name:"help",
+    type:"interaction",
+    prototype:"selectMenu",
+    code:`
+$interactionReply[;{newEmbed:
+ {title:Etkinlikler}
+ {description:Etkinlik Seç}
+ $addSelectMenu[2;Etkinlikler;Etkinlik Seç...;1;1;no;Growtopia:Growtopia rtkinliği komutlarını gösterir:etgrowtopia:no:]
+ 
+ $onlyIf[$interactionData[values[0]]==help3]
+ `
 }]
