@@ -42,8 +42,10 @@ gunlukgelenpara: "500",
 
 //Kişi Değişkenleri
 devid: "980089372768624660",
+  
 //Öneri Kutusu Değişkenleri
 önerikutusu:"açık",
+  
 //Rozet Değişkenleri
 bughunterrozet: "Sahip Değilsin",
 premiumsahibirozet: "Sahip Değilsin",
@@ -66,13 +68,21 @@ yükselreisrozet: "Sahip Değilsin",
  jailchid: "undefined",
  jailroleid:"undefined",
   
-//GrowTopia Değişkenleri 
+//GrowTopia
+  
+      //World Locklar;
   wl:"0",
   dl:"0",
   elock:"0",
   rlock:"0",
   bgl:"0",
-  
+      //Bloklar;
+          //Mevcut Blok Değişkeni
+      mevcutblok:"",
+          //Toprak
+      toprakmingem:"3",
+      toprakmaxgem:"15",
+          //
 })
 
 bot.variables({
