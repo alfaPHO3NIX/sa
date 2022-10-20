@@ -76,12 +76,12 @@ $textSplit[$interactionData[customId];_;1]
     type:"interaction",
     prototype:"button",
     code:`
-    $interactionReply[;
+    $interactionReply[;{newEmbed:
     {title:Özel Oda | Ayarlar}
-    {description:Seçiniz.};{actionRow:
+    {description:Seçiniz.}};{actionRow:
     {button:Kanala Erişim Al:1:success:kerisimal_$authorID]
     {actionRow:
-    {Button:Özel Odanın Adını değiştir:1:oaddegis_$authorID]
+    {button:Özel Odanın Adını değiştir:1:oaddegis_$authorID]
     }
     }
     ]
