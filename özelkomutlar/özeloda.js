@@ -84,7 +84,7 @@ $textSplit[$interactionData[customId];_;1]
     {button:Özel Odanın Adını değiştir:1:oaddegis_$authorID:no:📝}
     }
     }
-    ]
+    ;;;yes]
     $onlyif[$get[authorID]==$interactionData[author.id];{
 "content" : "Bu Butonu Sadece Komutu Kullanan Kişi Basabilir",
 "ephemeral" : true,
@@ -120,12 +120,13 @@ $textSplit[$interactionData[customId];_;1]
     type:"interaction",
     prototype:"modal",
     code:`
-    $title[Özel Oda | Ayarlar]
-    $description[Erişim başarıyla Verildi!]
+    $interactionReply[;{newEmbed:
+    {title:Özel Oda | Ayarlar}
+    {description:** **\nErişim başarıyla Verildi!
+    ** **}
     $modifyChannelPerms[$authorID;$textInputValue[erisimModal];+viewchannel;+sendmessage;+addreactions]
     $setGlobalUserVar[ozelodaid;$textInputValue[erisimModal]]
     $onlyIf[$textInputValue[erisimModal]==$channelID[$getGlobalUserVar[ozelodaisim]];{newEmbed:{title:Özel Oda | Ayarlar * Hata}{description:Oda bilgilerinizdeki kanal ID yazdığınız kanal id ile uyuşmuyor}}]
-    $interactionReply[** **]
     `
   },{
     type:"interaction",
