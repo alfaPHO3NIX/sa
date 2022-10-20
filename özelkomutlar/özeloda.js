@@ -59,7 +59,7 @@ $textSplit[$interactionData[customId];_;1]
     prototype:"button",
     code:`
     $interactionReply[;{newEmbed:
-    {title:Özel Oda | Ayarlar * Kanal ID Kopyala}
+    {title:Özel Oda | Oda Bilgileri * Kanal ID Kopyala}
     {description:$if[$getGlobalUserVar[ozelodaid]!=0;$getGlobalUserVar[ozelodaid];$channelID[$getGlobalUserVar[ozelodaisim]]]
     };;;;yes]
     $onlyif[$get[authorID]==$interactionData[author.id];{
@@ -77,11 +77,14 @@ $textSplit[$interactionData[customId];_;1]
     prototype:"button",
     code:`
     $interactionReply[;
-    $title:Özel Oda | Ayarlar]
-    $description[Seçiniz.]
-    $addButton[1;Kanala Erişim Al;success;kerisimal_$authorID;no;🔓]
-    $addButton[2;Özel Odanın Adını değiştir;1;oaddegis_$authorID;no;📝]
-    
+    {title:Özel Oda | Ayarlar}
+    {description:Seçiniz.};{actionRow:
+    {button:Kanala Erişim Al:1:success:kerisimal_$authorID]
+    {actionRow:
+    {Button:Özel Odanın Adını değiştir:1:oaddegis_$authorID]
+    }
+    }
+    ]
     $onlyif[$get[authorID]==$interactionData[author.id];{
 "content" : "Bu Butonu Sadece Komutu Kullanan Kişi Basabilir",
 "ephemeral" : true,
