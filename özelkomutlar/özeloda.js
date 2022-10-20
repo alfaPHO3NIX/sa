@@ -39,8 +39,9 @@ $textSplit[$interactionData[customId];_;1]
   $getGlobalUserVar[ozelodaisim]
  Oda ID: 
  $if[$getGlobalUserVar[ozelodaid]!=0;$getGlobalUserVar[ozelodaid];$channelID[$getGlobalUserVar[ozelodaisim]]]
-  }};
-  {button:1:Kanal ID Kopyala:1:chidkopyala_$authorID;no}
+  }};{actionRow:
+  {button:Kanal ID Kopyala:1:chidkopyala_$authorID}
+  }
   ;;;yes]
   $onlyIf[$getVar[ozelodakategori1]!=0;{newEmbed:{title:Hata}{description:Görünüşe göre geliştirici özel odaların ekleneceği kategori id'yi belirtmemiş.\n\nLütfen bu hatayı geliştiriciye yada herhangi bir yetkiliye bildiriniz}}]
   $onlyif[$get[authorID]==$interactionData[author.id];{
@@ -57,10 +58,10 @@ $textSplit[$interactionData[customId];_;1]
     type:"interaction",
     prototype:"button",
     code:`
-    $deleteIn[20s]
-    $interactionReply[
-    $if[$getGlobalUserVar[ozelodaid]!=0;$getGlobalUserVar[ozelodaid];$channelID[$getGlobalUserVar[ozelodaisim]]]
-    ]
+    $interactionReply[;{newEmbed:
+    {title:Özel Oda | Ayarlar * Kanal ID Kopyala}
+    {description:$if[$getGlobalUserVar[ozelodaid]!=0;$getGlobalUserVar[ozelodaid];$channelID[$getGlobalUserVar[ozelodaisim]]]
+    };;;;yes]
     $onlyif[$get[authorID]==$interactionData[author.id];{
 "content" : "Bu Butonu Sadece Komutu Kullanan Kişi Basabilir",
 "ephemeral" : true,
@@ -75,8 +76,8 @@ $textSplit[$interactionData[customId];_;1]
     type:"interaction",
     prototype:"button",
     code:`
-    
-    $title[Özel Oda | Ayarlar]
+    $interactionReply[;
+    $title:Özel Oda | Ayarlar]
     $description[Seçiniz.]
     $addButton[1;Kanala Erişim Al;success;kerisimal_$authorID;no;🔓]
     $addButton[2;Özel Odanın Adını değiştir;1;oaddegis_$authorID;no;📝]
