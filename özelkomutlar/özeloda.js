@@ -33,14 +33,15 @@ $textSplit[$interactionData[customId];_;1]
   type:"interaction",
   prototype:"button",
   code: `
-  ** **
-  $title[Özel Oda | Oda Bilgileri]
-  $description[Oda Adı: 
+  $interactionReply[;{newEmbed:
+  {title:Özel Oda | Oda Bilgileri}
+  {description:Oda Adı: 
   $getGlobalUserVar[ozelodaisim]
  Oda ID: 
- $if[$getGlobalUserVar[ozelodaid]!=0;$getGlobalUserVar[ozelodaid];$channelID[$getGlobalUserVar[ozelodaisim]]]]
-  $addButton[1;Kanal ID Kopyala;1;chidkopyala_$authorID;no]
-  $interactionUpdate[** **]
+ $if[$getGlobalUserVar[ozelodaid]!=0;$getGlobalUserVar[ozelodaid];$channelID[$getGlobalUserVar[ozelodaisim]]]
+  }};
+  {button:1:Kanal ID Kopyala:1:chidkopyala_$authorID;no}
+  ;;;yes]
   $onlyIf[$getVar[ozelodakategori1]!=0;{newEmbed:{title:Hata}{description:Görünüşe göre geliştirici özel odaların ekleneceği kategori id'yi belirtmemiş.\n\nLütfen bu hatayı geliştiriciye yada herhangi bir yetkiliye bildiriniz}}]
   $onlyif[$get[authorID]==$interactionData[author.id];{
 "content" : "Bu Butonu Sadece Komutu Kullanan Kişi Basabilir",

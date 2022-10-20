@@ -1,6 +1,6 @@
 module.exports = [{
   name: "özelodaadmin",
-  aliases: ["özeloda-admin","ö admin","öa."],
+  aliases: ["özeloda-admin","ö admin","öa"],
   code: `
   $title[Özel Oda | Admin Menüsü]
   $description[Seçim Yapınız.]
