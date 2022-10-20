@@ -79,9 +79,9 @@ $textSplit[$interactionData[customId];_;1]
     $interactionReply[;{newEmbed:
     {title:Özel Oda | Ayarlar}
     {description:Seçiniz.}};{actionRow:
-    {button:Kanala Erişim Al:1:success:kerisimal_$authorID]
+    {button:Kanala Erişim Al:3:kerisimal_$authorID:no:🔓}
     {actionRow:
-    {button:Özel Odanın Adını değiştir:1:oaddegis_$authorID]
+    {button:Özel Odanın Adını değiştir:1:oaddegis_$authorID:no:📝}
     }
     }
     ]
