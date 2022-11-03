@@ -22,6 +22,7 @@ loader.load(bot.cmd, "./özelkomutlar")
 loader.load(bot.cmd, "./eğlence")
 loader.load(bot.cmd, "./mücevher eko")
 loader.load(bot.cmd, "./Etkinlik")
+loader.load(bot.cmd, "./Keyfine")
 
 bot.variables({
 //Ekonomi Değişkenleri
@@ -84,10 +85,8 @@ yükselreisrozet: "Sahip Değilsin",
           //Toprak
       toprakmingem:"3",
       toprakmaxgem:"15",
-          //
-  abonerol:"1031609913518071868",
-  abonekanal:"1030549010919997440",
-  aboneyt:"1030054998316425246",
+     //Butonlu Kayıt
+  
 })
 
 bot.variables({
