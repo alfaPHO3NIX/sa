@@ -13,7 +13,7 @@ module.exports = [{
   code:`
   $interactionModal[Kayıt Ol;kayitModal;
   {actionRow:
-     
+     {textInput:Adın Nedir?:1:isimInput:yes:Ahmet:5:25}
   
   
   }]
