@@ -4,7 +4,7 @@ module.exports = [{
   code: `
   $title[Snors Code]
   $description[Kayıt Olmak için Tıkla!]
-  $addButton[1;Kayıt Ol;success;kayitol;no]
+  $addButton[1;Kayıt Ol;success;kayitol;no;➕]
   `
 },{
   name:"kayitol",
@@ -13,9 +13,9 @@ module.exports = [{
   code:`
   $interactionModal[Kayıt Ol;kayitModal;
   {actionRow:
-     {textInput:Adın Nedir?:1:isimInput:yes:Ahmet:5:25}
-  
-  
+     {textInput:Adın Nedir?:1:isimInput:yes:Furkan:5:25}
+  {actionRow:
+     {textInput:Kaç Yaşındasın?:1:yasInput:yes:19:1:2}
   }]
   `
   
