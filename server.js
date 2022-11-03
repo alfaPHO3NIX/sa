@@ -86,7 +86,8 @@ yükselreisrozet: "Sahip Değilsin",
       toprakmingem:"3",
       toprakmaxgem:"15",
      //Butonlu Kayıt
-  
+  logkanal:"0",
+  uyerolid:"979834024463859752",
 })
 
 bot.variables({
