@@ -20,4 +20,14 @@ module.exports = [{
   `
   
   
+},{
+  name:"kayitModal",
+  type:"interaction",
+  prototype:"modal",
+  code:`
+  
+  $interactionReply[sa deneme]
+  `
+  
+  
 }]
