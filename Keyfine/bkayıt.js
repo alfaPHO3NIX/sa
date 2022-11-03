@@ -25,8 +25,8 @@ module.exports = [{
   type:"interaction",
   prototype:"modal",
   code:`
-  $giveRole[$guildID;$authorID;$getServerVar[uyerolid]]
-  $changeNickname[$authorID;$textInputValue[isimInput] $textInputValue[yasInput];sa]
+  $giveRole[$guildID;$authorID;$getVar[uyerolid]]
+  $changeNickname[$authorID;Selam;sa]
   $interactionReply[Başarıyla Kayıt Oldun!;;;;;yes]
   `
   
