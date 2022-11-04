@@ -2,9 +2,9 @@ module.exports = {
   name: "kaz",
   aliases: ["dig"],
   code: `
-  $setGlobalUserVar[mücevher;$sum[$getglobalUserVar[mücevher];$random[$getVar[toprakmingem];$getVar[toprakmaxgem]]]]
+  $setGlobalUserVar[mücevher;$sum[$getGlobalUserVar[mücevher];$random[$getVar[$getGlobalUserVar[mevcutblok]mingem];$getVar[$getGlobalUserVar[mevcutblok]maxgem]]]]
   $title[Blok Kazıldı]
-  $description[Kazılan Blok: $getGlobalUserVar[Elmas Blok]
+  $description[Kazılan Blok: $getGlobalUserVar[mevcutblok]
   Kazanılan Mücevher: $random[$getGlobalUserVar[$getGlobalUserVar[mevcutblok]mingem];$getGlobalUserVar[$getGlobalUserVar[mevcutblok]maxgem]]
   ]
   `
