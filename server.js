@@ -86,8 +86,8 @@ yükselreisrozet: "Sahip Değilsin",
       toprakmingem:"3",
       toprakmaxgem:"15",
          //Elmas Blok
-      "Elmas Blokmingem":"50",
-      "Elmas Blokmaxgem":"250",
+      "Elmas Blokmingem":"500",
+      "Elmas Blokmaxgem":"2500",
 //Butonlu Kayıt
   logkanal:"0",
   uyerolid:"979834024463859752",
