@@ -88,6 +88,8 @@ yükselreisrozet: "Sahip Değilsin",
          //Elmas Blok
       "Elmas Blokmingem":"500",
       "Elmas Blokmaxgem":"2500",
+      "Elmas Bloknblok":"yok",
+      "Elmas Bloknbfiyat":"",
 //Butonlu Kayıt
   logkanal:"0",
   uyerolid:"979834024463859752",
