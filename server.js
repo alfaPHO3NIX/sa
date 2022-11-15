@@ -28,14 +28,14 @@ bot.variables({
 //Ekonomi Değişkenleri
 mücevher: "0",
 para: "0",
-parasembol: "TL",
+parasembol: "DÖL",
 
-//Bot Status Değilkenleri
+//Bot Status Değişkenleri
 botadi: "xFrkn_",
 prefix: "!",
 
  //Premium Değişkenleri
-  premium: "Var",
+  premium: "Yok",
 //Kasa Değişkenleri
 katlamakasasicarpan: "0",
 

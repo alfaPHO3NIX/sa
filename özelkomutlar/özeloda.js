@@ -83,6 +83,9 @@ $textSplit[$interactionData[customId];_;1]
     {actionRow:
     {button:Özel Odanın Adını değiştir:1:oaddegis_$authorID:no:📝}
     }
+    {actionRow:
+    {button:Özel Odayı Sil:danger:ozelodasil_$authorID:no:🗑️}
+    }
     }
     ;;;yes]
     $onlyif[$get[authorID]==$interactionData[author.id];{
