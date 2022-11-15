@@ -4,8 +4,8 @@ module.exports = [{
   code: `
   $title[Özel Oda | Admin Menüsü]
   $description[Seçim Yapınız.]
-  $addButton[1;Kategori ID Ayarla;1;katidayarla_$authorID;no;📝]
-  $addButton[2;İsim Değişim Talep Logu Ayarla;öisimdegistlplog_$]
+  $addButton[1;Kategori ID Ayarla;1;katidayarla_$authorID;no]
+  $addButton[2;İsim Değişim Talep Logu Ayarla;1;öisimdegistlplog_$authorID;no;1030569737001898094]
   $onlyForIDs[$botOwnerID;Yekin Yok $CustomEmoji[reddet]]
   `
 },{
