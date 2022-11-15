@@ -16,7 +16,7 @@ module.exports = [{
   $interactionReply[Oda Başarıyla Oluşturuldu!;;;;;yes]
  $createChannel[$guildID;$random[1000;9999]-özel-oda;text;no;$getVar[ozelodakategori]]
  $setGlobalUserVar[ozelodaisim;$random[1000;9999]-özel-oda]
- 
+ $setGlobalUserVar[ozeloda;var]
  $onlyif[$get[authorID]==$interactionData[author.id];{
 "content" : "Bu Butonu Sadece Komutu Kullanan Kişi Basabilir",
 "ephemeral" : true,
@@ -43,6 +43,7 @@ $textSplit[$interactionData[customId];_;1]
   {button:Kanal ID Kopyala:1:chidkopyala_$authorID}
   }
   ;;;yes]
+  $onlyIf[$getGlobalUserVar[ozeloda==var;{newEmbed:{titleÖzel Oda Menü | Oda Bilgileri * Hata}{description:\nSenin Bir Özel Odan Yok!}]]
   $onlyIf[$getVar[ozelodakategori1]!=0;{newEmbed:{title:Hata}{description:Görünüşe göre geliştirici özel odaların ekleneceği kategori id'yi belirtmemiş.\n\nLütfen bu hatayı geliştiriciye yada herhangi bir yetkiliye bildiriniz}}]
   $onlyif[$get[authorID]==$interactionData[author.id];{
 "content" : "Bu Butonu Sadece Komutu Kullanan Kişi Basabilir",
@@ -166,9 +167,12 @@ $textSplit[$interactionData[customId];_;1]
     type:"interaction",
     prototype:"button",
     code:`
-    $if[$getGlobalUserVar[ozelodaid]>0;$interactionReply[Özel Odanız Başarıyla Silinmiştir.;;;;;yes] $resetGlobalUserVar[ozelodaisim] $resetGlobalUserVar[ozelodaid];$interactionReply[Oooww... Dostum bir sorunumuz var O_O Kanala erişim almadın ya da bir özel odan yok!;;;;;yes]]
+    $interactionReply[Özel Odanız Başarıyla Silinmiştir.;;;;;yes]
+    $resetGlobalUserVar[ozelodaid]
+    $resetGlobalUserVar[ozelodaisim]
+    $resetGlobalUserVar[ozeloda]
     $deleteChannels[$getGlobalUserVar[ozelodaid]]
-    
+    $suppressErrors[Bir Hata Oluştu!?!?! Kanala Erişim Almamış Olabilirsin ya da Özel Odan Olmayabilir.]
     $onlyif[$get[authorID]==$interactionData[author.id];{
 "content" : "Bu Butonu Sadece Komutu Kullanan Kişi Basabilir",
 "ephemeral" : true,
