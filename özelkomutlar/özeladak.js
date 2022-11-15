@@ -44,4 +44,23 @@ $textSplit[$interactionData[customId];_;1]
   `
   
   
+},{
+  type:"interaction",
+  prototype:"button",
+  code:`
+  $interactionModal[İsim Değişim Talep Logu Kanalı Ayarla;]
+  
+$onlyif[$get[authorID]==$interactionData[author.id];{
+"content" : "Bu Butonu Sadece Komutu Kullanan Kişi Basabilir",
+"ephemeral" : true,
+"options" : { "interaction" : true }
+}]
+$onlyIf[$get[customId]==öisimdegistlplog;]
+$let[authorID;$splitText[2]]
+$let[customId;$splitText[1]] 
+$textSplit[$interactionData[customId];_;1]
+  `
+  
+  
+  
 }]
