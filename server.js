@@ -66,7 +66,7 @@ yükselreisrozet: "Sahip Değilsin",
   ozeloda:"yok",//Özel Odanın açılıp açılmadığını kontrol eder.
   ozelodakategori:"undefined",//Kategori ID nin kaydedildiği değişken.
   ozelodakategori1:"0",//Kategorinin açılıp açılmadığını kontrol eder.
-
+      //Logları
 //Jail Değişkenleri
  jailchid: "undefined",
  jailroleid:"undefined",

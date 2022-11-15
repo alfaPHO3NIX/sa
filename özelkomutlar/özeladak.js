@@ -49,7 +49,7 @@ $textSplit[$interactionData[customId];_;1]
   prototype:"button",
   code:`
   $interactionModal[İsim Değişim Talep Logu Kanalı Ayarla;öismtlplogModal;{actionRow:
-  {textInput:Talep Log Kanal ID'sini Giriniz:1:öismtlplog:yes:(örnek)2729172639183738272}
+  {textInput:Talep Log Kanal ID'sini Giriniz:1:öismtlplog:yes:(örnek)2729172639183738272:19:19}
   }
   
   ]
@@ -65,6 +65,13 @@ $let[customId;$splitText[1]]
 $textSplit[$interactionData[customId];_;1]
   `
   
+  
+  
+},{
+  name:"öismtlplogModal",
+  type:"interaction",
+  prototype:"modal",
+  code :`sa`
   
   
 }]
