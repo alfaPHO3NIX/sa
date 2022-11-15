@@ -162,6 +162,22 @@ $textSplit[$interactionData[customId];_;1]
     code:`
     $editChannel[$getGlobalUserVar[ozelodaid];$default;d;$default;$default;$default;$default;yes]
     `
+  },{
+    type:"interaction",
+    prototype:"button",
+    code:`slekk
+    
+    
+    $onlyif[$get[authorID]==$interactionData[author.id];{
+"content" : "Bu Butonu Sadece Komutu Kullanan Kişi Basabilir",
+"ephemeral" : true,
+"options" : { "interaction" : true }
+}]
+$onlyIf[$get[customId]==ozelodasil;]
+$let[authorID;$splitText[2]]
+$let[customId;$splitText[1]] 
+$textSplit[$interactionData[customId];_;1]
+    `
   }
     
   ]
