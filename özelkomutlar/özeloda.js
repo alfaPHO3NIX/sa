@@ -169,7 +169,7 @@ $textSplit[$interactionData[customId];_;1]
     
     
     
-    $onlyIf[$getGlobalUserVar[ozelodaid]!=1;Oooww... Dostum bir sorunumuz var O_O Kanala erişim almadın ya da bir özel odan yok!]
+    $onlyIf[$getGlobalUserVar[ozelodaid]!=0;$interactionReply[Oooww... Dostum bir sorunumuz var O_O Kanala erişim almadın ya da bir özel odan yok!;;;;;yes]]
     
     
     $onlyif[$get[authorID]==$interactionData[author.id];{
