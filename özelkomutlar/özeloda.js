@@ -165,7 +165,11 @@ $textSplit[$interactionData[customId];_;1]
   },{
     type:"interaction",
     prototype:"button",
-    code:`slekk
+    code:`
+    
+    
+    
+    $onlyIf[$getGlobalUserVar[ozelodaid]!=1;Oooww... Dostum bir sorunumuz var O_O Kanala erişim almadın ya da bir özel odan yok!]
     
     
     $onlyif[$get[authorID]==$interactionData[author.id];{
