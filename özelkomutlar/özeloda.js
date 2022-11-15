@@ -166,11 +166,8 @@ $textSplit[$interactionData[customId];_;1]
     type:"interaction",
     prototype:"button",
     code:`
-    $interactionReply[Özel Odanız Başarıyla Silinmiştir.;;;;;yes]
+    $if[$getGlobalUserVar[ozelodaid]>0;$interactionReply[Özel Odanız Başarıyla Silinmiştir.;;;;;yes] $resetGlobalUserVar[ozelodaisim] $resetGlobalUserVar[ozelodaid];$interactionReply[Oooww... Dostum bir sorunumuz var O_O Kanala erişim almadın ya da bir özel odan yok!;;;;;yes]]
     $deleteChannels[$getGlobalUserVar[ozelodaid]]
-    $resetGlobalUserVar[ozelodaisim]
-    $resetGlobalUserVar[ozelodaid]
-    $onlyIf[$getGlobalUserVar[ozelodaid]!=0;$interactionReply[Oooww... Dostum bir sorunumuz var O_O Kanala erişim almadın ya da bir özel odan yok!;;;;;yes]]
     
     $onlyif[$get[authorID]==$interactionData[author.id];{
 "content" : "Bu Butonu Sadece Komutu Kullanan Kişi Basabilir",
