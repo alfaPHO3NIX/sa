@@ -48,7 +48,11 @@ $textSplit[$interactionData[customId];_;1]
   type:"interaction",
   prototype:"button",
   code:`
-  $interactionModal[İsim Değişim Talep Logu Kanalı Ayarla;]
+  $interactionModal[İsim Değişim Talep Logu Kanalı Ayarla;öismtlplogModal;{actionRow:
+  {textInput:Talep Log Kanal ID'sini Giriniz:1:öismtlplog:yes:(örnek)2729172639183738272}
+  }
+  
+  ]
   
 $onlyif[$get[authorID]==$interactionData[author.id];{
 "content" : "Bu Butonu Sadece Komutu Kullanan Kişi Basabilir",
