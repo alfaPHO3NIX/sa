@@ -4,14 +4,15 @@ module.exports = [{
   code: `
   $title[Özel Oda | Admin Menüsü]
   $description[Seçim Yapınız.]
-  $addButton[1;Kategori ID Ayarla;1;katidayarla_$authorID]
-  $onlyPerms[admin;Yekin Yok $CustomEmoji[reddet]]
+  $addButton[1;Kategori ID Ayarla;1;katidayarla_$authorID;no;📝]
+  $addButton[2;İsim Değişim Talep Logu Ayarla;öisimdegistlplog_$]
+  $onlyForIDs[$botOwnerID;Yekin Yok $CustomEmoji[reddet]]
   `
 },{
   type:"interaction",
   prototype:"button",
   code:`
-  $interactionModal[Hello there!;katModals;
+  $interactionModal[Kategori ID Ayarla;katModals;
     {actionRow:
       {textInput:Kategori ID Giriniz:1:kModal:yes:(Örnek)10363825383638253027:19:19}
     }
@@ -34,12 +35,12 @@ $textSplit[$interactionData[customId];_;1]
   type:"interaction",
   prototype:"modal",
   code:`
-  $interactionReply[;
-  {title:Başarılı $customEmoji[onayla]}
-  {description:Kategori ID Başarıyla Ayarlandı\n\nEğer kanal id yazarsanız kabul eder fakat özel oda oluştururken hata alırsınız.}
-  ]
-  $setVar[ozelodakategori;$textInputValue[kModals]]
-  $onlyIf[$channelExists[$textInputValue[kModal]]!=false;$interactionReply[;{newEmbed:{title:Özel Oda | Admin Menüsü * Hata}{description:Bu kategori bulunamadı}}]]
+  $interactionReply[Kategori <#$textInputValue[kModal]> olarak ayarlandı!;;;;;yes]
+  $setVar[ozelodakategori;$textInputValue[kModal]]
+  $setVar[ozelodakategori1;1]
+  $modifyChannelPerms[$GuildID;$textInputValue[kModal];-viewchannel;-addreactions;-sendmessage]
+  $suppressErrors[Ow dostum bir hata oluştu. kategori ID'yi yanlış yazmış olabilirsin!]
+  
   `
   
   
