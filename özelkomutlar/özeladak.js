@@ -74,8 +74,8 @@ $textSplit[$interactionData[customId];_;1]
   code :`
   
   $interactionReply[Talep Logu Başarıyla Ayarlandı $customEmoji[onayla];;;;;yes]
-  $setVar[öismdegistlplog;$textInputValue[öismdegistlplog]]
-  $onlyIf[$channelExists[$textInputValue[öismtlplog]]==true;$interactionReply[;{newEmbed:{title:Özel Oda | Admin Menüsü | İsim Değişim Talep Logu Ayarla * Hata}{description:\n** **$customEmoji[reddet] Böyle bir kanal bulunamadı!\n** **}};;;;yes]]
+  $setVar[öismdegistlplog;$textInputValue[öismtlplog]]
+  $onlyIf[$serverChannelExists[$textInputValue[öismtlplog]]!=false;$interactionReply[;{newEmbed:{title:Özel Oda | Admin Menüsü | İsim Değişim Talep Logu Ayarla * Hata}{description:\n** **$customEmoji[reddet] Böyle bir kanal bulunamadı!\n** **}};;;;yes]]
   `
   
   
