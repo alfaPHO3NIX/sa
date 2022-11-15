@@ -71,7 +71,12 @@ $textSplit[$interactionData[customId];_;1]
   name:"öismtlplogModal",
   type:"interaction",
   prototype:"modal",
-  code :`sa`
+  code :`
+  
+  
+  
+  $onlyIf[$channelExists[$textInputValue[öismtlplog]]==true;{newEmbed:{title:Özel Oda | Admin Menüsü | }}]
+  `
   
   
 }]

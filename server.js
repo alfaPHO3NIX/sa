@@ -28,7 +28,7 @@ bot.variables({
 //Ekonomi Değişkenleri
 mücevher: "0",
 para: "0",
-parasembol: "DÖL",
+parasembol: "VLC",
 
 //Bot Status Değişkenleri
 botadi: "xFrkn_",
@@ -66,7 +66,8 @@ yükselreisrozet: "Sahip Değilsin",
   ozeloda:"yok",//Özel Odanın açılıp açılmadığını kontrol eder.
   ozelodakategori:"undefined",//Kategori ID nin kaydedildiği değişken.
   ozelodakategori1:"0",//Kategorinin açılıp açılmadığını kontrol eder.
-      //Logları
+      //Loglar
+         öismdegistlplog:"0",
 //Jail Değişkenleri
  jailchid: "undefined",
  jailroleid:"undefined",
