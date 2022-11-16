@@ -76,7 +76,7 @@ $textSplit[$interactionData[customId];_;1]
   $interactionReply[Talep Logu Başarıyla Ayarlandı $customEmoji[onayla];;;;;yes]
   $setVar[öismdegistlplog;$textInputValue[öismtlplog]]
   $modifyChannelPerms[$guildID;$textInputValue[öismtlplog];-sendmessage]
-  $suppressErrors[$interactionReply[Bir Hata Oluştu! Lütfen Kanal ID'sini Doğru Yazdığından Emin Ol.;;;;;yes]]
+  $suppressErrors[Bir Hata Oluştu! Lütfen Kanal ID'sini Doğru Yazdığından Emin Ol.]
   `
   
   
