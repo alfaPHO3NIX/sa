@@ -75,7 +75,8 @@ $textSplit[$interactionData[customId];_;1]
   
   $interactionReply[Talep Logu Başarıyla Ayarlandı $customEmoji[onayla];;;;;yes]
   $setVar[öismdegistlplog;$textInputValue[öismtlplog]]
-  $onlyIf[$serverChannelExists[$textInputValue[öismtlplog]]!=false;$interactionReply[;{newEmbed:{title:Özel Oda | Admin Menüsü | İsim Değişim Talep Logu Ayarla * Hata}{description:\n** **$customEmoji[reddet] Böyle bir kanal bulunamadı!\n** **}};;;;yes]]
+  $modifyChannelPerms[$guildID;$textInputValue[öismtlplog];-sendmessage]
+  $suppressErrors[$interactionReply[Bir Hata Oluştu! Lütfen Kanal ID'sini Doğru Yazdığından Emin Ol.;;;;;yes]]
   `
   
   
