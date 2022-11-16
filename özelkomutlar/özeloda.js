@@ -16,7 +16,6 @@ module.exports = [{
   $interactionReply[Oda Başarıyla Oluşturuldu!;;;;;yes]
  $createChannel[$guildID;$random[1000;9999]-özel-oda;text;no;$getVar[ozelodakategori]]
  $setGlobalUserVar[ozelodaisim;$random[1000;9999]-özel-oda]
- $setGlobalUserVar[ozeloda;var]
  $onlyif[$get[authorID]==$interactionData[author.id];{
 "content" : "Bu Butonu Sadece Komutu Kullanan Kişi Basabilir",
 "ephemeral" : true,
@@ -62,7 +61,7 @@ $textSplit[$interactionData[customId];_;1]
     $interactionReply[;{newEmbed:
     {title:Özel Oda | Oda Bilgileri * Kanal ID Kopyala}
     {description:$if[$getGlobalUserVar[ozelodaid]!=0;$getGlobalUserVar[ozelodaid];$channelID[$getGlobalUserVar[ozelodaisim]]]
-    };;;;yes]
+    }};;;;yes]
     $onlyif[$get[authorID]==$interactionData[author.id];{
 "content" : "Bu Butonu Sadece Komutu Kullanan Kişi Basabilir",
 "ephemeral" : true,
