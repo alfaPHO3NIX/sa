@@ -43,7 +43,7 @@ $textSplit[$interactionData[customId];_;1]
   {button:Kanal ID Kopyala:1:chidkopyala_$authorID}
   }
   ;;;yes]
-  $onlyIf[$getGlobalUserVar[ozeloda]==var;{newEmbed:{title:Özel Oda Menü | Oda Bilgileri * Hata}{description:\nSenin Bir Özel Odan Yok!}}]
+  $onlyIf[$getGlobalUserVar[ozeloda]==var;$interactionReply[;{newEmbed:{title:Özel Oda Menü | Oda Bilgileri * Hata}{description:\nSenin Bir Özel Odan Yok!}};;;;yes]]
   $onlyIf[$getVar[ozelodakategori1]!=0;{newEmbed:{title:Hata}{description:Görünüşe göre geliştirici özel odaların ekleneceği kategori id'yi belirtmemiş.\n\nLütfen bu hatayı geliştiriciye yada herhangi bir yetkiliye bildiriniz}}]
   $onlyif[$get[authorID]==$interactionData[author.id];{
 "content" : "Bu Butonu Sadece Komutu Kullanan Kişi Basabilir",
