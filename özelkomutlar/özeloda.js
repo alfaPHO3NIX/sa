@@ -89,6 +89,7 @@ $textSplit[$interactionData[customId];_;1]
     }
     }
     ;;;yes]
+    $onlyIf[$getGlobalUserVar[ozeloda]==var;$interactionReply[;{newEmbed:{title:Özel Oda Menü * Hata}{description:\nSenin Bir Özel Odan Yok!}};;;;yes]]
     $onlyif[$get[authorID]==$interactionData[author.id];{
 "content" : "Bu Butonu Sadece Komutu Kullanan Kişi Basabilir",
 "ephemeral" : true,
