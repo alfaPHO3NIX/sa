@@ -155,7 +155,7 @@ bot.awaitedCommand({
 bot.awaitedCommand({
   name:"hyr",
   code:`
-  $gşve
+  $giveRoles[$guildID;$randomUserID;1042570930758635601]
 
   `
 
