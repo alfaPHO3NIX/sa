@@ -155,9 +155,7 @@ bot.awaitedCommand({
 bot.awaitedCommand({
   name:"hyr",
   code:`
-  $clearReactions[$channelID;$message[1];all]
-  $editMessage[$message[1];{color:RED}
-  {author:$userTag[$mentioned[1]] Kişisine Abone Rolü Vermeyi Reddettiniz !:$userAvatar[$mentioned[1]]}]
+  $gşve
 
   `
 
