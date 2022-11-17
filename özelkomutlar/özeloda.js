@@ -14,9 +14,10 @@ module.exports = [{
   prototype: "button",
   code: `
   $interactionReply[Oda Başarıyla Oluşturuldu!;;;;;yes]
- $loop[1;{};öayrlavar]
+ $loop[1;{};hyr]
  $createChannel[$guildID;$random[1000;9999]-özel-oda;text;no;$getVar[ozelodakategori]]
  $setGlobalUserVar[ozelodaisim;$random[1000;9999]-özel-oda]
+ $setG
  $onlyif[$get[authorID]==$interactionData[author.id];{
 "content" : "Bu Butonu Sadece Komutu Kullanan Kişi Basabilir",
 "ephemeral" : true,
