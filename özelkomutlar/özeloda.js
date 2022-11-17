@@ -44,7 +44,7 @@ $textSplit[$interactionData[customId];_;1]
   }
   ;;;yes]
   $onlyIf[$getVar[ozelodakategori1]!=0;{newEmbed:{title:Hata}{description:Görünüşe göre geliştirici özel odaların ekleneceği kategori id'yi belirtmemiş.\n\nLütfen bu hatayı geliştiriciye yada herhangi bir yetkiliye bildiriniz}}]
-  $onlyIf[$getGlobalUserVar[ozeloda]!=yok;$interactionReply[;{newEmbed:{title:Özel Oda Menü | Oda Bilgileri * Hata}{description:\nSenin Bir Özel Odan Yok!}};;;;yes]]
+  $onlyIf[$getGlobalUserVar[ozeloda]!=yok;{newEmbed:{title:Özel Oda Menü | Oda Bilgileri * Hata}{description:\nSenin Bir Özel Odan Yok!}}]
   $onlyif[$get[authorID]==$interactionData[author.id];
 {"content" : "Bu Butonu Sadece Komutu Kullanan Kişi Basabilir",
 "ephemeral" : true,
@@ -127,7 +127,7 @@ $textSplit[$interactionData[customId];_;1]
     $interactionReply[;{newEmbed:
     {title:Özel Oda | Ayarlar}
     {description:** **\nErişim başarıyla Verildi!
-    ** **}
+    ** **}};;;;yes]
     $modifyChannelPerms[$authorID;$textInputValue[erisimModal];+viewchannel;+sendmessage;+addreactions]
     $setGlobalUserVar[ozelodaid;$textInputValue[erisimModal]]
     $onlyIf[$textInputValue[erisimModal]==$channelID[$getGlobalUserVar[ozelodaisim]];{newEmbed:{title:Özel Oda | Ayarlar * Hata}{description:Oda bilgilerinizdeki kanal ID yazdığınız kanal id ile uyuşmuyor}}]
