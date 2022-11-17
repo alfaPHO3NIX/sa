@@ -13,6 +13,6 @@ module.exports = {
   }
   
   }]
-  
+  $onlyPerms[admin;Yetkin Yok.]
   `
 }
