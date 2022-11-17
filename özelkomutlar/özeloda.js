@@ -183,5 +183,5 @@ $let[authorID;$splitText[2]]
 $let[customId;$splitText[1]] 
 $textSplit[$interactionData[customId];_;1]
     `
-  }}
+  }
    ]

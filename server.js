@@ -155,7 +155,7 @@ bot.awaitedCommand({
 bot.awaitedCommand({
   name:"hyr",
   code:`
-  $giveRoles[$guildID;$randomUserID;1042570930758635601]
+   $setGlobalUserVar[ozeloda;var]
 
   `
 
