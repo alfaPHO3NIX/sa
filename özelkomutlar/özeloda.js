@@ -17,7 +17,7 @@ module.exports = [{
  $createChannel[$guildID;$random[1000;9999]-özel-oda;text;no;$getVar[ozelodakategori]]
  $setGlobalUserVar[ozelodaisim;$random[1000;9999]-özel-oda]
  $setGlobalUserVar[ozeloda;var]
- $onlyIf[$getGlobalUserVar[ozeloda]!=var;Zaten Bir özel odan var!]
+ $onlyIf[$getGlobalUserVar[ozeloda]!=var;Zaten Bir Özel Odan Var!]
  $onlyif[$get[authorID]==$interactionData[author.id];{
 "content" : "Bu Butonu Sadece Komutu Kullanan Kişi Basabilir",
 "ephemeral" : true,
@@ -45,7 +45,7 @@ $textSplit[$interactionData[customId];_;1]
   }
   ;;;yes]
   $onlyIf[$getVar[ozelodakategori1]!=0;{newEmbed:{title:Hata}{description:Görünüşe göre geliştirici özel odaların ekleneceği kategori id'yi belirtmemiş.\n\nLütfen bu hatayı geliştiriciye yada herhangi bir yetkiliye bildiriniz}}]
-  $onlyIf[$getGlobalUserVar[ozeloda]!=yok;Senin Bir Özel Odan Yok!]
+  $onlyIf[$getGlobalUserVar[ozeloda]!=yok;$interactionReply[Senin Bir Özel Odan Yok!]]
   $onlyif[$get[authorID]==$interactionData[author.id];
 {"content" : "Bu Butonu Sadece Komutu Kullanan Kişi Basabilir",
 "ephemeral" : true,
@@ -162,7 +162,7 @@ $textSplit[$interactionData[customId];_;1]
     type:"interaction",
     prototype:"modal",
     code:`
-    $editChannel[$getGlobalUserVar[ozelodaid];$default;d;$default;$default;$default;$default;yes]
+    $sendMessage[]
     `
   },{
     type:"interaction",
