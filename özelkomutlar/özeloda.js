@@ -17,6 +17,7 @@ module.exports = [{
  $createChannel[$guildID;$random[1000;9999]-özel-oda;text;no;$getVar[ozelodakategori]]
  $setGlobalUserVar[ozelodaisim;$random[1000;9999]-özel-oda]
  $setGlobalUserVar[ozeloda;var]
+ $onlyIf[$getGlobalUserVar[ozeloda]!=var;Zaten Bir özel odan var!]
  $onlyif[$get[authorID]==$interactionData[author.id];{
 "content" : "Bu Butonu Sadece Komutu Kullanan Kişi Basabilir",
 "ephemeral" : true,
