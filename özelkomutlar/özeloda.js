@@ -14,6 +14,8 @@ module.exports = [{
   prototype: "button",
   code: `
   $interactionReply[Oda Başarıyla Oluşturuldu! <#$channelID[$random[1000;9999]-özel-oda]>;;;;;yes]
+ $setGlobalUserVar[ozelodaid;$channelID[$random[1000;9999]-özel-oda]]
+ $modifyChannelPerms[$authorID;$channelID[$random[1000;9999]-özel-oda];+viewchannel;+sendmessage;+addreactions]
  $createChannel[$guildID;$random[1000;9999]-özel-oda;text;no;$getVar[ozelodakategori]]
  $setGlobalUserVar[ozelodaisim;$random[1000;9999]-özel-oda]
  $setGlobalUserVar[ozeloda;var]
