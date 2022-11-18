@@ -3,6 +3,7 @@ module.exports = [{
   aliases: ["özel-oda","ö"],
   code: `
   $title[Özel Oda Menü]
+  $footer[<@$authorID>]
   $addButton[3;Ayarlar;2;ayarlar_$authorID;no;⚙️]
   $addButton[1;Oda Oluştur;success;odaolustur_$authorID;no;💬]
   $addButton[2;Oda Bilgileri;1;odabilgileri_$authorID;no;❔]
