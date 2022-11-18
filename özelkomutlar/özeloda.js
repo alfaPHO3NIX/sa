@@ -93,7 +93,7 @@ $textSplit[$interactionData[customId];_;1]
     }
     }
     ;;;yes]
-    $onlyIf[$getGlobalUserVar[ozeloda]!=yok;{newEmbed:{title:Özel Oda | Oda Bilgileri * Hata}{description:\nSenin Bir Özel Odan Yok!}{delete:3s}}]
+    $onlyIf[$getGlobalUserVar[ozeloda]!=yok;{newEmbed:{title:Özel Oda | Ayarlar * Hata}{description:\nSenin Bir Özel Odan Yok!}{delete:3s}}]
     $onlyif[$get[authorID]==$interactionData[author.id];{
 "content" : "Bu Butonu Sadece Komutu Kullanan Kişi Basabilir",
 "ephemeral" : true,
@@ -115,7 +115,7 @@ $textSplit[$interactionData[customId];_;1]
 
        }
       ]
-    $onlyIf[$getGlobalUserVar[ozeloda]!=yok;{newEmbed:{title:Özel Oda | Oda Bilgileri * Hata}{description:\nSenin Bir Özel Odan Yok!}{delete:3s}}]
+    $onlyIf[$getGlobalUserVar[ozeloda]!=yok;{newEmbed:{title:Özel Oda | Ayarlar | İsim Değiştir * Hata}{description:\nSenin Bir Özel Odan Yok!}{delete:3s}}]
     $onlyif[$get[authorID]==$interactionData[author.id];{
 "content" : "Bu Butonu Sadece Komutu Kullanan Kişi Basabilir",
 "ephemeral" : true,
@@ -149,7 +149,7 @@ $textSplit[$interactionData[customId];_;1]
     $resetGlobalUserVar[ozeloda]
     $deleteChannels[$getGlobalUserVar[ozelodaid]]
     $suppressErrors[Bir Hata Oluştu!?!?! Kanala Erişim Almamış Olabilirsin ya da Özel Odan Olmayabilir.]
-    $onlyIf[$getGlobalUserVar[ozeloda]!=yok;{newEmbed:{title:Özel Oda | Oda Bilgileri * Hata}{description:\nSenin Bir Özel Odan Yok!}{delete:3s}}]
+    $onlyIf[$getGlobalUserVar[ozeloda]!=yok;{newEmbed:{title:Özel Oda | Ayarlar | Özel Odayı Sil * Hata}{description:\nSenin Bir Özel Odan Yok!}{delete:3s}}]
     $onlyif[$get[authorID]==$interactionData[author.id];{
 "content" : "Bu Butonu Sadece Komutu Kullanan Kişi Basabilir",
 "ephemeral" : true,
