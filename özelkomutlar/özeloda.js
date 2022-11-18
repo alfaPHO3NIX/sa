@@ -123,19 +123,6 @@ $let[customId;$splitText[1]]
 $textSplit[$interactionData[customId];_;1]
     `
   },{
-    name:"kaerisimModal",
-    type:"interaction",
-    prototype:"modal",
-    code:`
-    $interactionReply[;{newEmbed:
-    {title:Özel Oda | Ayarlar}
-    {description:** **\nErişim başarıyla Verildi!
-    ** **}};;;;yes]
-    $modifyChannelPerms[$authorID;$textInputValue[erisimModal];+viewchannel;+sendmessage;+addreactions]
-    $setGlobalUserVar[ozelodaid;$textInputValue[erisimModal]]
-    $onlyIf[$textInputValue[erisimModal]==$channelID[$getGlobalUserVar[ozelodaisim]];{newEmbed:{title:Özel Oda | Ayarlar * Hata}{description:Oda bilgilerinizdeki kanal ID yazdığınız kanal id ile uyuşmuyor}}]
-    `
-  },{
     type:"interaction",
     prototype:"button",
     code:`
@@ -164,7 +151,8 @@ $textSplit[$interactionData[customId];_;1]
     type:"interaction",
     prototype:"modal",
     code:`
-    $interactionReply[;{newEmbed:{title:Özel Oda | Ayarlar | Özel Odanın Adını Değiştir}{description:\n** **\nTalebiniz Alınmıştır 24 Saat içerisinde talebiniz incelenip sonucu botumusun dm inden atılacaktır.\n** **}};;;;yes]
+    $interactionReply[;{newEmbed:{title:Özel Oda | Ayarlar | Özel Odanın Adını Değiştir}{description:\n** **\nTalebiniz Alınmıştır 24 Saat İçerisinde Kontrol Edilip Gerekli İşlemler Yapılacaktır.\n** **}};;;;yes]
+    $channelSendMessage[]
     `
   },{
     type:"interaction",
