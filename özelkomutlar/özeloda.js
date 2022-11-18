@@ -8,6 +8,7 @@ module.exports = [{
   $addButton[2;Oda Bilgileri;1;odabilgileri_$authorID;no;❔]
   $onlyIf[$getGlobalUserVar[premium]==Var;{newEmbed:{color:RANDOM}{title:Özel Oda Menü * Hata}{description:Bu komutu sadece premium üyeler kullanabilir!}}]
   $onlyIf[$getVar[ozelodakategori1]!=0;{newEmbed:{title:Hata}{description:Görünüşe göre geliştirici özel odaların ekleneceği kategori id'yi belirtmemiş.\n\nLütfen bu hatayı geliştiriciye yada herhangi bir yetkiliye bildiriniz}}]
+  $onlyForServers[688736441290719256;Bu komut sadece $servername[688736441290719256] adlı sunucu da kullanılabilir!!!]
  `,
 },{
   type: "interaction",
