@@ -84,8 +84,6 @@ $textSplit[$interactionData[customId];_;1]
     $interactionReply[;{newEmbed:
     {title:Özel Oda | Ayarlar}
     {description:Seçiniz.}};{actionRow:
-    {button:Kanala Erişim Al:3:kerisimal_$authorID:no:🔓}
-    {actionRow:
     {button:Özel Odanın Adını değiştir:1:oaddegis_$authorID:no:📝}
     }
     {actionRow:
@@ -103,26 +101,6 @@ $let[authorID;$splitText[2]]
 $let[customId;$splitText[1]] 
 $textSplit[$interactionData[customId];_;1]
   `
-  },{
-    type:"interaction",
-    prototype:"button",
-    code:`
-    $interactionModal[Kanal Erişim Al;kaerisimModal;
-    {actionRow:
-      {textInput:Kanal ID'nizi giriniz:1:erisimModal:yes:1234567890123456789:19:19}
-    }
-   ]
-    
-    $onlyif[$get[authorID]==$interactionData[author.id];{
-"content" : "Bu Butonu Sadece Komutu Kullanan Kişi Basabilir",
-"ephemeral" : true,
-"options" : { "interaction" : true }
-}]
-$onlyIf[$get[customId]==kerisimal;]
-$let[authorID;$splitText[2]]
-$let[customId;$splitText[1]]
-$textSplit[$interactionData[customId];_;1]
-    `
   },{
     type:"interaction",
     prototype:"button",
@@ -155,6 +133,10 @@ $textSplit[$interactionData[customId];_;1]
     $interactionReply[;{newEmbed:{title:Özel Oda | Ayarlar | Özel Odanın Adını Değiştir}{description:\n** **\nTalebiniz Alınmıştır 24 Saat İçerisinde Kontrol Edilip Gerekli İşlemler Yapılacaktır.\n** **}};;;;yes]
     $channelSendMessage[$getVar[öismdegistlplog];{newEmbed:
     {title:Yeni Bir Talep Var!!}
+    {description:Kullanıcı Adı:
+    <@$authorID>
+    {field:1:İd Kopyala:saaa}
+    }
     }]
     `
   },{
