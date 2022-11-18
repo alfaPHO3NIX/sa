@@ -6,7 +6,7 @@ $title[$customEmoji[verified]Başarılı]
 $description[<@$mentioned[1;no]> Adlı Kişiye Premium Verildi!
 \n$customEmoji[premium]Premium Rozeti Kazanıldı
 \n<@&$getVar[prerol]> Rolü Verildi $customEmoji[onayla]]
-$giveRoles[688736441290719256;$authorID;$getVar[prerol]]
+$giveRoles[688736441290719256;$mentioned[1];$getVar[prerol]]
 $setGlobalUserVar[premiumsahibirozet;Sahipsin$customEmoji[onayla];$mentioned[1]]
 $setGlobalUserVar[premium;Var;$mentioned[1]]
 $onlyIf[$mentioned[1;no]!=undefined;Bir Kişi Belirtmelisin $customEmoji[reddet]]
