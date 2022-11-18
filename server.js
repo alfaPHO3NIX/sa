@@ -36,6 +36,8 @@ prefix: "!",
 
  //Premium Değişkenleri
   premium: "Yok",
+   //Premium Rol Değişkenleri
+      prerol:"undefined",
 //Kasa Değişkenleri
 katlamakasasicarpan: "0",
 

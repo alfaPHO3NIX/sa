@@ -4,10 +4,12 @@ aliases: ['premiumver'],
 code: `
 $title[$customEmoji[verified]Başarılı]
 $description[<@$mentioned[1;no]> Adlı Kişiye Premium Verildi!
-\n$customEmoji[premium]Premium Rozeti Kazanıldı]
+\n$customEmoji[premium]Premium Rozeti Kazanıldı
+\n<@&$getVar[prerol]> Rolü Verildi $customEmoji[onayla]]
+$giveRole[$]
 $setGlobalUserVar[premiumsahibirozet;Sahipsin$customEmoji[onayla];$mentioned[1]]
 $setGlobalUserVar[premium;Var;$mentioned[1]]
-$onlyIf[$mentioned[1;no]!=undefined;Bir Kişi Belirmelisin $customEmoji[reddet]]
+$onlyIf[$mentioned[1;no]!=undefined;Bir Kişi Belirtmelisin $customEmoji[reddet]]
 $onlyForIDs[980089372768624660;711923709253910588;x;Yetkin Yok $customEmoji[reddet]]
 `
 }
