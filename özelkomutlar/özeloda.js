@@ -67,6 +67,7 @@ $textSplit[$interactionData[customId];_;1]
     {title:Özel Oda | Oda Bilgileri * Kanal ID Kopyala}
     {description:$if[$getGlobalUserVar[ozelodaid]!=0;$getGlobalUserVar[ozelodaid];$channelID[$getGlobalUserVar[ozelodaisim]]]
     }};;;;yes]
+    $onlyIf[$getGlobalUserVar[ozeloda]!=yok;{newEmbed:{title:Özel Oda | Oda Bilgileri * Hata}{description:\nSenin Bir Özel Odan Yok!}{delete:3s}}]
     $onlyif[$get[authorID]==$interactionData[author.id];{
 "content" : "Bu Butonu Sadece Komutu Kullanan Kişi Basabilir",
 "ephemeral" : true,
@@ -91,6 +92,7 @@ $textSplit[$interactionData[customId];_;1]
     }
     }
     ;;;yes]
+    $onlyIf[$getGlobalUserVar[ozeloda]!=yok;{newEmbed:{title:Özel Oda | Oda Bilgileri * Hata}{description:\nSenin Bir Özel Odan Yok!}{delete:3s}}]
     $onlyif[$get[authorID]==$interactionData[author.id];{
 "content" : "Bu Butonu Sadece Komutu Kullanan Kişi Basabilir",
 "ephemeral" : true,
@@ -112,7 +114,7 @@ $textSplit[$interactionData[customId];_;1]
 
        }
       ]
-    
+    $onlyIf[$getGlobalUserVar[ozeloda]!=yok;{newEmbed:{title:Özel Oda | Oda Bilgileri * Hata}{description:\nSenin Bir Özel Odan Yok!}{delete:3s}}]
     $onlyif[$get[authorID]==$interactionData[author.id];{
 "content" : "Bu Butonu Sadece Komutu Kullanan Kişi Basabilir",
 "ephemeral" : true,
@@ -134,7 +136,7 @@ $textSplit[$interactionData[customId];_;1]
     $channelSendMessage[$getVar[öismdegistlplog];{newEmbed:
     {title:Yeni Bir Talep Var!!}
     {field:Kullanıcı Adı\n<@$authorID>:$authorID:yes}
-    {field:İstenilen İsim:$textInputValue[öaddegisModals]:yes}}]
+    {field:İstenilen İsim:$textInputValue[oaddegisModals]:yes}}]
     `
   },{
     type:"interaction",
@@ -146,6 +148,7 @@ $textSplit[$interactionData[customId];_;1]
     $resetGlobalUserVar[ozeloda]
     $deleteChannels[$getGlobalUserVar[ozelodaid]]
     $suppressErrors[Bir Hata Oluştu!?!?! Kanala Erişim Almamış Olabilirsin ya da Özel Odan Olmayabilir.]
+    $onlyIf[$getGlobalUserVar[ozeloda]!=yok;{newEmbed:{title:Özel Oda | Oda Bilgileri * Hata}{description:\nSenin Bir Özel Odan Yok!}{delete:3s}}]
     $onlyif[$get[authorID]==$interactionData[author.id];{
 "content" : "Bu Butonu Sadece Komutu Kullanan Kişi Basabilir",
 "ephemeral" : true,
