@@ -152,7 +152,9 @@ $textSplit[$interactionData[customId];_;1]
     prototype:"modal",
     code:`
     $interactionReply[;{newEmbed:{title:Özel Oda | Ayarlar | Özel Odanın Adını Değiştir}{description:\n** **\nTalebiniz Alınmıştır 24 Saat İçerisinde Kontrol Edilip Gerekli İşlemler Yapılacaktır.\n** **}};;;;yes]
-    $channelSendMessage[]
+    $channelSendMessage[$getVar[öismdegistlplog];{newEmbed:
+    {title:Yeni Bir Talep Var!!}
+    }]
     `
   },{
     type:"interaction",

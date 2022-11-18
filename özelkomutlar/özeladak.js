@@ -7,6 +7,7 @@ module.exports = [{
   $addButton[1;Kategori ID Ayarla;1;katidayarla_$authorID;no;📝]
   $addButton[2;İsim Değişim Talep Logu Ayarla;1;öisimdegistlplog_$authorID;no;📝]
   $onlyForIDs[$botOwnerID;Yekin Yok $CustomEmoji[reddet]]
+  $onlyForServers[688736441290719256; Bu komut sadece $servername[688736441290719256] adlı sunucu da kullanılabilir!!!]
   `
 },{
   type:"interaction",
