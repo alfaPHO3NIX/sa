@@ -133,11 +133,8 @@ $textSplit[$interactionData[customId];_;1]
     $interactionReply[;{newEmbed:{title:Özel Oda | Ayarlar | Özel Odanın Adını Değiştir}{description:\n** **\nTalebiniz Alınmıştır 24 Saat İçerisinde Kontrol Edilip Gerekli İşlemler Yapılacaktır.\n** **}};;;;yes]
     $channelSendMessage[$getVar[öismdegistlplog];{newEmbed:
     {title:Yeni Bir Talep Var!!}
-    {description:Kullanıcı Adı:}
-    {field:<@$authorID>:** **:no}
-    {field:$authorID:** **:no}}]
-    
-    }]
+    {field:Kullanıcı Adı\n<@$authorID>:$authorID:yes}
+    {field:İstenilen İsim:$textInputValue[öaddegisModals]:yes}}]
     `
   },{
     type:"interaction",
