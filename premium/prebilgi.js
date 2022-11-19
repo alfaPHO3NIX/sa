@@ -23,6 +23,8 @@ $customEmoji[para] Hediye 250K $getVar[parasembol]
 🎁 Özel Hediye Kanalı!
 💎 Özel Vip Çekiliş Kanalı!
 💬 Özel Premium Sohbet Kanalı!
+🎖️ Özel Premium Rozeti (Premium Bitene Kadar)
+🎖️ Özel Destekçi Rozeti (Kalıcı)
 
 **          Fiyat Nedir?**
 Botumuzda Farklılık Olmasını İstediğiz İçin Zaman Yerine Mesaj Miktarı Şeklinde Yaptık.
