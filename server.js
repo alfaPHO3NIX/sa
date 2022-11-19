@@ -124,6 +124,7 @@ bot.command({
   name:"$alwaysExecute",
   code:`
   $sendMessage[<@$authorID> Premiumunuz bitmiştir]
+  $takeRoles[688736441290719256;$authorID;1042570943140200511]
   $setGlobalUserVar[premium;Yok]
   $resetGlobalUserVar[premiumsahibirozet]
   $onlyIf[$getGlobalUserVar[premium]!=Yok]
