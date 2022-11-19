@@ -27,8 +27,17 @@ $customEmoji[para] Hediye 250K $getVar[parasembol]
 🎖️ Özel Destekçi Rozeti (Kalıcı)
 
 **          Fiyat Nedir?**
-Botumuzda Farklılık Olmasını İstediğiz İçin Zaman Yerine Mesaj Miktarı Şeklinde Yaptık.
-ve Kalan Mesaj Sayısının Birimi PreCredit'tir
+1 PreCredit = 2 OwO
+(Minimum: 1000 PreCredit)
+Botumuzun Diğer Botlardan Farklı olması için Premium Sistemimiz Süreli yerine Mesaj sınırlıdır. Ve bunun para birimi PreCredit'tir
+
+Örnek:
+
+1000 PreCredit Aldıysanız
+
+1000 Mesaj Attığınızda Otomatik Premium'unuz Alınacaktır.
+
+
 ]
 $image[https://cdn.discordapp.com/attachments/1030562848344121446/1043577664805539961/IMG_20221119_200653.jpg]
 `

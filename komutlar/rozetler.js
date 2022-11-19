@@ -11,7 +11,7 @@ $customEmoji[premium]Premium Sahibi: $getGlobalUserVar[premiumsahibirozet]
 \n$customEmoji[etkinlikkazanani]Etkinlik Kazananı: $getGlobalUserVar[etkinlikkazananırozet]
 \n$customEmoji[verified] Onaylı Kişi: $getGlobalUserVar[onaylıkişirozet]
 \n$customEmoji[kirmiziyildiz]Developer: $getGlobalUserVar[geliştiricirozet]
-\nYüksel Reis: $getGlobalUserVar[yükselreisrozet]
+\n💰 Destekçi: $getGlobalUserVar[destekçirozet]
 $color[RANDOM]
 ]
 `

@@ -61,6 +61,7 @@ onaylıkişirozet: "Sahip Değilsin",
 yetkiliekibirozet: "Sahip Değilsin",
 geliştiricirozet: "Sahip Değilsin",
 yükselreisrozet: "Sahip Değilsin",
+destekçirozet:"Sahip Değilsin",
   //rozet: "Sahip Değilsin",
   
  //Özel Oda değişkenleri

@@ -7,6 +7,7 @@ $description[<@$mentioned[1;no]> Adlı Kişiye $noMentionMessage[1] PreCredit Ve
 \n$customEmoji[premium]Premium Rozeti Kazanıldı
 \n<@&$getVar[prerol]> Rolü Verildi $customEmoji[onayla]]
 $giveRoles[688736441290719256;$mentioned[1];$getVar[prerol]]
+$setGlobalUserVar[destekçirozet;Sahipsin$customEmoji[onayla];$mentioned[1]]
 $setGlobalUserVar[premiumsahibirozet;Sahipsin$customEmoji[onayla];$mentioned[1]]
 $setGlobalUserVar[premium;Var;$mentioned[1]]
 $setGlobalUserVar[precredit;$sum[$getGlobalUserVar[precredit;$mentioned[1;no]];$noMentionMessage[1]];$mentioned[1;no]]
