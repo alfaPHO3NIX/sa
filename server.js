@@ -36,6 +36,7 @@ prefix: "!",
 
  //Premium Değişkenleri
   premium: "Yok",
+  precredit:"0",
    //Premium Rol Değişkenleri
       prerol:"undefined",
 //Kasa Değişkenleri
