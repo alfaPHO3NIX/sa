@@ -15,10 +15,14 @@ Yakında
 
 **          Ses Ayrıcalıkları**
 $customEmoji[premium]Ses Kanallarında Öncelikli Konuşmacı İzni!
-Hediye 250K $getVar[parasembol]
+
+$customEmoji[para] Hediye 250K $getVar[parasembol]
 
 **          Özel Ayrıcalıklar**
-Özel Hediye Kanalı!
+🎁 Özel Hediye Kanalı!
+💎 Özel Vip Çekiliş Kanalı!
+💬 Özel Premium Sohbet Kanalı!
 ]
+$image[https://cdn.discordapp.com/attachments/1030562848344121446/1043577664805539961/IMG_20221119_200653.jpg]
 `
 }
