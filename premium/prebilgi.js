@@ -16,6 +16,7 @@ Yakında
 **          Ses Ayrıcalıkları**
 $customEmoji[premium]Ses Kanallarında Öncelikli Konuşmacı İzni!
 
+**          Ekonomi Ayrıcalıkları**
 $customEmoji[para] Hediye 250K $getVar[parasembol]
 
 **          Özel Ayrıcalıklar**
@@ -24,6 +25,8 @@ $customEmoji[para] Hediye 250K $getVar[parasembol]
 💬 Özel Premium Sohbet Kanalı!
 
 **          Fiyat Nedir?**
+Botumuzda Farklılık Olmasını İstediğiz İçin Zaman Yerine Mesaj Miktarı Şeklinde Yaptık.
+ve Kalan Mesaj Sayısının Birimi PreCredit'tir
 ]
 $image[https://cdn.discordapp.com/attachments/1030562848344121446/1043577664805539961/IMG_20221119_200653.jpg]
 `
