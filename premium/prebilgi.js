@@ -13,12 +13,12 @@ Emojili konuş sistemindeki emojileri adları ile beraber listeler.
 **$getServerVar[prefix]isimrenk / $getServerVar[prefix]renkliisim**
 Yakında
 
+**          Ses Ayrıcalıkları**
+$customEmoji[premium]Ses Kanallarında Öncelikli Konuşmacı İzni!
 Hediye 250K $getVar[parasembol]
 
-**TG MC sunucusunda özel kit**
-Yakında
-
-**Ücret:** __100K OwO__
+**          Özel Ayrıcalıklar**
+Özel Hediye Kanalı!
 ]
 `
 }
