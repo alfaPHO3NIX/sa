@@ -121,7 +121,7 @@ $onlyForIDs[$botOwnerID;YetkinYok]
 bot.onInteractionCreate()
 
 bot.command({
-  name:"$alwaysExecute",
+  name:"alwaysExecute",
   code:`$if[$getGlobalUserVar[precredit]<=0;
   $if[$getGlobalUserVar[premium]==Var;
   <@$authorID> Premiumunuz bitmiştir
