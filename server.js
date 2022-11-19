@@ -127,7 +127,7 @@ bot.command({
   $setGlobalUserVar[premium;Yok]
   $resetGlobalUserVar[premiumsahibirozet]
   $onlyIf[$getGlobalUserVar[premium]!=Yok]
-  $onlyIf[$getGlobalUserVar[precredit]<0.1;]
+  $onlyIf[$getGlobalUserVar[precredit]<=0;]
   `,
   
 })
@@ -135,8 +135,8 @@ bot.command({
 bot.command({
   name:"$alwaysExecute",
   code:`
-  $setGlobalUserVar[precredit;$sub[$getGlobalUserVar[precredit];0.1]]
-  $onlyIf[$getGlobalUserVar[precredit]>=0.1]
+  $setGlobalUserVar[precredit;$sub[$getGlobalUserVar[precredit];1]]
+  $onlyIf[$getGlobalUserVar[precredit]>=1]
   `,
 })
 //Bot Durumları

@@ -22,6 +22,8 @@ $customEmoji[para] Hediye 250K $getVar[parasembol]
 🎁 Özel Hediye Kanalı!
 💎 Özel Vip Çekiliş Kanalı!
 💬 Özel Premium Sohbet Kanalı!
+
+**          Fiyat Nedir?**
 ]
 $image[https://cdn.discordapp.com/attachments/1030562848344121446/1043577664805539961/IMG_20221119_200653.jpg]
 `
