@@ -127,7 +127,7 @@ bot.command({
   $setGlobalUserVar[premium;Yok]
   $resetGlobalUserVar[premiumsahibirozet]
   $onlyIf[$getGlobalUserVar[premium]!=Yok]
-  $onlyIf[$getGlobalUserVar[precredit]=<0;]
+  $onlyIf[$getGlobalUserVar[precredit]<0.1;]
   `,
   
 })
