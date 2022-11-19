@@ -137,7 +137,8 @@ $textSplit[$interactionData[customId];_;1]
     $channelSendMessage[$getVar[öismdegistlplog];{newEmbed:
     {title:Yeni Bir Talep Var!!}
     {field:Kullanıcı Adı\n<@$authorID>:$authorID:yes}
-    {field:İstenilen İsim:$textInputValue[oaddegisModals]:yes}}]
+    {field:İstenilen İsim:$textInputValue[oaddegisModals]:yes}
+    {field:Özel Oda Adı\n<#$getGlobalUserVar[ozelodaid]>:$getGlobalUserVar[ozelodaid]:no}}]
     `
   },{
     type:"interaction",
