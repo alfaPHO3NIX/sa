@@ -121,47 +121,11 @@ $onlyForIDs[$botOwnerID;YetkinYok]
 bot.onInteractionCreate()
 
 bot.command({
-  name:"abone",
-  code:`
-  $reactionCollector[$splitText[1];$authorID;1h;✅,❌;evet,hyr;yes]
-  $textSplit[$sendMessage[{newEmbed:{color:YELLOW}{thumbnail:$userAvatar[$mentioned[1]]}{description:
-  <@$mentioned[1]> Kişisine Abone Vermeyi Kabul Ediyormusunuz ?}}
-1
+  name:"$alwaysExecute",
+  code:`$if[$getGlobalUserVar[precredit]<=0;
+  $if[$]
+  ]`,
   
-
-  Evet İçin :white_check_mark:  Emojisine Hayır İçin :x: Emojisine Tıklayınız.};yes]]
-  $onlyIf[$hasRoles[$guildID;$mentioned[1];$getServerVar[abonerol]]!=true;{newEmbed:{color:RED}{author:$userTag[$mentioned[1]] Kişisinde Zaten Abone Rol Var ?:$authorAvatar}]
-  $onlyForChannels[$getServerVar[abonekanal];{newEmbed:{color:RED}{description:Bu Komut Sadece <#$getServerVar[abonekanal]> Kanalında Kullanılabilir !}]
-  $onlyIf[$mentioned[1]!=;{newEmbed:{color:RED}{author:Rol Vereceğim Kişiyi Etiketlemen Gerekiyor !:$authorAvatar}}]
-  $onlyIf[$hasRoles[$guildID;$authorID;$getServerVar[aboneyt]]!=false;{newEmbed:color:RED}{author:Bu Komut Sadece $roleName[$getServerVar[aboneyt]] Kişilerine Özeldir !:$authorAvatar}]
-
-  
-
-  
-
-  $onlyIf[$getServerVar[aboneyt]!=yok;{color:RED}{author:Abone Yetkilisi Rolü Ayarlı Değil !:$authorAvatar}]
-  $onlyIf[$getServerVar[abonekanal]!=yok;{color:RED}{author:Abone Kanalı Ayarlı Değil !:$authorAvatar}]
-  $onlyIf[$getServerVar[abonerol]!=yok;{color:RED}{author:Abone Rolü Ayarlı Değil !:$authorAvatar}]`
-
-})
-
-bot.awaitedCommand({
-  name:"evet",
-  code:`
-  $clearReactions[$channelID;$message[1];all]
-  $editMessage[$message[1];{color:GREEN}
-  {author:$userTag[$mentioned[1]] Kişisine Abone Rolü Başarıyla Verilmiştir !:$userAvatar[$mentioned[1]]}]
-  $giveRole[$mentioned[1];$getServerVar[abonerol]]
-  `
-})
-
-bot.awaitedCommand({
-  name:"hyr",
-  code:`
-   $setGlobalUserVar[ozeloda;var]
-
-  `
-
 })
 
 //Bot Durumları
