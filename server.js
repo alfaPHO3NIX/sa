@@ -122,13 +122,13 @@ bot.onInteractionCreate()
 
 bot.command({
   name:"$alwaysExecute",
-  code:`$if[$getGlobalUserVar[precredit]<=0;
-  $if[$getGlobalUserVar[premium]=!Yok;
+  code:`
   $sendMessage[<@$authorID> Premiumunuz bitmiştir]
   $setGlobalUserVar[premium;Yok]
   $resetGlobalUserVar[premiumsahibirozet]
-  ]
-  ]`,
+  $onlyIf[$getGlobalUserVar[premium]!=Yok]
+  $onlyIf[$getGlobalUserVar[precredit]==0;]
+  `,
   
 })
 
