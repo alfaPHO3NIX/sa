@@ -123,7 +123,8 @@ bot.onInteractionCreate()
 bot.command({
   name:"$alwaysExecute",
   code:`$if[$getGlobalUserVar[precredit]<=0;
-  $if[$]
+  $if[$getGlobalUserVar[premium]==Var;
+  <@$authorID> Premiumun bitti.0]
   ]`,
   
 })
