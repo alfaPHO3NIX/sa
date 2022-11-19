@@ -124,7 +124,10 @@ bot.command({
   name:"$alwaysExecute",
   code:`$if[$getGlobalUserVar[precredit]<=0;
   $if[$getGlobalUserVar[premium]==Var;
-  <@$authorID> Premiumun bitti.0]
+  <@$authorID> Premiumunuz bitmiştir
+  $resetGlobalUserVar[premium]
+  $resetGlobalUserVar[premiumsahibirozet]
+  ]
   ]`,
   
 })
