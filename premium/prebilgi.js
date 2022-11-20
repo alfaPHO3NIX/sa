@@ -14,6 +14,9 @@ Emojili konuş sistemindeki emojileri adları ile beraber listeler.
 **$getServerVar[prefix]isimrenk / $getServerVar[prefix]renkliisim**
 Yakında
 
+$getServerVar[prefix]ö / özeloda
+Kendinize Özel Odanız Var!😎
+
 **          Ses Ayrıcalıkları**
 $customEmoji[premium]Ses Kanallarında Öncelikli Konuşmacı İzni!
 
@@ -28,7 +31,7 @@ $customEmoji[para] Hediye 250K $getVar[parasembol]
 🎖️ Özel Destekçi Rozeti (Kalıcı)
 
 **          Fiyat Nedir?**
-1 PreCredit = 2 OwO
+1 PreCredit = 15 OwO
 (Minimum: 1000 PreCredit)
 
 Botumuzun Diğer Botlardan Farklı olması için Premium Sistemimiz Süreli yerine Mesaj sınırlıdır. Ve bunun para birimi PreCredit'tir
