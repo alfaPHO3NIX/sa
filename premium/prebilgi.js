@@ -2,6 +2,7 @@ module.exports = {
 name: "prebilgi",
 aliases: ['premiumbilgi','preözellikler','premiumözellikler'],
 code: `
+$deletecommand
 $title[$customEmoji[premium]Premium Özellikleri$customEmoji[premium]]
 $description[**          Özel Komutlar**
 **$getServerVar[prefix]e / emojilikonuş {mesaj}**
@@ -29,6 +30,7 @@ $customEmoji[para] Hediye 250K $getVar[parasembol]
 **          Fiyat Nedir?**
 1 PreCredit = 2 OwO
 (Minimum: 1000 PreCredit)
+
 Botumuzun Diğer Botlardan Farklı olması için Premium Sistemimiz Süreli yerine Mesaj sınırlıdır. Ve bunun para birimi PreCredit'tir
 
 Örnek:

@@ -4,8 +4,9 @@ aliases: ['premiumver'],
 code: `
 $title[$customEmoji[verified]Başarılı]
 $description[<@$mentioned[1;no]> Adlı Kişiye $noMentionMessage[1] PreCredit Verildi!
-\n$customEmoji[premium]Premium Rozeti Kazanıldı
-\n<@&$getVar[prerol]> Rolü Verildi $customEmoji[onayla]]
+\n$customEmoji[premium]Premium Rozeti Kazanıldı!
+\n<@&$getVar[prerol]> Rolü Verildi $customEmoji[onayla]
+\n $customEmoji[destekci] Destekçi Rozeti Verildi!]
 $giveRoles[688736441290719256;$mentioned[1];$getVar[prerol]]
 $setGlobalUserVar[destekçirozet;Sahipsin$customEmoji[onayla];$mentioned[1]]
 $setGlobalUserVar[premiumsahibirozet;Sahipsin$customEmoji[onayla];$mentioned[1]]
