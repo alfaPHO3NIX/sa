@@ -12,3 +12,7 @@ https://tenor.com/view/rasi%CC%87mozank%C3%BCtahyali-beyazfutbol-cahi%CC%87lerte
 ]
 `,
 };
+
+//köşeli parantezin içinden en alta boşluk bırakıp
+//;https://tenor.com/view/gif
+//şeklinde eklemelisiniz.
