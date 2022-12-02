@@ -29,7 +29,7 @@ bot.variables({
 mücevher: "0",
 para: "0",
 parasembol: "VLC",
-
+  
 //Bot Status Değişkenleri
 botadi: "xFrkn_",
 prefix: "!",
