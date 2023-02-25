@@ -4,7 +4,7 @@ aliases: ['help'],
 code: `
 $title[$customEmoji[kitap] Yardım $customEmoji[kitap]]
 $description[Seçiniz.]
-$addSelectMenu[1;help;Seçiniz...;1;1;no;Ana Komutlar:Ana komutları gösterir:help-1:no:$customEmoji[ev];Ekonomi Komutları:Ekonomi komutlarını gösterir.:help0:no:$customEmoji[para];Rozet Komutları:Rozet sistemi komutlarını gösterir:help1:no:$customEmoji[tac];Premium Komutları:Premium komutlarını gösterir:help2:no:$customEmoji[premium];Etkinlik Komutları:Etkinlik hakkında komutları gösterir:help3:no:]
+$addSelectMenu[1;help;Seçiniz...;1;1;no;Ana Komutlar:Ana komutları gösterir:help1:no:$customEmoji[ev];Ekonomi Komutları:Ekonomi komutlarını gösterir.:help0:no:$customEmoji[para];Rozet Komutları:Rozet sistemi komutlarını gösterir:help1:no:$customEmoji[tac];Premium Komutları:Premium komutlarını gösterir:help2:no:$customEmoji[premium];Etkinlik Komutları:Etkinlik hakkında komutları gösterir:help3:no]
 `
 },{
   name:"help",
@@ -69,7 +69,7 @@ Premium özrlliklerini gösterir.
 
 Premium'unuzun olup olmadığını gösterir
   }}
-  $onlyIf[$interactionData[values[0]]==help2;]
+  $onlyIf[$interactionData[values[0]]==help-1;]
   ;;;;yes]
   `
 },{

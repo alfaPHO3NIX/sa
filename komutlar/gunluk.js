@@ -15,7 +15,7 @@ $globalCooldown[$getGlobalUserVar[gunlukparacooldown];Bu komutu $replaceText[$re
 // Min Değer= 0
 //- gunlukparacooldown
 // Min Değer= 0s [Sonuna Zaman Terimi Koyun.]
-//-
-//-
+//[Teriml3]
+//
 //-
 
